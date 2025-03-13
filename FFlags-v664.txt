@@ -16998,6 +16998,8 @@ FFlagPlaceUploadFailure17Plus = false
 
 FFlagPlaceVersionHistoryTitleFix = true
 
+FFlagPlatformEventEnabled2 = true
+
 FFlagPlayerCharacterLoaderReplaceModelWithActor = false
 
 FFlagPlayerContextualMenuGameJoinAttribution = true
@@ -25914,6 +25916,8 @@ FStringPhysicsAdaptiveTimeSteppingIXP = Physics.AdaptiveTimeStepping
 FStringPivotEditorLearnMoreUrl = https://devforum.roblox.com/t/pivot-points-studio-beta/1180689
 
 FStringPlaceAnnotationsBetaFeatureUrl = 
+
+FStringPlatformEventUrl = https://www.roblox.com/the-hunt-mega-edition
 
 FStringPlatformExcellenceVRSpatialUILayer = PlatformExcellence.VR.SpatialUI
 
