@@ -21264,6 +21264,8 @@ FIntGamepadEmulatorBetaFeatureRolloutPercent = 0
 
 FIntGamepadNavigationDialogShowCount = 1
 
+FIntGameGridFlexFeedItemTileNumPerFeed = 500
+
 FIntGamePerfMonitorPercentage = 10
 
 FIntGamePerfMonitorReportTimer = 10
