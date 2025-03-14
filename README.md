@@ -1,6 +1,7 @@
 ### Version: 0.664.0.6640713
-### Channel: Production
+### Channel: ZControl
 ### Hash: version-3a5d3d49b5cf42eb
+### Type: Studio
 
 ---
 
