@@ -6,9 +6,9 @@
 ---
 
 ### List:
-https://github.com/SatlyBPro/Full-FastFlag-List/blob/main/FFlags-v664.txt
+https://github.com/SatlyBPro/Full-FastFlag-List/blob/main/FFlags.txt
 
 ###### .
 
 ### Raw List:
-https://raw.githubusercontent.com/SatlyBPro/Full-FastFlag-List/refs/heads/main/FFlags-v664.txt
+https://raw.githubusercontent.com/SatlyBPro/Full-FastFlag-List/refs/heads/main/FFlags.txt
