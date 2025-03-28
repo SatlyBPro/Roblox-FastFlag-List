@@ -10,6 +10,8 @@ DFFlagActiveCallAmpCanUseInExperienceChat4 = true
 
 DFFlagAddAppVersionIntoV2POCStat = true
 
+DFFlagAddConnectionTimeToDisconnectEvent = false
+
 DFFlagAddContextNamesToDurationLoggerEvents = true
 
 DFFlagAddControllerPDMembers2 = true
@@ -21,6 +23,8 @@ DFFlagAdditionalPrePauseStats = true
 DFFlagAddKtxContentHash2 = false
 
 DFFlagAddKtxTranscodedWidthHeight = false
+
+DFFlagAddKtxTranscoderVersion = false
 
 DFFlagAddMipPackMetadata = false
 
@@ -60,7 +64,7 @@ DFFlagAddTimestampToLoadMetrics = true
 
 DFFlagAddUniverseIDToTelemetryV2FRMStats = true
 
-DFFlagAdGuiImpressionDisabled = false
+DFFlagAdGuiHandleGameSettingsChangedUnderDmLock = false
 
 DFFlagAdjustHipTranslation = false
 
@@ -68,9 +72,13 @@ DFFlagAdjustMaxSimRadiusClamp = true
 
 DFFlagAdminRemoteMicroProfiler = false
 
-DFFlagAdServiceAccessMarketplaceServiceUnderDMLock = false
+DFFlagAdServiceAccessMarketplaceServiceUnderDMLock = true
 
 DFFlagAdServiceCallErrorFunctionInsteadOfPrint = false
+
+DFFlagAdserviceFixRewardedVideoAdPlaySignalLog = false
+
+DFFlagAdServiceMoveVolumeChangedSignalHandlerToDmThread = false
 
 DFFlagAESAddCreatorIdToSearch3 = true
 
@@ -79,8 +87,6 @@ DFFlagAESUseSupersetForATCSaveFailures2 = false
 DFFlagAggCpuMemRCC = false
 
 DFFlagAllowDisablingSTFields = false
-
-DFFlagAllowLuaAppFetchThumbnailsResizer = false
 
 DFFlagAllowOversizedLogToUser = true
 
@@ -162,7 +168,7 @@ DFFlagAnimatorThrottleRccEnabled = false
 
 DFFlagApiProposal323 = true
 
-DFFlagAppConfigurationAddUserIdInTelemetry = false
+DFFlagAppConfigurationAddUserIdInTelemetry = true
 
 DFFlagAppendSourceIdToRequireLog = false
 
@@ -177,6 +183,8 @@ DFFlagAssetAuthFallback = false
 DFFlagAssetPreloadingUrlVersionEnabled = false
 
 DFFlagAssetPreloadingUrlVersionEnabled2 = false
+
+DFFlagAssetProviderDeDupeWorkflows = false
 
 DFFlagAssetRequestAddCacheSourceToTotalDelayStat2 = true
 
@@ -262,7 +270,7 @@ DFFlagBadgeServiceEnableStats = false
 
 DFFlagBadgeServiceUseUpdatedRequestChecker = true
 
-DFFlagBadgesWriteEnabled = true
+DFFlagBadgesWriteEnabled = false
 
 DFFlagBandwidthManagerGetFeedbackInWindowAndReport2 = false
 
@@ -279,8 +287,6 @@ DFFlagBetterPartFallHeightDelete2 = false
 DFFlagBetterPatcherWait = true
 
 DFFlagBetterPlatform = true
-
-DFFlagBroadphaseSupportMidphaseOpt = true
 
 DFFlagBrowserTrackerIdTelemetryEnabled = true
 
@@ -330,9 +336,9 @@ DFFlagClampIncomingReplicationLag = false
 
 DFFlagCleanOldCSGData = false
 
-DFFlagCleanOOMMath = false
+DFFlagCleanOOMMath = true
 
-DFFlagCleanOOMVideo = false
+DFFlagCleanOOMVideo = true
 
 DFFlagClearEvictedCacheEntriesTracking = false
 
@@ -454,6 +460,8 @@ DFFlagCollisionOnlySpawnPlacement = false
 
 DFFlagCompareFilterResults = false
 
+DFFlagConfigServiceTelemetryIncludeUniverseIdAndPlaceId = false
+
 DFFlagConsistentRakNetPing = true
 
 DFFlagConsumePlatformNameOverAlternateName = false
@@ -516,7 +524,9 @@ DFFlagCreationStorageSerializationKillSwitch = false
 
 DFFlagCreatorBanSetErrorDetails = true
 
-DFFlagCrossServerMessagingWriteEnabled = true
+DFFlagCreatorConfigProviderTelemetryIncludeUniverseIdAndPlaceId = false
+
+DFFlagCrossServerMessagingWriteEnabled = false
 
 DFFlagCSGv2AlwaysClusterPositions = false
 
@@ -590,7 +600,7 @@ DFFlagDebugD3D11MockExceptionOnCreateBuffer = false
 
 DFFlagDebugD3D11MockExceptionOnCreateBufferInBindWorkspace = false
 
-DFFlagDebugDataStoreWriteEnabled = true
+DFFlagDebugDataStoreWriteEnabled = false
 
 DFFlagDebugDetailedSoundMemoryStats = false
 
@@ -619,6 +629,8 @@ DFFlagDebugDrawBroadPhaseAABBs = false
 DFFlagDebugDrawBvhNodes = false
 
 DFFlagDebugDrawControllerManagerAdorns = false
+
+DFFlagDebugDrawEnable = false
 
 DFFlagDebugDrawOcclusionPaths = false
 
@@ -671,10 +683,6 @@ DFFlagDebugEnableRomarkService = false
 DFFlagDebugEnableSFULoadTestClientReport = false
 
 DFFlagDebugEnableStreamingSolverVisualization = false
-
-DFFlagDebugEnableVideoAdsDeviceAllowlist = false
-
-DFFlagDebugEnableVideoAdsDeviceFilter = false
 
 DFFlagDebugEnableVoiceVolumeFader = false
 
@@ -729,6 +737,8 @@ DFFlagDebugHlsStartAtLowestBitrate = false
 DFFlagDebugHttpSyncCallsForStatsReporting = false
 
 DFFlagDebugHumanoidUseMeshCollisionFidelity = false
+
+DFFlagDebugIgnoreNetAssetChecks = false
 
 DFFlagDebugIgnoreSkipStaleData = false
 
@@ -964,7 +974,7 @@ DFFlagDeferInferredCrashEvaluation = false
 
 DFFlagDeferredEventsMaximumQueueSizeTelemetry = false
 
-DFFlagDelayRewardedAdsInitialization = false
+DFFlagDelayRewardedAdsInitialization = true
 
 DFFlagDelayServingAdStateToVideoPlay = false
 
@@ -980,13 +990,15 @@ DFFlagDeprecateTestServiceThrottle = true
 
 DFFlagDeprecateUnsubscribedTerrain = true
 
-DFFlagDeprecationMessageRefinements = false
+DFFlagDeprecationMessageRefinements = true
 
 DFFlagDetailedBandwidthStatsInflux2 = false
 
-DFFlagDetectCollisionsWithOneSimulatingBody = false
+DFFlagDetectCollisionsWithOneSimulatingBody = true
 
 DFFlagDeveloperSubscriptionsEnabled = false
+
+DFFlagDevOriginatedRequestEnabled = false
 
 DFFlagDevProductCursorBasedPagination = true
 
@@ -1026,7 +1038,7 @@ DFFlagDisableTeleportCustomGui = false
 
 DFFlagDisconnectCodeUseEnum2 = true
 
-DFFlagDisconnectIntegrity = false
+DFFlagDisconnectIntegrity = true
 
 DFFlagDisconnectOnPingTimeOutGamePlay = false
 
@@ -1036,17 +1048,9 @@ DFFlagDisconnectReasonPerConnectionFix = false
 
 DFFlagDisplayAdMajorityCriteriaEnabled2 = false
 
-DFFlagDisplayAdRandomizedRaycastEnabled2 = true
-
-DFFlagDisplayAdRaycastBruteForceAllSlowEnabled = true
-
-DFFlagDisplayAdRaycastingDisabled = false
-
 DFFlagDMServiceStatsNullPtrFixEnabled = false
 
 DFFlagDoJoinBackTeleport = false
-
-DFFlagDomainAllowListEnabled = true
 
 DFFlagDoNotAddInvalidGroupRecordToNetworkObject = false
 
@@ -1070,7 +1074,7 @@ DFFlagDRSBasicManagement = false
 
 DFFlagDSBudgetV2CounterIncludeUniverseAndPlaceId = true
 
-DFFlagDSTelemetryEnableMetricRecorder = false
+DFFlagDSTelemetryEnableMetricRecorder = true
 
 DFFlagDSTelemetryV2IncludeUniverseIdAndPlaceId = true
 
@@ -1086,7 +1090,7 @@ DFFlagDualWriteRakNetBandwidthParquetPoint = true
 
 DFFlagDuplicateRejectionReportTracking = true
 
-DFFlagDynamicFastVariableReloaderTest1 = false
+DFFlagDynamicFastVariableReloaderTest1 = true
 
 DFFlagDynIpBlacklistBackoffEnabled = false
 
@@ -1097,6 +1101,8 @@ DFFlagEditableImageDrawImageTransformedBoundingBox = true
 DFFlagEditableImageDrawImageTransformedCheckInputs = true
 
 DFFlagEditableImageDrawImageTransformedEnabled = true
+
+DFFlagEditableMeshApiSimplify = false
 
 DFFlagEditableMeshEdgeContainer = false
 
@@ -1112,17 +1118,13 @@ DFFlagEmitSafetyTelemetryInCallbackEnable = true
 
 DFFlagEnableAccessoryPublish2 = false
 
-DFFlagEnableAddDurationNeededForRewardField = false
+DFFlagEnableAddDurationNeededForRewardField = true
 
 DFFlagEnableAdGuiIsValidUpdate = true
 
 DFFlagEnableAdModerationScreenshots2 = false
 
 DFFlagEnableAdPlacementCheckInRequest = true
-
-DFFlagEnableADS2546 = false
-
-DFFlagEnableAdServiceEventsSendImmediately = false
 
 DFFlagEnableAdServiceOnHeartbeat2 = false
 
@@ -1164,15 +1166,15 @@ DFFlagEnableCppHeapProfilerService = true
 
 DFFlagEnableCppSoundTelemetry = true
 
-DFFlagEnableCreatorStorePurchasing = false
+DFFlagEnableCreatorStorePurchasing = true
 
 DFFlagEnableCsmRateLimit = true
 
-DFFlagEnableDmLockHandleOnDemandAdPlayAtClient = false
+DFFlagEnableDmLockHandleOnDemandAdPlayAtClient = true
 
-DFFlagEnableDmLockHandleOnDemandAdsEnabledAtClient = false
+DFFlagEnableDmLockHandleOnDemandAdsEnabledAtClient = true
 
-DFFlagEnableDmLockOnDemandVideoPlayInUI = false
+DFFlagEnableDmLockOnDemandVideoPlayInUI = true
 
 DFFlagEnableDoNotDebouceAdFills = false
 
@@ -1190,7 +1192,7 @@ DFFlagEnableFeatureRestrictionManagerOnServiceProvider = true
 
 DFFlagEnableFilteredTextEnrichment = true
 
-DFFlagEnableFlushRewardedVideoSessionTrackingMetric = false
+DFFlagEnableFlushRewardedVideoSessionTrackingMetric = true
 
 DFFlagEnableFullscreenVisibilityCheck = true
 
@@ -1252,7 +1254,7 @@ DFFlagEnableModerationTimeoutMessageStatus = true
 
 DFFlagEnableMPAllocCallback = false
 
-DFFlagEnableNativeAdReactiveModeration = false
+DFFlagEnableNativeAdReactiveModeration = true
 
 DFFlagEnableNativeAdsProtocolTelemetry = true
 
@@ -1266,7 +1268,7 @@ DFFlagEnableNonTeamCreateRemoteSaveValidator = true
 
 DFFlagEnableOctreeDebugDraw = false
 
-DFFlagEnableOnDemandAdsProviderLogging = false
+DFFlagEnableOnDemandAdsProviderLogging = true
 
 DFFlagEnablePartyDevAPI = false
 
@@ -1330,15 +1332,13 @@ DFFlagEnableRemoteProfiling = true
 
 DFFlagEnableRemoteSaveValidatorTelemetry = true
 
-DFFlagEnableRewardedAdsFunnelEvents = false
+DFFlagEnableRewardedAdsFunnelEvents = true
 
 DFFlagEnableRewardedAdsLog = false
 
-DFFlagEnableRewardedVideoStudioOutput = true
-
 DFFlagEnableRobloxCNDomains = false
 
-DFFlagEnableRSLAllocateShared = false
+DFFlagEnableRSLAllocateShared = true
 
 DFFlagEnableScreenAndAdStatsForUnload = true
 
@@ -1349,8 +1349,6 @@ DFFlagEnableSendItemLimitDisconnect = false
 DFFlagEnableSetClientDeviceRam = true
 
 DFFlagEnableSetTransactionStatusMigration = true
-
-DFFlagEnableShowAdResultInsufficientMemoryEnum = true
 
 DFFlagEnableSkipUpdatingGlobalTelemetryInfo5 = true
 
@@ -1384,7 +1382,7 @@ DFFlagEnableThirdPartyAdPauseResumeEventReporting2 = false
 
 DFFlagEnableThirdPartyAdVolumeEventReporting = false
 
-DFFlagEnableThreadingFixForReportAdAvailability = false
+DFFlagEnableThreadingFixForReportAdAvailability = true
 
 DFFlagEnableThumbnailTextureLoadTimeout = true
 
@@ -1408,9 +1406,7 @@ DFFlagEnableValidateEngineContextLiveTrace = false
 
 DFFlagEnableVerboseFailedUrl = false
 
-DFFlagEnableVerifiedTextToTextFilter = false
-
-DFFlagEnableVideoAdsMemoryCheck = true
+DFFlagEnableVerifiedTextToTextFilter = true
 
 DFFlagEnableVideoAdsUpdatedImpressionDefinition = false
 
@@ -1486,6 +1482,8 @@ DFFlagFastRaycastParamsDescendantCopy = false
 
 DFFlagFbxAddAnimationEndTimeEpsilon = true
 
+DFFlagFeatureInterventionNamespaceEnabled = false
+
 DFFlagFileCacheDisableFileBuffer = false
 
 DFFlagFileCacheFast = false
@@ -1507,8 +1505,6 @@ DFFlagFixAccoutrementWeldCreationForCloudEdit4 = true
 DFFlagFixAccoutrementWeldCreationForPluginGUI = false
 
 DFFlagFixAdRewardToastTruncation = true
-
-DFFlagFixAdsEventMetadata = false
 
 DFFlagFixAdsNoFillReasonParsing = true
 
@@ -1534,7 +1530,7 @@ DFFlagFixContinuous50Reset = true
 
 DFFlagFixControllerManagerCrash = true
 
-DFFlagFixControllerManagerIteratorInvalidation = false
+DFFlagFixControllerManagerIteratorInvalidation = true
 
 DFFlagFixCREATORBUG5135 = false
 
@@ -1543,8 +1539,6 @@ DFFlagFixDispatcherInefficiency = true
 DFFlagFixDiv0RemoteSystemLookupHashIndex = false
 
 DFFlagFixGameJoinCrash = true
-
-DFFlagFixHandlePlayButtonClickedCrash = true
 
 DFFlagFixHumanoidPlayEmoteCrash = true
 
@@ -1570,6 +1564,8 @@ DFFlagFixLadderSearchDepth = false
 
 DFFlagFixLastAssetDeliveredTime = false
 
+DFFlagFixMakeAdGuiDataUndefinedBehavior = false
+
 DFFlagFixMigrateAvatarTelemetryToDurationLogger3 = true
 
 DFFlagFixMissingDataPingComponentSample = true
@@ -1588,7 +1584,7 @@ DFFlagFixRCCDisconnectReasonReporting = false
 
 DFFlagFixReplicatorIdentityCheck = true
 
-DFFlagFixRSTelemetryV2FieldNames = false
+DFFlagFixRSTelemetryV2FieldNames = true
 
 DFFlagFixSanitizeAnimationId = true
 
@@ -1602,11 +1598,11 @@ DFFlagFixTelemetryForPacketMissLongTerm = true
 
 DFFlagFixTextDirectionNotUpdating = false
 
-DFFlagFixUIRenderModifierUnibarBug = false
+DFFlagFixUIRenderModifierUnibarBug = true
 
 DFFlagFixUsingGameIdInsteadOfJobId = true
 
-DFFlagFixVictoriaMetricsNegativeNumbersHistogram = false
+DFFlagFixValidateRewardDMLock = false
 
 DFFlagFlagRolloutTestDynamicBool0 = false
 
@@ -1622,27 +1618,27 @@ DFFlagFlagRolloutTestDynamicBool13 = true
 
 DFFlagFlagRolloutTestDynamicBool14 = false
 
-DFFlagFlagRolloutTestDynamicBool15 = false
+DFFlagFlagRolloutTestDynamicBool15 = true
 
-DFFlagFlagRolloutTestDynamicBool16 = true
+DFFlagFlagRolloutTestDynamicBool16 = false
 
-DFFlagFlagRolloutTestDynamicBool17 = true
+DFFlagFlagRolloutTestDynamicBool17 = false
 
-DFFlagFlagRolloutTestDynamicBool18 = false
+DFFlagFlagRolloutTestDynamicBool18 = true
 
-DFFlagFlagRolloutTestDynamicBool19 = false
+DFFlagFlagRolloutTestDynamicBool19 = true
 
 DFFlagFlagRolloutTestDynamicBool2 = false
 
-DFFlagFlagRolloutTestDynamicBool20 = true
+DFFlagFlagRolloutTestDynamicBool20 = false
 
-DFFlagFlagRolloutTestDynamicBool21 = true
+DFFlagFlagRolloutTestDynamicBool21 = false
 
-DFFlagFlagRolloutTestDynamicBool22 = false
+DFFlagFlagRolloutTestDynamicBool22 = true
 
-DFFlagFlagRolloutTestDynamicBool23 = true
+DFFlagFlagRolloutTestDynamicBool23 = false
 
-DFFlagFlagRolloutTestDynamicBool24 = true
+DFFlagFlagRolloutTestDynamicBool24 = false
 
 DFFlagFlagRolloutTestDynamicBool25 = true
 
@@ -1724,9 +1720,9 @@ DFFlagGameLoadDataStatistics = false
 
 DFFlagGameNetFixReplicationSkipBug = true
 
-DFFlagGamepadCursorUpdatesMousePositionEarlier = false
+DFFlagGamepadCursorUpdatesMousePositionEarlier = true
 
-DFFlagGamepadCursorUsesRawPosition2 = false
+DFFlagGamepadCursorUsesRawPosition2 = true
 
 DFFlagGatherStatsPerFrame = false
 
@@ -1760,11 +1756,11 @@ DFFlagGltfAddAnimationEndTimeEpsilonForFacs = true
 
 DFFlagGltfFlipEulerAngleOrder = true
 
-DFFlagGmaEligibilityCheckAccessDmkInDMThread = false
+DFFlagGmaEligibilityCheckAccessDmkInDMThread = true
 
 DFFlagGoodbyeChoiceActiveProperty = true
 
-DFFlagGpuVsCpuBoundTelemetry = false
+DFFlagGpuVsCpuBoundTelemetry = true
 
 DFFlagGraphicsDeviceDriverVersion = true
 
@@ -1791,6 +1787,8 @@ DFFlagHideDestroySetting = true
 DFFlagHighlightsFixAncestorChanges = false
 
 DFFlagHSRForceClearOtherData = true
+
+DFFlagHttp2DetailedStats = true
 
 DFFlagHttpApplyDecompressionMultiplier = true
 
@@ -1823,6 +1821,8 @@ DFFlagHttpClientDisableLocalThrottleOnSend = true
 DFFlagHttpClientLogCdnRequestsForNoneAssetTypes = true
 
 DFFlagHttpCurlFallbackIPv4 = true
+
+DFFlagHttpCurlHttp2Enabled = false
 
 DFFlagHttpDetachCacheCleanThread = false
 
@@ -1870,9 +1870,11 @@ DFFlagHttpServiceInternalUrlWhitelistEnabled = false
 
 DFFlagHttpServiceInternalUrlWhitelistRobloxIdRemoved = false
 
+DFFlagHttpServiceOpenCloudEnabled = false
+
 DFFlagHttpServiceRequestTimeout = false
 
-DFFlagHttpServiceWriteEnabled = true
+DFFlagHttpServiceWriteEnabled = false
 
 DFFlagHttpSslCertCacheEnabled2 = true
 
@@ -1890,11 +1892,11 @@ DFFlagHttpTrackResponseProcessTime = true
 
 DFFlagHttpTrackSyncWriteCachePhase = true
 
-DFFlagHugeAddedToHugeFix = false
+DFFlagHugeAddedToHugeFix = true
 
 DFFlagHumanoidDescriptionAssetTypeVerificationDefaultAlways = false
 
-DFFlagHumanoidEquipServer = false
+DFFlagHumanoidEquipServer = true
 
 DFFlagHumanoidExtractGenerateExtentsHull = true
 
@@ -1930,7 +1932,7 @@ DFFlagIkControlRecomputeChainOnScale = true
 
 DFFlagIkLimitFixLimitCrash = true
 
-DFFlagIkLimitFixPoleJitter = false
+DFFlagIkLimitFixPoleJitter = true
 
 DFFlagIkSolverFreeUseOgFabrikSolver = false
 
@@ -1941,6 +1943,8 @@ DFFlagIkTwoBoneBetterSolver = false
 DFFlagImprovedGCDeletionRateMetrics = true
 
 DFFlagImprovedGuiFilter = true
+
+DFFlagIncludeAirAbsorption = false
 
 DFFlagInExpAvatarCreationDisableEphemeralCounters2 = false
 
@@ -1979,8 +1983,6 @@ DFFlagIntegrateSendInPeer = false
 DFFlagIntegrityCheckedProcessorDisableAllAdditions = false
 
 DFFlagIntegrityClientOS = false
-
-DFFlagInternalTestPermission = true
 
 DFFlagInternationalizationUseNewFormat = false
 
@@ -2032,7 +2034,7 @@ DFFlagLatencyLoggingRemoteName = false
 
 DFFlagLegacyRedundantPlayerCheckAnalytics = true
 
-DFFlagLightGridSimdNew3 = false
+DFFlagLightGridSimdNew3 = true
 
 DFFlagLimitDeprecatedStringSize = true
 
@@ -2047,6 +2049,8 @@ DFFlagLivePackageUpdating2 = false
 DFFlagLocalExperienceChatTimeout = false
 
 DFFlagLocalizationLocaleRefactorThrowOnInvalidLocaleIds = false
+
+DFFlagLocalizationParseSourceLocaleValueFromManifest = false
 
 DFFlagLocalizationTableAnalyticsSenderRequeueFailedEntries = false
 
@@ -2110,17 +2114,15 @@ DFFlagLuauCodeGenIssueTelemetry = true
 
 DFFlagLuauPopIncompleteCi = true
 
-DFFlagLuauRunCustomModuleChecks = false
+DFFlagLuauRunCustomModuleChecks = true
 
 DFFlagLuauStackLimit = true
 
 DFFlagLuauStringFormatFixC = false
 
-DFFlagLVMSGet2 = false
+DFFlagLVMSGet2 = true
 
-DFFlagLVMSPut = false
-
-DFFlagMakeBezierEvaluationFast2 = true
+DFFlagLVMSPut = true
 
 DFFlagMalformedAnimationUrl2 = true
 
@@ -2144,6 +2146,8 @@ DFFlagMeasureTelemetryAccuracyUsingPerfData = true
 
 DFFlagMemoryCategoryChangeEnabled = false
 
+DFFlagMemoryCrashOnCategoryOverflow = false
+
 DFFlagMemoryProfilingTopLevelUsageMutex = false
 
 DFFlagMemoryStoreInsightMetricsEnabled = true
@@ -2151,8 +2155,6 @@ DFFlagMemoryStoreInsightMetricsEnabled = true
 DFFlagMemoryStoreUpdateAsyncRetryUseExpBackoff = false
 
 DFFlagMemoryStoreUpdateAsyncThrowIfInvalidSortKey = true
-
-DFFlagMemoryTrackingSafeReset = true
 
 DFFlagMergeFakeInputEvents3 = false
 
@@ -2192,7 +2194,7 @@ DFFlagMigrateSimpleDeprecatedSetTrail = false
 
 DFFlagMigrateSimpleDeprecatedSetUI2 = false
 
-DFFlagMigrateStudioRemovePlaceUsageFromWwwToUniversesApi = false
+DFFlagMigrateStudioRemovePlaceUsageFromWwwToUniversesApi = true
 
 DFFlagMipPacksBySize = false
 
@@ -2234,13 +2236,11 @@ DFFlagNetworkValueTypeCrashFix = true
 
 DFFlagNewCreateMeshPart = true
 
-DFFlagNewCreateMeshPartAllowAsyncAero2 = true
-
 DFFlagNewCreateMeshPartBeta = true
 
 DFFlagNewCreateMeshPartClampInitialSize = false
 
-DFFlagNewInstanceItemPlayerAnalytics = false
+DFFlagNewInstanceItemPlayerAnalytics = true
 
 DFFlagNewPackageAnalytics = true
 
@@ -2276,9 +2276,11 @@ DFFlagNoSurfaceAppearanceForceField = true
 
 DFFlagNotificationServiceIsConnectedProperty = false
 
-DFFlagNOUNormalizedPhysicsTelemetry = false
+DFFlagNOUNormalizedPhysicsTelemetry = true
 
 DFFlagNoVisuallyMovingOnBlindDataModels = false
+
+DFFlagOcclusionUsesLowPass = false
 
 DFFlagODAFetchAdRefactor = false
 
@@ -2286,11 +2288,13 @@ DFFlagODAGetAdAvailabilityOrFetchRefactor = false
 
 DFFlagODARetrieveQueryInfoAndFetchAdRefactor = false
 
-DFFlagODAUseRecursiveLock = false
+DFFlagODAUseRecursiveLock2 = false
 
-DFFlagOnDemandAdsProviderAccessAdServiceUnderDmLock = false
+DFFlagOnDemandAdsProviderAccessAdServiceUnderDmLock = true
 
-DFFlagOnDemandAdsProviderContentProviderAccessUnderDmLock = false
+DFFlagOnDemandAdsProviderContentProviderAccessUnderDmLock = true
+
+DFFlagOnDemandAdsRespectSharedPtr = false
 
 DFFlagOnlyAllowThumbnailRbxCdnUrls2 = true
 
@@ -2316,11 +2320,13 @@ DFFlagOptimizeClassDescriptorSearches = false
 
 DFFlagOptimizeClusterCacheAlloc = true
 
-DFFlagOptimizeInstanceRemove = false
+DFFlagOptimizeInstanceRemove = true
 
 DFFlagOptimizeNoCollisionPrimitiveInMidphaseCrash = false
 
 DFFlagOptimizePartsInPart = false
+
+DFFlagOptimizeShadowPropertyChangePartOne = false
 
 DFFlagOptimizeVRMatrices = false
 
@@ -2338,8 +2344,6 @@ DFFlagPassiveCallAmpCanUseInExperienceChat4 = false
 
 DFFlagPatchTeleportExploit = false
 
-DFFlagPath2DAnalyticsEnabled2 = true
-
 DFFlagPath2DDisableReplication = false
 
 DFFlagPathfindingQueryFilterAddFromTo = true
@@ -2351,6 +2355,10 @@ DFFlagPerfDataEnableV2PointsDualWrite = false
 DFFlagPerfDataSetInitialValueOptional = true
 
 DFFlagPerfDataTagMult = true
+
+DFFlagPerformanceControlAddMemoryPerRegionSecondary = false
+
+DFFlagPerformanceControlAddMemoryPressureLevelThreshold = false
 
 DFFlagPerformanceControlAddMLOomModelTimestamp2 = false
 
@@ -2382,7 +2390,7 @@ DFFlagPerMipLoading = false
 
 DFFlagPhantomFreezeDisconnect2 = false
 
-DFFlagPhysicsCollisionDataReceivedStats = false
+DFFlagPhysicsCollisionDataReceivedStats = true
 
 DFFlagPhysicsMechanismCacheOptimizeAlloc = true
 
@@ -2412,7 +2420,7 @@ DFFlagPlayerReflectThirdPartyTextChatRestrictionStatus = false
 
 DFFlagPointsServiceDisabled = true
 
-DFFlagPointsWriteEnabled = true
+DFFlagPointsWriteEnabled = false
 
 DFFlagPoisonLegacyVoiceMethods = false
 
@@ -2468,7 +2476,7 @@ DFFlagRakNetCalculateApplicationFeedback2 = false
 
 DFFlagRakNetControlledOomCrash = true
 
-DFFlagRakNetControlledOomCrashPart2 = false
+DFFlagRakNetControlledOomCrashPart2 = true
 
 DFFlagRakNetDecoupleRecvAndUpdateLoopShutdown = true
 
@@ -2486,11 +2494,13 @@ DFFlagRakNetMissingPingReport = true
 
 DFFlagRakNetMissingPingReportMultiple = false
 
-DFFlagRakNetMissingPingUpgradeTelemetry = false
+DFFlagRakNetMissingPingUpgradeTelemetry = true
 
 DFFlagRakNetMtuPing = true
 
 DFFlagRakNetNetworkDiagOnConnectFail = false
+
+DFFlagRakNetOpenFileCountTelem = false
 
 DFFlagRakNetStaleSendQueue = false
 
@@ -2498,11 +2508,15 @@ DFFlagRakNetUnblockSelectOnShutdownByWritingToSocket = false
 
 DFFlagRakNetUseSlidingWindow4 = false
 
+DFFlagRateLimitTTS = false
+
 DFFlagRbxStorageAvoidROSBReadFile = false
 
 DFFlagRbxStorageForceROSBReadFile = true
 
 DFFlagRbxStorageMigrationStats = false
+
+DFFlagRbxStorageQueryNumExternal = false
 
 DFFlagRbxStorageReportUniqueId = true
 
@@ -2562,7 +2576,7 @@ DFFlagRemoveBanKicks = true
 
 DFFlagRemoveEarlyOutInArrayDynamic = false
 
-DFFlagRemoveFavorSet = false
+DFFlagRemoveFavorSet = true
 
 DFFlagRemoveLegacyPackageAnalytics = false
 
@@ -2580,17 +2594,15 @@ DFFlagRemovePerfTimer = true
 
 DFFlagRemoveProfTotalFromPerfAggregate = true
 
-DFFlagRemoveRaycastBuffers = false
-
-DFFlagRemoveRBXCRASHFromAdGui = true
+DFFlagRemoveRaycastBuffers = true
 
 DFFlagRemoveUnnecessaryKick = false
 
 DFFlagRemoveWriteLockFromScriptLoading = true
 
-DFFlagRenderBloomMakeResolutionIndependent = false
+DFFlagRenderBloomMakeResolutionIndependent = true
 
-DFFlagRenderBlurMakeResolutionIndependent = false
+DFFlagRenderBlurMakeResolutionIndependent = true
 
 DFFlagRenderInternalDisplayName = true
 
@@ -2606,11 +2618,13 @@ DFFlagRenderMeshBulkUploadIgnoreBudget = false
 
 DFFlagRenderRecordLongestShaderTime2 = true
 
-DFFlagRenderRecordMemoryInShaderTime = true
+DFFlagRenderRecordMemoryInShaderTime2 = false
+
+DFFlagRenderShaderLoadReportInformation = false
 
 DFFlagRenderSmootherStepUpsampling = false
 
-DFFlagRenderSunRaysMakeResolutionIndependent = false
+DFFlagRenderSunRaysMakeResolutionIndependent = true
 
 DFFlagRepDelayClear = false
 
@@ -2758,7 +2772,7 @@ DFFlagReportReplicatorStatsToTelemetryV21 = false
 
 DFFlagReportRetargetingStats = true
 
-DFFlagReportSelectionModeStatistics = false
+DFFlagReportSelectionModeStatistics = true
 
 DFFlagReportSharedStringBreakdown3 = false
 
@@ -2778,17 +2792,17 @@ DFFlagReportTimeoutStatistics2 = false
 
 DFFlagReportUntrustedIntegrityOnly = false
 
-DFFlagReportUseAssetRequest = true
+DFFlagReportUseAssetRequest = false
 
 DFFlagReportVideoCompletionAt99Percent = true
 
-DFFlagRequireByAssetIdUseStatsTelemetryEnabled = true
+DFFlagRequireByAssetIdUseStatsTelemetryEnabled = false
 
-DFFlagRequireByStringEventTelemetryEnabled = false
+DFFlagRequireByStringEventTelemetryEnabled = true
 
-DFFlagRequireByStringUseEventTelemetryEnabled = true
+DFFlagRequireByStringUseEventTelemetryEnabled = false
 
-DFFlagRequireByStringUseStatsTelemetryEnabled = true
+DFFlagRequireByStringUseStatsTelemetryEnabled = false
 
 DFFlagRequireScriptLog = true
 
@@ -2833,6 +2847,8 @@ DFFlagRobloxTelemetryMakeStringFromListFix = true
 DFFlagRobloxTelemetryNewESIHeader = false
 
 DFFlagRobloxTelemetryReliabilityCounterRefactor2 = false
+
+DFFlagRobloxTelemetryRemovePlaceIdSuffix = false
 
 DFFlagRobloxTelemetrySendByBatchSize3 = true
 
@@ -2888,8 +2904,6 @@ DFFlagSendDataModelAPIUsageMetrics = false
 
 DFFlagSendItemLimitLogToUser = false
 
-DFFlagSendModerationExternalCreativeUrl = true
-
 DFFlagSendOrientationToPlayersGui = false
 
 DFFlagSendPerfDataFromRccIgnoringPlaceFilter = false
@@ -2916,7 +2930,7 @@ DFFlagSessionTrackingCrashHandlerStateHistory = false
 
 DFFlagSessionTrackingPrepareToReport = false
 
-DFFlagSet2DMeshScaledInertiaToFixedValue = false
+DFFlagSet2DMeshScaledInertiaToFixedValue = true
 
 DFFlagSetAbsoluteRotationPerfOpt = true
 
@@ -2943,8 +2957,6 @@ DFFlagShouldOverrideSoundTunableUtilityRealTime = false
 DFFlagShouldSetTimeoutForBufferedPointsReporter = false
 
 DFFlagShowAudioPlayerLoadFailures = false
-
-DFFlagShowPluginRunContextInStudio = true
 
 DFFlagShowTunableStreamingDebug = true
 
@@ -3006,13 +3018,15 @@ DFFlagSimCSG3EnableNewAPIPluginUse = false
 
 DFFlagSimCSG3NegateIntersectionUpdate = false
 
-DFFlagSimCSG4FixBoxMapping = true
+DFFlagSimCSG4FixBoxMapping = false
 
 DFFlagSimCSG4FixEmptyResultCrash = true
 
-DFFlagSimCSG4ImprovedTelemetry = false
+DFFlagSimCSG4FixTinyTriangleTangents = false
 
-DFFlagSimCSGAddAeroDataToUpdateGeometry = true
+DFFlagSimCSG4GiveManifoldCenteredTree = false
+
+DFFlagSimCSG4ImprovedTelemetry = false
 
 DFFlagSimCSGAPIUseClosedVoxel4 = true
 
@@ -3064,9 +3078,11 @@ DFFlagSimEditablePermissionCheckHttpErrorLogging = true
 
 DFFlagSimEditableSessionEventMeshInitFix = true
 
+DFFlagSimEidtableFixImageCount = false
+
 DFFlagSimEnableAngularAccelerationConversionMethods = false
 
-DFFlagSimEnableBadMoverConstraintTelemetry = true
+DFFlagSimEnableBadMoverConstraintTelemetry = false
 
 DFFlagSimEnableStepPhysics = true
 
@@ -3084,7 +3100,7 @@ DFFlagSimFixNodeWeightsMoveCtor = false
 
 DFFlagSimGroundControllerIgnoreYVelocityInit = false
 
-DFFlagSimGroundControllerRecomputeAcceleration = false
+DFFlagSimGroundControllerRecomputeAcceleration = true
 
 DFFlagSimHumanoidFirstPerson240hz = false
 
@@ -3116,6 +3132,8 @@ DFFlagSimOptimizeSetThrottle = false
 
 DFFlagSimplifyInsertPoint = true
 
+DFFlagSimPrimalSolverConstraintPerp2AxesMakeJacobianConsistentWithFormula = false
+
 DFFlagSimReduceStepAPSHumanoid = true
 
 DFFlagSimRefactorConstraintForces = false
@@ -3134,15 +3152,19 @@ DFFlagSimReportBroadPhasePairCountAnalytics = false
 
 DFFlagSimReportContactStats = true
 
-DFFlagSimShowJointCoordinatesGetCofmFromPart = false
+DFFlagSimShowJointCoordinatesGetCofmFromPart = true
 
 DFFlagSimSmoothedRunningController2 = false
 
-DFFlagSimSolverByeByeBallOnAxisWorldSpaceParameters = false
+DFFlagSimSolverByeByeBallOnAxisWorldSpaceParameters = true
+
+DFFlagSimSolverFixRodGS = false
 
 DFFlagSimSolverImprovedPartialSleep = false
 
 DFFlagSimSolverImprovedPartialSleepDefaultEnabled = false
+
+DFFlagSimSolverInsideOfSphereGS = false
 
 DFFlagSimSolverLevitationSurfaceExternalForcesToPlatform3 = false
 
@@ -3162,7 +3184,7 @@ DFFlagSimStepPhysicsFixSelectiveSleep = true
 
 DFFlagSimStepPhysicsImprovedSubStepping = true
 
-DFFlagSimUnifyBroadphaseUpdateCalls = false
+DFFlagSimUnifyBroadphaseUpdateCalls = true
 
 DFFlagSimUpdatePrimitiveInertia = true
 
@@ -3216,19 +3238,19 @@ DFFlagSolverNOURemovedUnderSetOptimized2 = false
 
 DFFlagSolverStateReplicatedOnly2 = false
 
-DFFlagSolverV2DoNotCollectNonReplicatableObjects = false
+DFFlagSolverV2DoNotCollectNonReplicatableObjects = true
 
 DFFlagSolverV2MarkInstancesUnderNonReplicableSubtreeAsNonReplicable = false
 
-DFFlagSolverV2SetDependencyWithGap = false
+DFFlagSolverV2NOUInstancesMustBeUnderWorkspace = false
+
+DFFlagSolverV2SetDependencyWithGap = true
 
 DFFlagSoundLatencyStackOverflow = true
 
 DFFlagSQliteCacheTrackEvictions = false
 
 DFFlagSqliteCacheUseTTLOnRead = false
-
-DFFlagSQliteCacheYieldThread = true
 
 DFFlagSSReportLSCount = true
 
@@ -3274,7 +3296,7 @@ DFFlagStreamJobLogStreamOutPersistent = false
 
 DFFlagStreamJobMinRadiusLimits = true
 
-DFFlagStreamJobNoItemLod2 = false
+DFFlagStreamJobNoItemLod3 = false
 
 DFFlagStreamJobUpdatedSetIterator = true
 
@@ -3314,7 +3336,7 @@ DFFlagSwapRayCellTraversalOrder = false
 
 DFFlagTagAnalyticsPointsWithIxpIds = true
 
-DFFlagTagRemovalInvalidationFix = false
+DFFlagTagRemovalInvalidationFix = true
 
 DFFlagTagTelemWithIxpIds = true
 
@@ -3394,13 +3416,15 @@ DFFlagTeleportPreloadingMetrics5 = false
 
 DFFlagTeleportServiceCallEvent = true
 
+DFFlagTeleportSettingsTelemetry = false
+
 DFFlagTeleportSpawnNameLimitEnabled = false
 
 DFFlagTeleportTimeClientLoadedFiltered = false
 
 DFFlagTeleportWebErrorLogUserId2 = true
 
-DFFlagTestServiceDeprecationWarning = false
+DFFlagTestServiceDeprecationWarning = true
 
 DFFlagTestUserFeatureFlagShouldExist = false
 
@@ -3414,19 +3438,21 @@ DFFlagTextScraperAlwaysSendParameterInfoIfPresent = true
 
 DFFlagTextScraperEnableNumberFormatting = false
 
+DFFlagTextureManagerLoadAsyncHandleExceptions = false
+
 DFFlagTexturePacksWaitingUseColorMapFallback = false
 
 DFFlagTextureQualityOverrideEnabled = false
 
 DFFlagTheDoublePat = false
 
-DFFlagThirdPartyVideoAdFetchMetrics2 = true
-
-DFFlagThirdPartyVoiceChatSettings = false
+DFFlagThirdPartyVoiceChatSettings = true
 
 DFFlagThrottleDeveloperConsoleEvents = false
 
 DFFlagThrottlingExponentialBackoffClass = false
+
+DFFlagTimerServiceFix = false
 
 DFFlagTopRepContainerTotalBytes = true
 
@@ -3460,6 +3486,8 @@ DFFlagTransportTestPeer = false
 
 DFFlagTTFromRuppHeaderOnly = true
 
+DFFlagTTSMoreThoroughErrorReporting = false
+
 DFFlagTurnoffContentProviderTempIdReturnEmptyIdStudioHack = false
 
 DFFlagUADFDisableImportLoD = false
@@ -3469,8 +3497,6 @@ DFFlagUGCValidateMeshTriangleAreaFacesFix = false
 DFFlagUGCValidationReportScriptTimeBlocking = false
 
 DFFlagUIStrokeWithRichTextEnabled = true
-
-DFFlagUndoRedoShortcutsTextBoxTelemetry2 = false
 
 DFFlagUnexpectedEventGlobalEnabled = false
 
@@ -3498,7 +3524,7 @@ DFFlagUpperLimitTC1TextureBudget = true
 
 DFFlagUseActorIdentity = true
 
-DFFlagUseAssetProvider = false
+DFFlagUseAssetProvider2 = false
 
 DFFlagUseBackendProcessedCommerceUrl = true
 
@@ -3512,7 +3538,7 @@ DFFlagUseDecreasingMemoryPerRegionOrConfiguredPercent = false
 
 DFFlagUseDefaultDynamicHead2 = true
 
-DFFlagUseFromRegion3Throwing = false
+DFFlagUseFromRegion3Checking = false
 
 DFFlagUseHttpResponseView = true
 
@@ -3556,11 +3582,7 @@ DFFlagVideoCaptureReportRemoveExtraCall = true
 
 DFFlagVideoCaptureServiceEnabled = true
 
-DFFlagVideoCatchGetCacheDirectoryException = true
-
 DFFlagVideoDoNotResetWeakTextureOnClose = true
-
-DFFlagVideoFixSavingPngData = true
 
 DFFlagVideoFrameSupportAdsVideo = true
 
@@ -3628,15 +3650,11 @@ DFFlagVoiceChatEnableRccV2ControlPlane = true
 
 DFFlagVoiceChatFixJoinRetry = false
 
-DFFlagVoiceChatFixSubscriptionsUnmutedCountAssertAfterSubReset = true
-
 DFFlagVoiceChatHandleDuplicateSubscriptions = true
 
 DFFlagVoiceChatJoinProfilingUsingTelemetryStat_RCC = false
 
 DFFlagVoiceChatLogSubscriptionUpdateErrors = false
-
-DFFlagVoiceChatPossibleDuplicateSubscriptionsTelemetry = true
 
 DFFlagVoiceChatRecordRoomMetricsFromRCC3 = false
 
@@ -3658,12 +3676,6 @@ DFFlagVoiceChatTurnOnMuteUnmuteNotificationHack = true
 
 DFFlagVoiceInCallReliabilityTelemetryUseCachedPlaySessionId = true
 
-DFFlagVoicePublishConnectionStateTelemetryFix = true
-
-DFFlagVoiceReliabilityTelemetryEventIngest = true
-
-DFFlagVoiceSubscribeConnectionStateTelemetry = true
-
 DFFlagVoxelizerDisableTerrainSIMD = false
 
 DFFlagWaitForSeatWeld = false
@@ -3676,11 +3688,13 @@ DFFlagWebParserCheckStackDepthThrow = true
 
 DFFlagWebParserCheckVariantCount = false
 
-DFFlagWebrtcDisableComfortNoiseIXPEnabled = false
+DFFlagWebrtcDisableComfortNoiseIXPEnabled = true
 
 DFFlagWebRTCHackDcstpSocketToCloseOnErrorEnabled = false
 
 DFFlagWebRTCHackDtlsTransportToNotForeverLoopDangerouslyEnabled = true
+
+DFFlagWebrtcPortAllocatorUdpTcpStunEnabled = false
 
 DFFlagWebSocketCheckSendReplyError = false
 
@@ -3717,6 +3731,8 @@ DFIntAccelerationTimeThreshold = 2
 DFIntAccErrorDrainedThousandth = 100
 
 DFIntAcousticFilterPeakSectionCount = 1
+
+DFIntAcousticSimulationAlphaPeriodPropertiesUs = 10
 
 DFIntActionStationDebounceTime = 2
 
@@ -3755,6 +3771,8 @@ DFIntAdsScreenshotEventThrottleHundredthsPercent = 0
 DFIntAECRingBufferSizeTenthsMs = 520
 
 DFIntAinPointsThrottleValue = 10000
+
+DFIntAirAbsorptiondBPerSx1000 = 0
 
 DFIntAirControllerBalancingResponsiveness = 40
 
@@ -3914,7 +3932,7 @@ DFIntAnimatorThrottleRccFramesToSkip = 0
 
 DFIntApiRateLimit = 200
 
-DFIntAppConfigurationTelemetryNewEventsThrottleHundredthsPercent = 0
+DFIntAppConfigurationTelemetryNewEventsThrottleHundredthsPercent = 1000
 
 DFIntAppConfigurationTelemetryThrottleHundredthsPercent = 1000
 
@@ -3940,10 +3958,6 @@ DFIntAssetPermissionsUserThrottle = 60
 
 DFIntAssetPermissionsUserThrottleTimeSec = 60
 
-DFIntAssetProviderActiveWorkflowCollectionInitialSize = 0
-
-DFIntAssetProviderNewWorkflowCollectionInitialSize = 0
-
 DFIntAssetProviderWorkflowExecutorSleepMicroSeconds = 1000
 
 DFIntAssetPublishMaxRetry = 0
@@ -3953,6 +3967,8 @@ DFIntAssetRequestPointsHundredthsPercent = 100
 DFIntAssetRequestStatsHundredthsPercent = 10000
 
 DFIntAssetRequestV2CounterHundredthsPercent = 10000
+
+DFIntAssetResolutionWorkflowStatsHundredthsPercent = 0
 
 DFIntAssetsUploadStatusPollingErrorMaxRetry = 3
 
@@ -3984,6 +4000,10 @@ DFIntAudioMetadataLimitCapacity = 10
 
 DFIntAudioMetadataLimitDuration = 1
 
+DFIntAudioOcclusionDensityFactorDenominator = 1
+
+DFIntAudioOcclusionDensityFactorNumerator = 1
+
 DFIntAudioOcclusionMaxNumQueriesPerFrame = 4
 
 DFIntAudioOcclusionMaxPiercedPrimitives = 5
@@ -3997,6 +4017,8 @@ DFIntAudioPermissionsHundredthPercentageSent = 0
 DFIntAudioVolumetricMeshCalcStrategy = 0
 
 DFIntAuroraClientInputBufferSize = 128
+
+DFIntAuroraDebuggerEventBufferSize = 10000
 
 DFIntAuroraServerInputBufferMaxSizeMultiplier = 2
 
@@ -4404,7 +4426,7 @@ DFIntClientPacketUnhealthyContEscMsPerSecond = 750
 
 DFIntClientPropSyncExpiryTeamCreateTimeSec = 6
 
-DFIntClientReplicatorStatsEventsThrottleHP = 0
+DFIntClientReplicatorStatsEventsThrottleHP = 100
 
 DFIntClientReportInitExpJobStatsHundredthPercent = 10
 
@@ -4498,6 +4520,10 @@ DFIntCommonQueuePreserializeParallelBatchSize = 200
 
 DFIntCompareFilterResultsHundredths = 0
 
+DFIntConfigServiceGetConfigAsyncPollIntervalMilliseconds = 500
+
+DFIntConfigServiceGetConfigAsyncTimeoutMilliseconds = 30000
+
 DFIntConnectingTimerInterval = 55
 
 DFIntConnectionLostDisconnectReasonInfluxHundredthsPercentage = 0
@@ -4553,6 +4579,16 @@ DFIntCreationDBInstanceStatsEventIngestOverride = 10000
 DFIntCreationDBStringStreamSizeLimit = 3145728
 
 DFIntCreationStorageSerializeChangesCollectionPeriod = 30
+
+DFIntCreatorConfigProviderMaxReportingEntriesPerBatch = 1000
+
+DFIntCreatorConfigProviderMaxRetries = 3
+
+DFIntCreatorConfigProviderPollPeriodMilliseconds = 300000
+
+DFIntCreatorConfigProviderReportPeriodMilliseconds = 600000
+
+DFIntCreatorConfigProviderRetryIntervalMilliseconds = 5000
 
 DFIntCriticalBatteryLevelPercentage = 5
 
@@ -4816,6 +4852,8 @@ DFIntDebugDefaultTargetWorldStepsPerFrame = 0
 
 DFIntDebugDynamicRenderKiloPixels = -1
 
+DFIntDebugFragmentAcChannelGroup = 0
+
 DFIntDebugFRMQualityLevelOverride = 0
 
 DFIntDebuggerEventIngestThrottleHundredthPercent = 5000
@@ -4972,7 +5010,7 @@ DFIntDefaultTimeoutTimeMs = 20000
 
 DFIntDelayExecutionInSecondsAfterHomePage = 10
 
-DFIntDelayRewardedAdsInSeconds = 3
+DFIntDelayRewardedAdsInSeconds = 10
 
 DFIntDEPRECATED_GetProductInfoSubscriptionCacheSecs = 0
 
@@ -5137,8 +5175,6 @@ DFIntElevatedPhysicsFPSReportThresholdTenths = 585
 DFIntEmaHalfLife = 25
 
 DFIntEmaSampleRate = 60
-
-DFIntEnableAdServiceEventsSendImmediatelyHundredthPercent = 0
 
 DFIntEnableInternalMemoryUpdateFunctionsPercentage = 0
 
@@ -5344,7 +5380,7 @@ DFIntFriendsListFailureExpirationInSeconds = 10
 
 DFIntFRMVoxelizerBudgetWhileLoading = 50
 
-DFIntFTUXDHAvatarLoadTimeThrottleHundredthsPercent = 0
+DFIntFTUXDHAvatarLoadTimeThrottleHundredthsPercent = 10000
 
 DFIntFullscreenVolume = 0
 
@@ -5404,7 +5440,7 @@ DFIntGcInParallelWithRenderPrepareTelemetryCooldownSec = 120
 
 DFIntGCJobUEIntervalSeconds = 0
 
-DFIntGCJobUEThrottleHP = 0
+DFIntGCJobUEThrottleHP = 100
 
 DFIntGCMinimumDeletionRateForNonZeroClientInstanceQuota = 100
 
@@ -5412,9 +5448,11 @@ DFIntGCReducesQuotaCriticalPercent = 10
 
 DFIntGCReducesQuotaPercent = 30
 
-DFIntGenerationServicePollingSeconds = 3
+DFIntGenerationServiceEventsThrottleHundredthsPercent = 0
 
-DFIntGetAdAvailabilityNowAsyncDelaySec = 3
+DFIntGenerationServicePollingSeconds = 5
+
+DFIntGetAdAvailabilityNowAsyncDelaySec = 1
 
 DFIntGetCharacterAppearanceInfoAsyncThrottleCountPerMinute = 300
 
@@ -5555,6 +5593,8 @@ DFIntHomePageInteractiveAlertThrottleHundredthPercent = 3
 DFIntHSRPublishBestEffortSkipSec = 60
 
 DFIntHSRPublishRetries = 40
+
+DFIntHttp2StatsHundredthsPercent = 500
 
 DFIntHttpAnalyticsMaxHistory = 256
 
@@ -5964,7 +6004,7 @@ DFIntInsertServiceErrorInfluxHundrethsPercentage = 0
 
 DFIntInstanceObjectManagerUEIntervalSeconds = 0
 
-DFIntInstanceObjectManagerUEThrottleHP = 0
+DFIntInstanceObjectManagerUEThrottleHP = 100
 
 DFIntInstanceOutliveDataModelInterval = 60
 
@@ -6114,6 +6154,8 @@ DFIntLDLProgramOpsReportingMinOpCount = 1000
 
 DFIntLDLProgramOpsReportingRate = 1000
 
+DFIntLegacyClientWebrtcIceTransportsType = 1
+
 DFIntLegacyStyleUsed_ReportPercentHundredths = 100
 
 DFIntLifecycleManagerComponentsTelemetryThrottleHundredthsPercent = 100
@@ -6237,6 +6279,8 @@ DFIntLogLineReportingHundredthsPercent = 100
 DFIntLogMessageTruncateLimit = 980000
 
 DFIntLogNonuniformSeparateHundredthsPercentage = 0
+
+DFIntLogRecentsWidgetClickedThrottleHundredthsPercentage = 0
 
 DFIntLogReportingStatsHundredthsPercent = 250
 
@@ -6710,7 +6754,7 @@ DFIntNetworkInProcessLimitGameplayMsRcc = 0
 
 DFIntNetworkJDIReadProcessReportingThresholdMs = 100
 
-DFIntNetworkObjectsStatsHundredthsPercentage = 0
+DFIntNetworkObjectsStatsHundredthsPercentage = 500
 
 DFIntNetworkObjectStatsCollectorReportHundredthsPercentage = 10000
 
@@ -6770,9 +6814,9 @@ DFIntNewVRSystemHandPitch = 20
 
 DFIntNfwlTrackingPermyriad = 0
 
-DFIntNIIPlayerCloudEditAnalyticsHundredths = 0
+DFIntNIIPlayerCloudEditAnalyticsHundredths = 100
 
-DFIntNIIPlayerOldAnalyticsHundredths = 0
+DFIntNIIPlayerOldAnalyticsHundredths = 100
 
 DFIntNLSMBucketCountDumpSamplingThreshold = 500
 
@@ -7026,6 +7070,8 @@ DFIntPerformanceControlLmkdPropertiesHundredthPercentageSent = 21
 
 DFIntPerformanceControlMemoryCategoriesTelemetryEnabledHundrethPercentage = 0
 
+DFIntPerformanceControlMemoryPressureLevelThreshold = 0
+
 DFIntPerformanceControlPointsHundredthPercentageSent = 21
 
 DFIntPerformanceControlPredictedOOMAbsLimitExtraBufferMB = 0
@@ -7088,7 +7134,7 @@ DFIntPhysicsAnalyticsIntervalSec = 300
 
 DFIntPhysicsCountLocalSimulatedTouchEventsHundredthsPercentage = 100
 
-DFIntPhysicsDataReceivedHundredths = 0
+DFIntPhysicsDataReceivedHundredths = 1
 
 DFIntPhysicsDecompForceUpgradeVersion = 3
 
@@ -7688,7 +7734,7 @@ DFIntReportCloudEditJoinFailureReportPerMyriad = 10000
 
 DFIntReportCommandsPerCycleIntervalMS = 1000
 
-DFIntReportContextActionServiceBindEventsHundrethsPercent = 100
+DFIntReportContextActionServiceBindEventsHundrethsPercent2 = 0
 
 DFIntReportControllerManagerPercent = 1000
 
@@ -7769,6 +7815,8 @@ DFIntReportMissedSchemaPropVecSizeHundredths = 100
 DFIntReportNavigationTileLastUsedDurationRateAllowed = 5
 
 DFIntReportNavigationTileLastUsedDurationRateTotal = 1000000
+
+DFIntReportNetAssetChecksStatsHundredths = 0
 
 DFIntReportNetworkSendersLeftoverBytesThrottlePercentage = 0
 
@@ -7908,9 +7956,9 @@ DFIntReportVRRefreshRateChangeBelowLowerBoundThrottleHundrethsPercent = 10000
 
 DFIntRequestApiServiceNotFoundEventThrottleHundredthPercent = 1000
 
-DFIntRequireByStringEventHundredthsPercent = 0
+DFIntRequireByStringEventHundredthsPercent = 25
 
-DFIntRequireByStringUseEventHundredthsPercent = 1
+DFIntRequireByStringUseEventHundredthsPercent = 0
 
 DFIntRequiredMemoryInMebibytesForDeviceCapture = 0
 
@@ -7924,7 +7972,11 @@ DFIntRetryBaseTimeMSec = 1000
 
 DFIntReverbCameraPushForwardStudsHundredths = 0
 
-DFIntRewardedAdEventTrackingEventThrottleHundrethsPercent = 0
+DFIntReverbTailAbsorptionKnee = 100
+
+DFIntReverbTailAbsorptionMin = 60
+
+DFIntRewardedAdEventTrackingEventThrottleHundrethsPercent = 10
 
 DFIntRewardedAdsLogCount = 10
 
@@ -8008,7 +8060,7 @@ DFIntRtcAnalyticsInfluxReportHundredthsPercent = 0
 
 DFIntRunningBaseGravityReductionFactorHundredth = 100
 
-DFIntRuntimeConcurrency = 3
+DFIntRuntimeConcurrency = 8
 
 DFIntRuppTokenUpdatePeriodMs = 1000
 
@@ -8404,8 +8456,6 @@ DFIntSimSolverFixCircularRead = 0
 
 DFIntSimSolverImprovedPartialSleepAngularWeight = 80
 
-DFIntSimSolverImprovedPartialSleepLinearWidth = 10
-
 DFIntSimSolverImprovedPartialSleepTolerance = 5
 
 DFIntSimSolverLargeIslandCountMax = 100
@@ -8420,7 +8470,7 @@ DFIntSimSolverStatisticsHundrethsPercentage = 100
 
 DFIntSimSolverWakeDisplacementMultiplier = 10
 
-DFIntSimSolverWakeDisplacementScalingNoContacts = 10
+DFIntSimSolverWakeDisplacementScalingNoContacts = 50
 
 DFIntSimStepPhysicsStatsHundredthsPercentage = 10000
 
@@ -8586,7 +8636,7 @@ DFIntStreamingSolverMapModifyCountsHundredthsPercentage = 1000
 
 DFIntStreamingSolverUEIntervalSeconds = 0
 
-DFIntStreamingSolverUEThrottleHP = 0
+DFIntStreamingSolverUEThrottleHP = 100
 
 DFIntStreamingSolverWeakLockHundredthsPercentage = 0
 
@@ -8792,9 +8842,9 @@ DFIntTattletaleReportUnfilteredJobMaxReportsPerTick = 64
 
 DFIntTattletaleShuffleCount = 500
 
-DFIntTcClientReplicatorStatsEventsThrottleHP = 0
+DFIntTcClientReplicatorStatsEventsThrottleHP = 100
 
-DFIntTcServerReplicatorStatsEventsThrottleHP = 0
+DFIntTcServerReplicatorStatsEventsThrottleHP = 100
 
 DFIntTCSTranslateSecondServerPartitionId = -1
 
@@ -8881,6 +8931,8 @@ DFIntTeleportResumeTimeoutMs = 300000
 DFIntTeleportRetryTimes = 10
 
 DFIntTeleportServiceTookTooLongThresholdMilliseconds = 10000
+
+DFIntTeleportSettingVariantTrackingInvalidThrottleHundredthsPercentage = 0
 
 DFIntTeleportSpawnNameLimit = 100
 
@@ -8998,7 +9050,7 @@ DFIntThumbnailContentProviderTimeoutSecs = 10
 
 DFIntThumbnailTextureLoadTimeoutSecs = 10
 
-DFIntThumbnailToCDNURLFailureEventMappingHundredthsPercent = 0
+DFIntThumbnailToCDNURLFailureEventMappingHundredthsPercent = 100
 
 DFIntThumbnailToCDNURLSuccessEventMappingHundredthsPercent = 100
 
@@ -9114,6 +9166,8 @@ DFIntTreeDiffModCheckShadowReportingRate = 100
 
 DFIntTreeDiffWorldCFrameEpsilonMultiplier = 1000
 
+DFIntTTSRateLimitQps = 1000
+
 DFIntTTSRequestTimeoutMs = 100000
 
 DFIntUAWebLoginErrorHundredthsPercentage = 0
@@ -9192,6 +9246,8 @@ DFIntUpdateDeviceMemoryDeltaMB = 10
 
 DFIntUpdatedVideoImpressionMinimumIntervalMs = 2000
 
+DFIntUseFromRegion3Checking_ThrottleMs = 1000
+
 DFIntUserHttpRequestsPerMinuteLimit = 500
 
 DFIntUserHttpRequestsPerMinuteLimitM = 0
@@ -9258,7 +9314,7 @@ DFIntVideoDriverMaxIncomingPackets = 0
 
 DFIntVideoDriverMaxOutgoingFrames = 2
 
-DFIntVideoEncoderBitrate = 40000000
+DFIntVideoEncoderBitrate = 4000000
 
 DFIntVideoFeatureCriteriaMaxDecodingTimeUsPerFrame = 10000
 
@@ -9318,7 +9374,7 @@ DFIntVideoStatsInfluxReportHundredthsPercent = 2
 
 DFIntVideoStreamBufferingStatsThrottlePercentageHundredthPercent = 0
 
-DFIntVideoStreamFailureEventThrottlePercentageHundredthPercent = 0
+DFIntVideoStreamFailureEventThrottlePercentageHundredthPercent = 100
 
 DFIntVideoStreamMaxBufferMs = 200
 
@@ -9578,6 +9634,8 @@ DFLogAudioTextToSpeech = Warning,6
 
 DFLogAudioTrackerWorkerThreadTrace = Warning,0
 
+DFLogAuroraDebugLogs = Warning,6
+
 DFLogAuroraInputLogging = Warning,6
 
 DFLogAuroraRollback = Warning,6
@@ -9620,6 +9678,10 @@ DFLogBootcampCLI143791Log = Warning,6
 
 DFLogBootcampCLI145319Log = Warning,6
 
+DFLogBootcampCLI145464Log = Warning,6
+
+DFLogBootcampCLI145624Log = Warning,6
+
 DFLogCallAnalytics = Warning,0
 
 DFLogCameraTrace = Warning,0
@@ -9638,9 +9700,13 @@ DFLogCollab6803DebugManagerTests = Debug,6
 
 DFLogCommerce = Warning,6
 
+DFLogConfigService = Warning,6
+
 DFLogConnectionStatusMonitor = Warning,0
 
 DFLogCoordinatorMemoryPressure = Info,6
+
+DFLogCreatorConfigProvider = Warning,6
 
 DFLogCsmConnectionManager = Warning,0
 
@@ -9697,6 +9763,8 @@ DFLogHttpCacheTrace = Warning,0
 DFLogHttpPointReporterTrace = Warning,0
 
 DFLogHttpRetryOverrides = Warning,0
+
+DFLogHttpServiceOpenCloud = Warning,6
 
 DFLogHttpTrace = Warning,0
 
@@ -10080,7 +10148,7 @@ DFStringAssetPurchasePath = marketplace/purchase
 
 DFStringBouncingScriptHashes = 0cafba4c7f78f0d3ba21eecad014d577,52a56973785c92e2cf53c23d3727bc56,b7234aeb653563acdf5e00d02fb8da6d,66b5762641ed134a4bee3a4cc855a76e,02ee97967c358708cf1184c44c2b6923,56ad00a5ce2136cdfe263cb89c74e184,7209da36bdc79db4be4bfc91e8640a64,456876eb24ccc1b2d4d37eae67c1f657,7848a5a4d823bb1b8e4c94ea147ad313,d52fb823ed804783bbd59c8562524092,524c4bd9bc08e110d89b9300ce613624
 
-DFStringChannelName = ZBeta
+DFStringChannelName = ZControl
 
 DFStringCLI50798S = 
 
@@ -10095,6 +10163,8 @@ DFStringCliNetIngressLimiterReportingConfigUserIdPer100K =
 DFStringCommerceUniverseAllowList = 6656347044,6704585586,6710437199,1601065334,1531130248,3317679266,2711375305,1831550657,5478865922,6793242781,6820379034,4300637801,5478865922,5478863270,5478864876,5640276568,245662005,4014729424,4113086200,5747485495,1788486008,3317679266,6626926572,985731078,1235188606
 
 DFStringCompatibilityMigrationAttributeName = RBX_LightingCompatibilityMigrated
+
+DFStringConfigServiceDefaultConfigFilename = UniverseConfigurations
 
 DFStringCrashUploadToBacktraceBaseUrl = https://upload.crashes.rbxinfra.com/post?format=minidump
 
@@ -10142,9 +10212,9 @@ DFStringDefaultAvatarDeathType = Classic
 
 DFStringDeveloperProductPurchasePath = marketplace/submitpurchase
 
-DFStringDHAnalyticsNewUserIDLowerBound = 9223372036854775807
+DFStringDHAnalyticsNewUserIDLowerBound = 8180704623
 
-DFStringDHAnalyticsNewUserIDUpperBound = -9223372036854775808
+DFStringDHAnalyticsNewUserIDUpperBound = 8271004623
 
 DFStringDRSMaximumMegapixelsPerFRMQL = QL0: 0, QL1: 0, QL2: 0, QL3: 0, QL4: 0, QL5: 0, QL6: 0, QL7: 0, QL8: 0, QL9: 0, QL10: 0, QL11: 0, QL12: 0, QL13: 0, QL14: 0, QL15: 0, QL16: 0, QL17: 0, QL18: 0, QL19: 0, QL20: 0, QL21: 0
 
@@ -10228,6 +10298,8 @@ DFStringHttpRetryOverridesDsv2 = 503:POST:gamejoin.roblox.com:/v1/{join-endpoint
 
 DFStringHttpServiceInternalUrlWhitelist = https://economy.roblox.com/v1/game-pass/{pass-id}/game-pass-product-info,https://catalog.roblox.com/v1/search/items/details
 
+DFStringHttpServiceOpenCloudUrlAllowlist = 
+
 DFStringHttpServiceUserAgent = RobloxGameCloud/1.0 (+http://www.roblox.com)
 
 DFStringHttpUniverseBlacklist = 
@@ -10268,13 +10340,13 @@ DFStringLogUploadToBacktraceSynchronousToken = fd6665d12ee74df65f9c0630c379708f2
 
 DFStringLogUploadToBacktraceToken = e945add587940cbe113c31569f99aeebaab5c6a05069952429d145be7823b42f
 
-DFStringMeshGenerationAPIOverride = null
+DFStringMeshGenerationAPIOverride = 
 
 DFStringMeshLODTranscodeDefaultFidelity = ALL
 
 DFStringMeshLODTranscodeDefaultFormat = fmd
 
-DFStringMeshLODTranscodeMajorVersion = 0.1.2
+DFStringMeshLODTranscodeMajorVersion = 1.0.1
 
 DFStringModerationFilterTextUrlV2 = moderation/v2/filtertext
 
@@ -10450,8 +10522,6 @@ FFlagAccountSwitchScrim3 = true
 
 FFlagACEFaceAnimationEditorUIFixes = true
 
-FFlagACEFaceAnimationEditorUIFixes = true
-
 FFlagAcousticsSimulationBetaFeature = false
 
 FFlagACSRemoveExtraHdChildrenCheck = false
@@ -10461,6 +10531,8 @@ FFlagACSRemoveProxyWrap = true
 FFlagActionableSocialContextToastEnabledForAll = false
 
 FFlagActionManagerActivateLegacyPluginActions = true
+
+FFlagActionsBridgeDontListDisableInQuickAccessActions = false
 
 FFlagActionsBridgeNullCreateIcon = false
 
@@ -10494,7 +10566,7 @@ FFlagAddBasePartCountToOnPlacePublishPackage = true
 
 FFlagAddBuildVariantToGlobalTags = false
 
-FFlagAddChangeMouseCommandLogs = false
+FFlagAddChangeMouseCommandLogs = true
 
 FFlagAddChromeActivatedEvents = true
 
@@ -10514,13 +10586,11 @@ FFlagAddCreatorContextAsset = true
 
 FFlagAddCriticalSectionToCoreAudio = false
 
-FFlagAddCursorProviderToPurchasePromptAppV2 = false
+FFlagAddCursorProviderToPurchasePromptAppV3 = false
 
 FFlagAddDebugLogForLaunchingStudio = true
 
 FFlagAddDraftsToActivityHistory = false
-
-FFlagAddDuaFriendCarouselImpressions = true
 
 FFlagAddEngineContextId = true
 
@@ -10532,13 +10602,15 @@ FFlagAddFontAtlasMipmaps = false
 
 FFlagAddFriendsContainerFunctionalized = true
 
-FFlagAddFriendsMigrateAnalytics_v3 = true
-
 FFlagAddFriendsMovePropsToTile_V2 = true
 
-FFlagAddFriendsPageBackBtnFix = false
+FFlagAddFriendsPageBackBtnFix = true
 
-FFlagAddFriendsPageFunctionalMigration = false
+FFlagAddFriendsPageFunctionalMigration_v2 = true
+
+FFlagAddFriendsTCEducationEnabledForAll = false
+
+FFlagAddFriendsTCEducationSetup_v1 = false
 
 FFlagAddFriendsTelemetryEvents = true
 
@@ -10552,7 +10624,7 @@ FFlagAddJoinAttemptId = true
 
 FFlagAddMarkdownViewerToActivityFeed = false
 
-FFlagAddMatchmakingTypeToDM = false
+FFlagAddMatchmakingTypeToDM = true
 
 FFlagAddMenuNavigationToggleDialog = false
 
@@ -10560,15 +10632,13 @@ FFlagAddMorePhoneUpsellEvents = true
 
 FFlagAddMuteErrorStates = true
 
-FFlagAddMutexToLatchedSignal = true
-
 FFlagAddNewFriendRequestsNetworking = true
 
 FFlagAddOptionToGetAnimationClipIgnoringUniverseCheckAsync = true
 
 FFlagAddPlaceVersionIdToOnPlacePublishPackage = true
 
-FFlagAddPluginActivationLogs = false
+FFlagAddPluginActivationLogs = true
 
 FFlagAddPublishAssetPrompt6 = true
 
@@ -10610,8 +10680,6 @@ FFlagAdPortalTeleportPromptLua = false
 
 FFlagADS4948SendUniverseIdToEventStream = true
 
-FFlagAdServiceAdditionalDataModelChecksEnabled = true
-
 FFlagAdServiceEnabled = true
 
 FFlagAdsEudsaModalUseAnimationTimeFlag = true
@@ -10650,11 +10718,9 @@ FFlagAimMigrateUploadApiToPublishService = true
 
 FFlagAimSimplifyMergeMeshes = false
 
-FFlagAimThereIsNoGameUpload = true
-
 FFlagAimUncheckAllErroredNodesByDefault = true
 
-FFlagAinSetCageTempIds = false
+FFlagAinSetCageTempIds = true
 
 FFlagAinSettingsHandleAnchored = true
 
@@ -10740,21 +10806,23 @@ FFlagAnimatorRetargetSkipAnkleModification = true
 
 FFlagAnimatorRetargetSkipLowerBodyIK = true
 
-FFlagAnnotationsAddTagging8 = false
+FFlagAnnotationsAddTagging9 = false
 
-FFlagAnnotationsAddTaggingFiltering2 = false
+FFlagAnnotationsAddTaggingFiltering3 = false
 
-FFlagAnnotationsEditOperation2 = false
+FFlagAnnotationsAddTaggingKeyConnects = false
 
-FFlagAnnotationsFocusTextBox = false
+FFlagAnnotationsEditOperation2 = true
 
-FFlagAnnotationsHandleNonTC = false
+FFlagAnnotationsFocusTextBox1 = false
+
+FFlagAnnotationsHandleNonTC = true
 
 FFlagAnnotationsModernColors = false
 
-FFlagAnnotationsReleaseCallout = false
+FFlagAnnotationsReleaseCallout = true
 
-FFlagAnnotationsSubmitOnEnter = false
+FFlagAnnotationsSubmitOnEnter = true
 
 FFlagAnnotationsSyncTagging2 = false
 
@@ -10786,8 +10854,6 @@ FFlagAppChatCommunitiesGlobeIcon = false
 
 FFlagAppChatConnectIconDropdownAlwaysAvailable = true
 
-FFlagAppChatConversationIncreasePadding = true
-
 FFlagAppChatConversationKeyboardOffsetCalculation = true
 
 FFlagAppChatConversationNewAvatarCircle = true
@@ -10806,7 +10872,7 @@ FFlagAppChatEnableGroupChatSettings = true
 
 FFlagAppChatEnableGroupedMessageBubbles = false
 
-FFlagAppChatEnableInterventionRC1 = false
+FFlagAppChatEnableInterventionRC2 = false
 
 FFlagAppChatEnablePaddingConsistency2 = true
 
@@ -10850,10 +10916,6 @@ FFlagAppChatInExpToastSnoozeMenuDismissFix = true
 
 FFlagAppChatInExpUseUnibarNotification = false
 
-FFlagAppChatMakeBackgroundTransparent2 = true
-
-FFlagAppChatMessageListInitialFetch = true
-
 FFlagAppChatMigrateIGMInvite = true
 
 FFlagAppChatMouseLockFix = true
@@ -10863,6 +10925,8 @@ FFlagAppChatMoveApolloProvider = true
 FFlagAppChatMoveDispatchLocalUser = true
 
 FFlagAppChatMoveUnreadCountCall = true
+
+FFlagAppChatNavigateLandingWhenDisabled = false
 
 FFlagAppChatNetworkingMigrateToTelemetry = true
 
@@ -10886,15 +10950,15 @@ FFlagAppChatRebrandInNonChrome = false
 
 FFlagAppChatRebrandStringUpdates = true
 
-FFlagAppChatRefactorParticipantMetadata = true
-
 FFlagAppChatRemainingOlderMessagesLogResolve = true
 
 FFlagAppChatRemoveDynamicRequires = false
 
+FFlagAppChatRemoveUserProfileTitles = false
+
 FFlagAppChatShouldNotAdjustForKeyboardInExperience2 = true
 
-FFlagAppChatShutdownBeforeLaunch = false
+FFlagAppChatShutdownBeforeLaunch = true
 
 FFlagAppChatTelemetryRefactor = true
 
@@ -10902,7 +10966,7 @@ FFlagAppChatTiltMenuConnectIcon = true
 
 FFlagAppChatUnreadRealtimeEventMkII = true
 
-FFlagAppConfigurationGUACHttpTelemetryNewEvents = false
+FFlagAppConfigurationGUACHttpTelemetryNewEvents = true
 
 FFlagAppConfigurationGUACHttpTelemetryTotalDelay = false
 
@@ -10926,17 +10990,13 @@ FFlagApplyResolutionScale = false
 
 FFlagAppNavFixBarItems = true
 
-FFlagAppNavRemoveFullscreenToastPolicy = true
-
-FFlagAppNavResponsivePlacement2 = false
+FFlagAppNavResponsivePlacement2 = true
 
 FFlagAppNavSimplification = true
 
 FFlagAppNavSimplification10ft = true
 
 FFlagAppNavUpdateUse3DPanels2 = true
-
-FFlagAppNavUseIsInFullScreen = true
 
 FFlagARKS1766EnableGranularPublish = true
 
@@ -10969,6 +11029,8 @@ FFlagAssetImportGltfPivotSupport = false
 FFlagAssetImportIncludeFacsJoint = true
 
 FFlagAssetImportIOUnicodeSupport = true
+
+FFlagAssetImportMatchNameDotNumber = false
 
 FFlagAssetImportOnlyRenameMeshesOnce = false
 
@@ -11014,9 +11076,11 @@ FFlagAssignTexturePackOwnerAsGameOwner = false
 
 FFlagAssistantLabBetaFeature = false
 
-FFlagAssistantMeshGenBetaFeature = false
+FFlagAssistantMeshGenBetaFeature = true
 
 FFlagAsyncHttpQueueRemoveIStream = false
+
+FFlagAsyncVersionCheck = false
 
 FFlagAudioAssetInsertAssetManagerUsesSelection = false
 
@@ -11076,7 +11140,7 @@ FFlagAutoUnlockInsertedAssets = false
 
 FFlagAvatarAutosetupCancel = true
 
-FFlagAvatarAutosetupStatusNotifications = false
+FFlagAvatarAutosetupStatusNotifications2 = true
 
 FFlagAvatarAutoSetupTelemetryV2 = true
 
@@ -11100,7 +11164,7 @@ FFlagAvatarContextMenuItemsChatButtonRefactor = false
 
 FFlagAvatarEditorServiceCreateOutfitSupportsGears = true
 
-FFlagAvatarEditorServiceRemoveRecommendationsDummyData = false
+FFlagAvatarEditorServiceRemoveRecommendationsDummyData = true
 
 FFlagAvatarEditorServiceV2EndpointSupported = false
 
@@ -11142,7 +11206,7 @@ FFlagBacktraceMainSourcePathEnabled = true
 
 FFlagBaseScriptEnabledProperty = true
 
-FFlagBaseWrapRespectsLODs = false
+FFlagBaseWrapRespectsLODs = true
 
 FFlagBatchedReporterSetTimeout2 = false
 
@@ -11157,8 +11221,6 @@ FFlagBetaBadgeLearnMoreLinkFormview = true
 FFlagBetterTrackpadScrolling = false
 
 FFlagBillboardGuiOnlyLayoutWhenRenderable = true
-
-FFlagBlake3SerializerBinary = true
 
 FFlagBlendedSerpUserPresenceInLineEnabled = false
 
@@ -11252,6 +11314,10 @@ FFlagBootcampCLI143791 = false
 
 FFlagBootcampCLI145319 = false
 
+FFlagBootcampCLI145464 = false
+
+FFlagBootcampCLI145624 = false
+
 FFlagBootcampCLI50852 = false
 
 FFlagBootcampCLI7459 = false
@@ -11265,6 +11331,8 @@ FFlagBottomColorShiftDefaultUsage = true
 FFlagBreakpointScrollBarMarkerColor = false
 
 FFlagBreakStudioDependencyOnDocuments = true
+
+FFlagBroaderFileDescriptorLimit = false
 
 FFlagBubbleChatSettingsApi = true
 
@@ -11280,7 +11348,7 @@ FFlagBulkPropertyEditTelemetry2 = true
 
 FFlagCacheableContentProviderFixRccMsg = true
 
-FFlagCachedArgCheckIsEnabled = false
+FFlagCachedArgCheckIsEnabled = true
 
 FFlagCacheReadParsePolicy = true
 
@@ -11290,7 +11358,7 @@ FFlagCacheTextBoundsInGuiText = false
 
 FFlagCacheVREnabled = true
 
-FFlagCAIMLR_149_EnableText2MeshStudio = false
+FFlagCAIMLR_149_EnableText2MeshStudio = true
 
 FFlagCalculateFriendsTileSize = true
 
@@ -11300,7 +11368,7 @@ FFlagCameraSensitivityPadding2 = true
 
 FFlagCameraToggleInitBugFix = true
 
-FFlagCancelTimerOnUnmount = false
+FFlagCancelTimerOnUnmount = true
 
 FFlagCanReplicateContentPropertiesClient = true
 
@@ -11334,9 +11402,9 @@ FFlagCapturesCoreGuiDisabledAnalytics = true
 
 FFlagCaptureServiceContentObjectEnabled4 = false
 
-FFlagCaptureServiceVideoReadyTaskEnabled = false
+FFlagCaptureServiceVideoReadyTaskEnabled = true
 
-FFlagCapturesGalleryAddSizeStringNilCheck = false
+FFlagCapturesGalleryAddSizeStringNilCheck = true
 
 FFlagCapturesPostEnabledForAll_v4 = false
 
@@ -11426,6 +11494,8 @@ FFlagCheckForNilUserIdOnPlayerList = true
 
 FFlagCheckForOutdatedFontsOnFirstGLCRender = false
 
+FFlagCheckForTCSMigration = false
+
 FFlagCheckIfDataModelTypeDiffersFromAvatarFetch2 = false
 
 FFlagCheckMediaPickerIsAvailable = true
@@ -11476,7 +11546,7 @@ FFlagChromeTrackWindowStatus = false
 
 FFlagChromeUsePreferredTransparency = true
 
-FFlagCIAnalyticsRefactor = false
+FFlagCIAnalyticsRefactor = true
 
 FFlagCinAssetCreationPermissionsGrant3dImport = false
 
@@ -11486,7 +11556,7 @@ FFlagCinFixApplyForBadSession = true
 
 FFlagCinFixUploadResults = true
 
-FFlagCinImprovedErrorMessages = false
+FFlagCinImprovedErrorMessages = true
 
 FFlagCIPromptOnAddFriendsEnabledForAll_V2 = false
 
@@ -11508,13 +11578,15 @@ FFlagClearUserFromRecentVoiceDataOnLeave = true
 
 FFlagClearVoiceStateOnRejoin = true
 
+FFlagCLI_146266_GenerationServiceHttpHelperTelemetryUpdate = true
+
+FFlagCLI_146266_GenerationServiceTelemetry = true
+
 FFlagCLI_85871 = false
 
 FFlagCLI_85872 = false
 
 FFlagCLI115093 = true
-
-FFlagCLI128688 = true
 
 FFlagCLI142291 = true
 
@@ -11538,7 +11610,7 @@ FFlagClientFixCreatorIdValueForSimulation = true
 
 FFlagClientFRMManualToAutoExperimentCheck2 = false
 
-FFlagClientRbxmBundleSplit8 = false
+FFlagClientRbxmBundleSplit8 = true
 
 FFlagClientSideCompatibility = true
 
@@ -11557,6 +11629,14 @@ FFlagClusterCacheWorkspaceProperty2 = true
 FFlagCMSUploadAccessoryMeshPartFormat2 = true
 
 FFlagCodeAssistSilentAutoTrigger = false
+
+FFlagCodeAssistTriggerIgnoreFilter = false
+
+FFlagCodeAssistTriggerOnCommit = false
+
+FFlagCodeAssistTriggerOnESC = false
+
+FFlagCodeAssistTriggerOnTab = false
 
 FFlagCodeSnippet_Alpha4 = true
 
@@ -11642,6 +11722,8 @@ FFlagCOLLAB6856FixAHPublish = true
 
 FFlagCOLLAB7436AnnotationHeaderIcons = false
 
+FFlagCollab7848 = false
+
 FFlagCOLLAB7954AnnotationsLoadRecentReplies = false
 
 FFlagCollaborationIxpContextProvider = true
@@ -11652,13 +11734,13 @@ FFlagCollectDeprecatedGAAndEventStreamCalls = false
 
 FFlagCollectibleItemPurchaseResellNetworkEnabled = true
 
-FFlagCollectionGridFixUseEffect = false
+FFlagCollectionGridFixUseEffect = true
 
 FFlagCollectLogsFromCoreAudio = false
 
 FFlagCollectMoreLogsFromCoreAudio = false
 
-FFlagColorComparisonFloatToDouble = false
+FFlagColorComparisonFloatToDouble = true
 
 FFlagCommandKeyOverlayPrevNext = false
 
@@ -11676,7 +11758,9 @@ FFlagComputeBoxMappedDataOnDemand2 = true
 
 FFlagComputeUsedVertexRangeSize3 = false
 
-FFlagConnectFriendsLandingNavigator_4 = false
+FFlagConfigServiceEnabled = false
+
+FFlagConnectFriendsLandingNavigator_4 = true
 
 FFlagConnectGamepadChrome = true
 
@@ -11692,13 +11776,15 @@ FFlagConnectTabChatTileRecolorEnabled = false
 
 FFlagConsoleApplyTokenizationEdp = false
 
+FFlagConsoleChatOnExpControls = false
+
 FFlagConsoleInExperienceChatExperimentEnabled = false
 
 FFlagConstraintUseColor3 = false
 
 FFlagContactImportButtonsExperimentEnabled = true
 
-FFlagContactImporterFlowIXPEnabled_v5 = false
+FFlagContactImporterFlowIXPEnabled_v5 = true
 
 FFlagContactInvitesInProfilePlatformV2 = true
 
@@ -11740,7 +11826,7 @@ FFlagControlSimulationViaDataModelFeatures2 = false
 
 FFlagConvAI_ConditionalDropdown = true
 
-FFlagConvAIAddCommandSearchInsertAsset3 = false
+FFlagConvAIAddCommandSearchInsertAsset3 = true
 
 FFlagConvAIAddSavePlaceCommand = true
 
@@ -11830,23 +11916,29 @@ FFlagCoreScriptBacktraceRepeatedErrorRateLimiting = true
 
 FFlagCoreScriptShowTeleportPrompt = false
 
+FFlagCorrectlyParseQTLocale = false
+
+FFlagCorrectlyParseQTLocale = false
+
 FFlagCorrectlyPositionMuteButton = true
 
 FFlagCountAcousticSimulationUsageTelemetry = false
 
 FFlagCPPErrorReporterStopListening = false
 
+FFlagCrashAnalysis146784 = false
+
 FFlagCrashOnDataModelValidationFailure = false
 
 FFlagCrashpadAddLocations = true
 
-FFlagCrashpadIncludeIndirectMemory = false
+FFlagCrashpadIncludeIndirectMemory = true
 
 FFlagCrashpadIncludeIndirectMemoryOnOOM = false
 
 FFlagCrashReportDX11WindowsHResult2 = true
 
-FFlagCrashReporterDebugString = false
+FFlagCrashReporterDebugString = true
 
 FFlagCrashUploadDX11WindowsHResultANR2 = true
 
@@ -11880,7 +11972,7 @@ FFlagCustomVideoUploadBetaFeature = true
 
 FFlagCylinderHandleAdornmentHoverNormalFix = true
 
-FFlagDataModelInitParamsDefaultPatchInExp = false
+FFlagDataModelInitParamsDefaultPatchInExp = true
 
 FFlagDataModelPatchBackgroundLoad3 = true
 
@@ -12091,6 +12183,8 @@ FFlagDebugDisplayFPS = false
 FFlagDebugDisplayMicroProfilerAutoCapture = false
 
 FFlagDebugDisplayUnthemedInstances = false
+
+FFlagDebugDoNotClearGhostTextOnFocusOut = false
 
 FFlagDebugDoNotLoadHumanoidSounds = false
 
@@ -12592,7 +12686,7 @@ FFlagDebugSSAOForce = false
 
 FFlagDebugStartMicroProfilerWebServer = false
 
-FFlagDebugStringAtomRespectLength = false
+FFlagDebugStringAtomRespectLength = true
 
 FFlagDebugStudioActionManagerCanGetNullAction = false
 
@@ -12758,7 +12852,7 @@ FFlagDeprecateOldScriptCommandHandler2 = false
 
 FFlagDeprecationMessageDateLocalizationRefactor = true
 
-FFlagDescendantOfDataModel = false
+FFlagDescendantOfDataModel = true
 
 FFlagDeserializePacketsJobSchedulerException = true
 
@@ -12774,9 +12868,9 @@ FFlagDevConsoleMemorySort = true
 
 FFlagDevConsoleUseThrottledMetrics = true
 
-FFlagDeveloperFrameworkMigrateStylingV2 = false
+FFlagDeveloperFrameworkMigrateStylingV2 = true
 
-FFlagDeveloperFrameworkMigrateStylingV2 = false
+FFlagDeveloperFrameworkMigrateStylingV2 = true
 
 FFlagDeveloperToastNotificationsEnabled2 = false
 
@@ -12844,10 +12938,12 @@ FFlagDevFrameworkDropdownFromSide = true
 
 FFlagDevFrameworkDropdownInGamePositioning = true
 
-FFlagDevFrameworkDropdownInGamePositioning = true
-
 FFlagDevFrameworkDropdownMenuHeight = false
 
+FFlagDevFrameworkEnableFoundationColors = false
+
+FFlagDevFrameworkEnableFoundationColors = false
+
 FFlagDevFrameworkEnableSkyForMetalBalls = true
 
 FFlagDevFrameworkEnableSkyForMetalBalls = true
@@ -12858,7 +12954,9 @@ FFlagDevFrameworkExpandablePaneAddTitle = true
 
 FFlagDevFrameworkExplorerTooltips = false
 
-FFlagDevFrameworkExplorerTooltips = false
+FFlagDevFrameworkExplorerTooltips2 = false
+
+FFlagDevFrameworkExplorerTooltips2 = false
 
 FFlagDevFrameworkFixGridCanvasSizeCalculation = true
 
@@ -12868,11 +12966,11 @@ FFlagDevFrameworkFixMissingKeyErrors = false
 
 FFlagDevFrameworkFixMissingKeyErrors = false
 
-FFlagDevFrameworkFixPermissionsApi = false
+FFlagDevFrameworkFixPermissionsApi = true
 
-FFlagDevFrameworkFixSliderOnChangeUpdate = false
+FFlagDevFrameworkFixSliderOnChangeUpdate = true
 
-FFlagDevFrameworkFixSliderOnChangeUpdate = false
+FFlagDevFrameworkFixSliderOnChangeUpdate = true
 
 FFlagDevFrameworkFixTextInputFits = true
 
@@ -12880,7 +12978,15 @@ FFlagDevFrameworkFixTextInputFits = true
 
 FFlagDevFrameworkFixTextInputWidth2 = true
 
+FFlagDevFrameworkFixTreeViewHover = true
+
+FFlagDevFrameworkFixTreeViewHover = true
+
 FFlagDevFrameworkFixUseDialogLayoutResizing = true
+
+FFlagDevFrameworkFormHideHeader = false
+
+FFlagDevFrameworkFormHideHeader = false
 
 FFlagDevFrameworkGridOnLoadRange = true
 
@@ -12912,7 +13018,7 @@ FFlagDevFrameworkLimitDropdownHeightFix = true
 
 FFlagDevFrameworkLimitDropdownHeightFix = true
 
-FFlagDevFrameworkListInsetAndForwardRef = false
+FFlagDevFrameworkListInsetAndForwardRef = true
 
 FFlagDevFrameworkLoadingBarAddOvertime = false
 
@@ -12920,6 +13026,10 @@ FFlagDevFrameworkLoadingBarAddOvertime = false
 
 FFlagDevFrameworkMakeBodyOptionalForUseDialogLayout = true
 
+FFlagDevFrameworkMarkdownErrorHandling = false
+
+FFlagDevFrameworkMarkdownErrorHandling = false
+
 FFlagDevFrameworkMarkdownViewer4 = true
 
 FFlagDevFrameworkMarkdownViewer4 = true
@@ -12943,6 +13053,10 @@ FFlagDevFrameworkMaterialPickerRenameGrabsMouseProp = true
 FFlagDevFrameworkMemStorageServiceMocks = false
 
 FFlagDevFrameworkMemStorageServiceMocks = false
+
+FFlagDevFrameworkMigrateEditTreeId = false
+
+FFlagDevFrameworkMigrateEditTreeId = false
 
 FFlagDevFrameworkModernStartPageStyle = true
 
@@ -12962,8 +13076,6 @@ FFlagDevFrameworkPaneActiveProp = false
 
 FFlagDevFrameworkPaneImmutableProps = true
 
-FFlagDevFrameworkPaneImmutableProps = true
-
 FFlagDevFrameworkPaneSizeFromStyle = true
 
 FFlagDevFrameworkPaneSizeFromStyleAgain = true
@@ -12976,7 +13088,15 @@ FFlagDevFrameworkPopupFixedTitle = true
 
 FFlagDevFrameworkPopupFixedTitle = true
 
-FFlagDevFrameworkPromiseAllBugfix = false
+FFlagDevFrameworkPortalDesignInPlugins = false
+
+FFlagDevFrameworkPortalDesignInPlugins = false
+
+FFlagDevFrameworkPromiseAllBugfix = true
+
+FFlagDevFrameworkRadioButtonTooltips = false
+
+FFlagDevFrameworkRadioButtonTooltips = false
 
 FFlagDevFrameworkRenderModelLoadedSignal = true
 
@@ -13042,6 +13162,14 @@ FFlagDevFrameworkTostringQueryParams = true
 
 FFlagDevFrameworkTostringQueryParams = true
 
+FFlagDevFrameworkTreeTableCellShowActions = false
+
+FFlagDevFrameworkTreeTableCellShowActions = false
+
+FFlagDevFrameworkTreeTableHandleHiddenSelection = false
+
+FFlagDevFrameworkTreeTableHandleHiddenSelection = false
+
 FFlagDevFrameworkTreeTableShimmer = true
 
 FFlagDevFrameworkTreeTableShimmer = true
@@ -13056,13 +13184,9 @@ FFlagDevFrameworkUrlNonStrEncode = true
 
 FFlagDevFrameworkUseDialogDisableTitleBar = true
 
-FFlagDevFrameworkUseDialogDisableTitleBar = true
-
 FFlagDevFrameworkUseInternalReact = true
 
 FFlagDevFrameworkUseInternalReact = true
-
-FFlagDevFrameworkValidateOnValidationChange = true
 
 FFlagDevFrameworkValidateOnValidationChange = true
 
@@ -13086,7 +13210,7 @@ FFlagDFVideoStudioPreviewPermissionFix2 = true
 
 FFlagDFVideoStudioPreviewPermissionFix2 = true
 
-FFlagDHAnalyticsNewUser = false
+FFlagDHAnalyticsNewUser = true
 
 FFlagDirectionalAnalogStick2 = false
 
@@ -13126,7 +13250,7 @@ FFlagDisableChromeV4ClosedSelfView = false
 
 FFlagDisableCloudsForMultiview = true
 
-FFlagDisableCloudsOnPVR8300OnAndroidBelow30 = false
+FFlagDisableCloudsOnSelectAndroidDevices = false
 
 FFlagDisableConsentModalForExistingUsers = false
 
@@ -13137,6 +13261,8 @@ FFlagDisableCorescriptLoadstring = false
 FFlagDisableEditProfileForVRV2 = false
 
 FFlagDisableExtraScrollingFriction = true
+
+FFlagDisableFacialAnimationStreamingServiceV2 = false
 
 FFlagDisableFeedbackSoothsayerCheck = true
 
@@ -13178,15 +13304,13 @@ FFlagDisableSelfViewDefaultOpen = true
 
 FFlagDisableServerLocalScripts = false
 
-FFlagDisableSongbirdForVRConsole = true
+FFlagDisableStreamingTunableMemoryTracking = false
 
 FFlagDisableTeleportPlayerDisconnectingSignal = false
 
 FFlagDisableUserPluginByteCode = true
 
 FFlagDisableVerifyPhoneViewOnSuccess = true
-
-FFlagDisableVideoAdsImpressionReporting = false
 
 FFlagDisableVRMenuFix = true
 
@@ -13208,6 +13332,8 @@ FFlagDMQIconCacheKey = true
 
 FFlagDMQIconCacheUseTextureSize = true
 
+FFlagDmWaitForPlayerDataSave = false
+
 FFlagDoNotIncludeGroupNodesInTheAnimation = true
 
 FFlagDoNotLoadCoreScriptsInStandaloneDM = false
@@ -13226,7 +13352,7 @@ FFlagDontTreat403AsGameJoinError = true
 
 FFlagDontUseFilteredSelectionInstance = true
 
-FFlagDoubleBufferWaitingThreadsWhenSchedulingParallelExecution = false
+FFlagDoubleBufferWaitingThreadsWhenSchedulingParallelExecution = true
 
 FFlagDragDetectorAllowOneTouch = true
 
@@ -13256,7 +13382,7 @@ FFlagDragDetectorRestartAfterPermissionChangeFix = true
 
 FFlagDragDetectorRestartDragOnlyWhenNeeded = true
 
-FFlagDragDetectorRestartPhysicalDragFix = false
+FFlagDragDetectorRestartPhysicalDragFix = true
 
 FFlagDragDetectorSendTouchEventToIndicatorRefactor = false
 
@@ -13390,7 +13516,7 @@ FFlagEditableMeshWithFastCluster2 = true
 
 FFlagEditableServiceEnabled3 = true
 
-FFlagEditProfileAddLoadingTracker = true
+FFlagEditUsernameBuyRobuxPageFix = false
 
 FFlagEDPContextRedesign3 = false
 
@@ -13403,8 +13529,6 @@ FFlagEdpPlayerFeedbackEnabled5 = false
 FFlagEdpPlayerFeedbackLogIXPExposure2 = false
 
 FFlagEdpPlayerFeedbackPromptTitleOnly = false
-
-FFlagEmitterSharedNewEnabledVar2 = true
 
 FFlagEmitUpdateLayoutStatsOnANR = false
 
@@ -13422,7 +13546,7 @@ FFlagEnableActivityHistoryEventService = false
 
 FFlagEnableAdGuiDropdownScaling = true
 
-FFlagEnableAdGuiUiBloxImages = false
+FFlagEnableAdGuiUiBloxImages = true
 
 FFlagEnableAdPortalInsert = false
 
@@ -13520,11 +13644,11 @@ FFlagEnableAudioChannelCountProperty = false
 
 FFlagEnableAudioChannelSelector = false
 
-FFlagEnableAudioChannelSplittingMixing2 = false
+FFlagEnableAudioChannelSplittingMixing2 = true
 
-FFlagEnableAudioCompressorEditor = false
+FFlagEnableAudioCompressorEditor = true
 
-FFlagEnableAudioCompressorEditorLua = false
+FFlagEnableAudioCompressorEditorLua = true
 
 FFlagEnableAudioDuckingAroundRewardedVideoAds4 = true
 
@@ -13548,13 +13672,11 @@ FFlagEnableAutomaticSizeVerticalOffsetWidthFix = false
 
 FFlagEnableAvatarFacechatReplOverRCCTelemetry = true
 
-FFlagEnableAvatarModerationCompleted = false
+FFlagEnableAvatarModerationCompleted = true
 
 FFlagEnableAvatarSettings = false
 
 FFlagEnableBackendAdsProviderInPlaySolo = false
-
-FFlagEnableBackendAdsProviderTimerService = true
 
 FFlagEnableBetterHapticsResultHandling = true
 
@@ -13572,7 +13694,7 @@ FFlagEnableCancelInputEvent = false
 
 FFlagEnableCancelSubscriptionAppLua = true
 
-FFlagEnableCanEditAssetAsync = false
+FFlagEnableCanEditAssetAsync = true
 
 FFlagEnableCanSendGameInviteAsync429ErrorMarshalingFix = true
 
@@ -13614,7 +13736,7 @@ FFlagEnableClickToMoveUsageTelemetry2 = true
 
 FFlagEnableClientRbxmBundleSplitExperiment4 = false
 
-FFlagEnableClientToastNotificationsRedirectExperiment = false
+FFlagEnableClientToastNotificationsRedirectExperiment = true
 
 FFlagEnableClientToastNotificationsReducedMotion = false
 
@@ -13660,6 +13782,8 @@ FFlagEnableConnectTabChatTileRecolorExperiment = true
 
 FFlagEnableConsoleAutoFocusForUEN = true
 
+FFlagEnableConsoleDisconnectNetworkingErrorToast = false
+
 FFlagEnableConsoleExpControls = false
 
 FFlagEnableConsolePreparePaymentCheck = false
@@ -13684,7 +13808,7 @@ FFlagEnableCppPluginErrorReporter2 = true
 
 FFlagEnableCreateAssetAsync = false
 
-FFlagEnableCreateAssetAsyncForRobloxScript = false
+FFlagEnableCreateAssetAsyncForRobloxScript = true
 
 FFlagEnableCreateAssetAsyncImageUpload = true
 
@@ -13706,7 +13830,7 @@ FFlagEnableCrossDeviceLoginUsingQRCodes3 = false
 
 FFlagEnableCrossExpEventLogging = false
 
-FFlagEnableCrossExpVoice3 = false
+FFlagEnableCrossExpVoice3 = true
 
 FFlagEnableCrossExpVoiceAbuseReport = true
 
@@ -13720,7 +13844,7 @@ FFlagEnableCrossExpVoiceVolumeIXPCheck = true
 
 FFlagEnableCullLogsExperiment = false
 
-FFlagEnableCustomMatchmaking2 = false
+FFlagEnableCustomMatchmaking3 = false
 
 FFlagEnableCustomVideoUpload = false
 
@@ -13786,7 +13910,7 @@ FFlagEnableExplorerTelemetry2 = true
 
 FFlagEnableExternalBrowserForVPCPrivacyPolicy = false
 
-FFlagEnableExternalContentSharingProtocolSetClipboardTextDesktop = false
+FFlagEnableExternalContentSharingProtocolSetClipboardTextDesktop = true
 
 FFlagEnableExternalPauseToastNotification2 = false
 
@@ -13852,9 +13976,7 @@ FFlagEnableGImageDetectsExif = false
 
 FFlagEnableGmaAdsInEngine = true
 
-FFlagEnableGmaDebuggingVariant = false
-
-FFlagEnableGmaEligibilityCheckIneligibleReason = true
+FFlagEnableGmaDebuggingVariant = true
 
 FFlagEnableGradientForChatWindowMessage = true
 
@@ -13873,8 +13995,6 @@ FFlagEnableHarmonyOnFrameRateManagerShadow2 = true
 FFlagEnableHasVerifiedBadgeUserModelValidation = false
 
 FFlagEnableHideReportAdModalDuringScreenshot2 = false
-
-FFlagEnableHideSystemCardLocalUserAvatar = true
 
 FFlagEnableImmediateSendingToHive = false
 
@@ -13912,9 +14032,9 @@ FFlagEnableInvitePromptLoadingState2 = false
 
 FFlagEnableIOSSavePasswordModalJitterFix2 = false
 
-FFlagEnableIsAvailableLatencyEvents = false
+FFlagEnableIsAvailableLatencyEvents = true
 
-FFlagEnableIXPForSwitchingOverToMemAvailable = false
+FFlagEnableIXPForSwitchingOverToMemAvailable = true
 
 FFlagEnableJoinVoiceOnUnibar = true
 
@@ -13931,8 +14051,6 @@ FFlagEnableLaserPointerDisableMethodV2 = false
 FFlagEnableLayoutModifiers2 = false
 
 FFlagEnableLeaveGameUpsellEntrypoint = true
-
-FFlagEnableLeaveSquadCatch = true
 
 FFlagEnableLegacyBlendingAttribute = true
 
@@ -13954,7 +14072,7 @@ FFlagEnableLogoutV3 = false
 
 FFlagEnableLuaAccountSwitchRelease2 = false
 
-FFlagEnableLuaAppsShareLinksPackages_v3 = false
+FFlagEnableLuaAppsShareLinksPackages_v4 = true
 
 FFlagEnableLuaCharacterController = false
 
@@ -14000,6 +14118,8 @@ FFlagEnableModularExternalNavigationHandler = false
 
 FFlagEnableModularizedUserAgreementsList = false
 
+FFlagEnableMPAllocCallbackDynamicAlloc = false
+
 FFlagEnableMultiPageSignup5 = false
 
 FFlagEnableMultipageSignupNonInteractiveUserAgreementsPage = false
@@ -14028,6 +14148,8 @@ FFlagEnableNewDeviceIntegrityFailureHandling = true
 
 FFlagEnableNewFriendRequestsBadge5 = true
 
+FFlagEnableNewFriendRequestsBadgeOnDua = false
+
 FFlagEnableNewInviteMenuCustomization2 = false
 
 FFlagEnableNewInviteMenuCustomizationIXP2 = true
@@ -14046,9 +14168,11 @@ FFlagEnableNewMaterialGenerationServiceApi = false
 
 FFlagEnableNewPartyInviteChanges3 = false
 
+FFlagEnableNewPartyInviteChanges4 = false
+
 FFlagEnableNewRNAppCards2 = true
 
-FFlagEnableNewUpsellPromptRobuxCalculation = false
+FFlagEnableNewUpsellPromptRobuxCalculation = true
 
 FFlagEnableNewVoiceReportFlows = true
 
@@ -14060,11 +14184,9 @@ FFlagEnableNotApprovedForeshadowingConsequenceABTest = true
 
 FFlagEnableNudgeAnalyticsV2 = true
 
-FFlagEnableOctreeInputSanitize = false
+FFlagEnableOctreeInputSanitize = true
 
 FFlagEnableOctreeIsFiniteChecks = false
-
-FFlagEnableODACapability = true
 
 FFlagEnableOnDemandAdsProviderHttpDebounce = true
 
@@ -14089,6 +14211,10 @@ FFlagEnablePartyCoordinationUiChanges = false
 FFlagEnablePartyIconInNonChrome5 = false
 
 FFlagEnablePartyIconInNonChromeWithMainFlag = false
+
+FFlagEnablePartyInviteChangesExperimentation2 = false
+
+FFlagEnablePartyLobbyDeepLink = false
 
 FFlagEnablePartyMicIconInChrome = true
 
@@ -14118,7 +14244,7 @@ FFlagEnablePerfStreamingCollection2 = false
 
 FFlagEnablePermissionCheckOnCreatingEditableAsset = false
 
-FFlagEnablePhoto2Avatar4 = false
+FFlagEnablePhoto2Avatar5 = false
 
 FFlagEnablePhoto2AvatarStudio = false
 
@@ -14131,6 +14257,8 @@ FFlagEnablePlatformChatCanSeeChatTab = false
 FFlagEnablePlatformEvidence = true
 
 FFlagEnablePlatformName = true
+
+FFlagEnablePlatformUiUnificationFixes = false
 
 FFlagEnablePlayerCharacterDestroyBehavior = true
 
@@ -14170,7 +14298,7 @@ FFlagEnablePrefetchTimeout = false
 
 FFlagEnablePremiumSponsoredExperienceReporting = false
 
-FFlagEnablePrepareAvatarForPreviewAsync = false
+FFlagEnablePrepareAvatarForPreviewAsync = true
 
 FFlagEnablePreSignedVngShopRedirectUrl = true
 
@@ -14200,7 +14328,7 @@ FFlagEnableRccBundleSplit2 = false
 
 FFlagEnableRCCOpenCloudSessionAssetPublish = false
 
-FFlagEnableReactLoggingProfiler2 = false
+FFlagEnableReactLoggingProfiler2 = true
 
 FFlagEnableReactPerfSummaryEvents = true
 
@@ -14221,6 +14349,8 @@ FFlagEnableRejectPromiseOnWebviewClosed = true
 FFlagEnableRemainInExperienceOnHandleDeepLinkUrl3 = false
 
 FFlagEnableReminderOfNormsABTest = true
+
+FFlagEnableRemoveGetAdAvailabilityGuard = false
 
 FFlagEnableRemoveIsFromToastNotification = true
 
@@ -14259,8 +14389,6 @@ FFlagEnableRunRenderJobCheck = true
 FFlagEnableSaleLocationShopAndExperiencesDevApi1 = true
 
 FFlagEnableSaveUserPins2 = false
-
-FFlagEnableSceneAnalysisPerformanceTest = false
 
 FFlagEnableSchematizedInGameRobuxUpsellEvent2 = true
 
@@ -14314,6 +14442,8 @@ FFlagEnableSongbirdPeek2 = false
 
 FFlagEnableSortDeeplinks2 = true
 
+FFlagEnableSortInvitesByScoreExperiment = true
+
 FFlagEnableSoundSessionTelemetry5 = true
 
 FFlagEnableSpatialRobloxGui4 = true
@@ -14324,13 +14454,9 @@ FFlagEnableSquadCoplayDependencyArray = true
 
 FFlagEnableSquadEntrypoints = false
 
-FFlagEnableSquadEntrypointsSettingsFix = true
-
 FFlagEnableSquadLazyComponent = true
 
 FFlagEnableSquadPromptAnalytics = true
-
-FFlagEnableSquadRTNPollingOptimizations = true
 
 FFlagEnableSquadTopBannerWideMode = true
 
@@ -14370,7 +14496,7 @@ FFlagEnableTelemetryProtocol = true
 
 FFlagEnableTelemetryService1 = true
 
-FFlagEnableTelemetryServiceMemoryCPUInfo = false
+FFlagEnableTelemetryServiceMemoryCPUInfo = true
 
 FFlagEnableTempFixCollectibleBundlePurchase = true
 
@@ -14384,7 +14510,9 @@ FFlagEnableTextChannelHistory = false
 
 FFlagEnableTextFieldContentType = false
 
-FFlagEnableTextureGenerator2 = false
+FFlagEnableTextureGenerator2 = true
+
+FFlagEnableTextureManagerIXPMappingForPerformanceControl = false
 
 FFlagEnableTFFeedbackModeEntryCheck = true
 
@@ -14397,8 +14525,6 @@ FFlagEnableToastLiteRender = true
 FFlagEnableToastNotificationsDeeplinkConfirmationModalHeightFix = true
 
 FFlagEnableToastNotificationWrapper3 = true
-
-FFlagEnableToastUpdateLifecycleEvent = true
 
 FFlagEnableTopBarAnalytics = true
 
@@ -14420,11 +14546,9 @@ FFlagEnableUISoundAndHaptics9 = false
 
 FFlagEnableUnexpectedServiceInstanceCountsTelem = false
 
-FFlagEnableUnfriendChatDetailsBugfix = true
-
 FFlagEnableUnibarFtuxTooltips = false
 
-FFlagEnableUnifiedWebViews4 = false
+FFlagEnableUnifiedWebViews4 = true
 
 FFlagEnableUniveralVoiceToasts = false
 
@@ -14492,7 +14616,7 @@ FFlagEnableWarnModerationUXInPlaceSession = true
 
 FFlagEnableWebViewProtocolV25 = true
 
-FFlagEnableWebViewService2 = false
+FFlagEnableWebViewService2 = true
 
 FFlagEnableWidgetLUAIXP = false
 
@@ -14520,19 +14644,21 @@ FFlagEngineStylingEnabled2 = true
 
 FFlagEngineTruncationEnabledForIngameSettingsV2 = false
 
-FFlagEngineVoiceComfortNoiseIxpEnabled = false
+FFlagEngineVoiceChatClientRewriteIxpEnabled = false
+
+FFlagEngineVoiceComfortNoiseIxpEnabled = true
 
 FFlagEngineVoiceComfortNoiseIxpOverrideEnabled = false
 
-FFlagEngineVoiceWebrtcAudioJitterBufferFastAccelerateIxpEnabled2 = false
+FFlagEngineVoiceWebrtcAudioJitterBufferFastAccelerateIxpEnabled2 = true
 
 FFlagEngineVoiceWebrtcAudioJitterBufferFastAccelerateIxpOverrideEnabled = false
 
-FFlagEngineVoiceWebrtcRobloxAudioJitterBufferSizeDecreaseIxpEnabled2 = false
+FFlagEngineVoiceWebrtcRobloxAudioJitterBufferSizeDecreaseIxpEnabled2 = true
 
 FFlagEngineVoiceWebrtcRobloxAudioJitterBufferSizeDecreaseIxpOverrideEnabled = false
 
-FFlagEngineVoiceWebrtcRobloxNeteqDynamicMemoryIxpEnabled = false
+FFlagEngineVoiceWebrtcRobloxNeteqDynamicMemoryIxpEnabled = true
 
 FFlagEngineVoiceWebrtcRobloxNeteqDynamicMemoryIxpOverrideEnabled = false
 
@@ -14542,13 +14668,13 @@ FFlagEnsureVoicePermissionsFetched = true
 
 FFlagErrorDetails = true
 
-FFlagErrorPromptResizesHeight = true
+FFlagEstimateUncompressedContentLength = false
 
 FFlagEulerToQuaternionActivated = true
 
 FFlagExcludeNonMeshNodesWhenFindingParentPart = true
 
-FFlagExcludeTutorialFromConvHistory = false
+FFlagExcludeTutorialFromConvHistory = true
 
 FFlagExpandScrollPickerTapTarget = true
 
@@ -14602,13 +14728,17 @@ FFlagExplorerDontIncrementNamesForDuplicates = false
 
 FFlagExplorerEmitTextBoxUpAndDown = true
 
-FFlagExplorerFilteringNoCap = true
+FFlagExplorerFixClearSelectionAction = true
 
-FFlagExplorerFilteringQuoteTags = true
+FFlagExplorerFixCSGActions = false
+
+FFlagExplorerFixGroupActions = false
 
 FFlagExplorerFixSelectOnInsertionSettingDefault = true
 
 FFlagExplorerFocusSearchBarAction = true
+
+FFlagExplorerHandleCoreGuiVisibilityProjectSetting = true
 
 FFlagExplorerIncrementNames = true
 
@@ -14628,7 +14758,7 @@ FFlagExportInterfaceFixCountGeneration = true
 
 FFlagExportSceneAsync2 = false
 
-FFlagExposeChatWindowToggled = false
+FFlagExposeChatWindowToggled = true
 
 FFlagExposeHintAndInformationSeverity = true
 
@@ -14639,6 +14769,8 @@ FFlagExtendedAttributeNames = false
 FFlagExtendedExpMenuPortraitLayout = true
 
 FFlagExtendedLightRanges2 = false
+
+FFlagExternalContentSharingEnableSetClipboardText = false
 
 FFlagFaceAnimatorEnableBoundingBoxResult = true
 
@@ -14738,6 +14870,10 @@ FFlagFeedbackEntryPointImprovedStrictnessCheck = true
 
 FFlagFFlagAbuseReportEnableReportSentPage = true
 
+FFlagFFlagDevFrameworkMoveEditTree = false
+
+FFlagFFlagDevFrameworkMoveEditTree = false
+
 FFlagFFlagEnableSetCoreGuiEnabledExpChat = true
 
 FFlagFFlagFixToastNotificationRightPosition = true
@@ -14752,7 +14888,7 @@ FFlagFFlagPCMAcceptWidthAsProp = true
 
 FFlagFFlagTimeoutRemoteEvent = false
 
-FFlagFFTStorePreviousWindowSize = false
+FFlagFFTStorePreviousWindowSize = true
 
 FFlagFIB3OnAndroidExperimentEnabled = false
 
@@ -14770,13 +14906,13 @@ FFlagFilteredLocalSimulation5 = false
 
 FFlagFilteredScrollingListAdditionalCustomizationsEnabled = true
 
+FFlagFilterPurchasePromptInputDispatch = false
+
 FFlagFilterRespects13PlusPlus = false
 
 FFlagFilterSendsUnfilteredEnrollment = false
 
 FFlagFindAllHighlightsInScriptEditor2 = false
-
-FFlagFindAndReplaceResizing = true
 
 FFlagFindAssetUtilRefactorAppendSlashIfRequired = false
 
@@ -14802,9 +14938,11 @@ FFlagFixAppPolicyDefaultUserId = true
 
 FFlagFixAssetFetchRequestRace = true
 
+FFlagFixAudibleSoundDetectionPerformance = true
+
 FFlagFixAudioAnalyzerWindowRace = true
 
-FFlagFixAudioMetadataTagParsing = false
+FFlagFixAudioMetadataTagParsing = true
 
 FFlagFixAvatarTabPluginsNotLoadingOnNonEnglishBuilds = true
 
@@ -14822,7 +14960,7 @@ FFlagFixBundlePromptThumbnail = false
 
 FFlagFixBundleThumbnailOnDetailPage = true
 
-FFlagFixButtonHoldImprecision2 = false
+FFlagFixButtonHoldImprecision2 = true
 
 FFlagFixButtonParameterName = true
 
@@ -14864,8 +15002,6 @@ FFlagFixConnectTabSearchBarHeight = true
 
 FFlagFixCountOfUnreadNotificationError = false
 
-FFlagFixCtrlShiftFCrash = true
-
 FFlagFixCurrentCameraPlacement = true
 
 FFlagFixCustomTextBoxHotkey = false
@@ -14888,9 +15024,11 @@ FFlagFixEmulatorConnectionSignals = true
 
 FFlagFixEmulatorSetup = true
 
-FFlagFixEmulatorStartupSequence2 = false
+FFlagFixEmulatorStartupSequence2 = true
 
 FFlagFixExitDialogBlockVRView = true
+
+FFlagFixExpChatConsoleTextSize = false
 
 FFlagFixFileMenuRecents = true
 
@@ -14912,7 +15050,7 @@ FFlagFixFullscreenTitleBarPromiseCancel = true
 
 FFlagFixGameInviteModalLoadTimeIncrease = true
 
-FFlagFixGamepadDisconnectHighlight2 = false
+FFlagFixGamepadDisconnectHighlight2 = true
 
 FFlagFixGameTileViewActivatedCallback = true
 
@@ -14994,6 +15132,8 @@ FFlagFixMoonbeamContentIdSlash = true
 
 FFlagFixMouseForAdsEuDsaModal = true
 
+FFlagFixMouseLockTypeWhenFocus = true
+
 FFlagFixNonUTF8ErrorLog = true
 
 FFlagFixNonZeroTransparency = true
@@ -15004,7 +15144,7 @@ FFlagFixNudgeDeniedEvents = true
 
 FFlagFixNullPtrCrashInLoadImageBuffer = false
 
-FFlagFixObjectInAPIDump = false
+FFlagFixObjectInAPIDump = true
 
 FFlagFixOpenPlaceProgressTeamCreateGetPlaceInfoSynchronousEnd = true
 
@@ -15024,7 +15164,7 @@ FFlagFixPeekViewBottomInset = false
 
 FFlagFixPeekViewJitter5 = false
 
-FFlagFixPeekViewScrimAssert = false
+FFlagFixPeekViewScrimAssert = true
 
 FFlagFixPermissionsButtonsEvents = true
 
@@ -15055,6 +15195,8 @@ FFlagFixPublishHSRInExperience2 = true
 FFlagFixReducedMotionStuckIGM2 = true
 
 FFlagFixRedundantAllocationInAnimator = false
+
+FFlagFixRelatedScriptCrossDM = false
 
 FFlagFixRemindMeButtonStall = true
 
@@ -15100,9 +15242,9 @@ FFlagFixSignalRDuplicateMessage = true
 
 FFlagFixSiteTestDeeplink = true
 
-FFlagFixSkinningLifetimeAndBugs3 = false
+FFlagFixSkinningLifetimeAndBugs4 = false
 
-FFlagFixSkinningUndo = false
+FFlagFixSkinningUndo = true
 
 FFlagFixSkipDeleteEvents = false
 
@@ -15112,13 +15254,9 @@ FFlagFixSmoothingDegenerateTriangles = false
 
 FFlagFixSomeFieldsNotBeingReadFromContextInfo = true
 
-FFlagFixSongbirdLoadingState2 = true
-
 FFlagFixSongbirdPeekUseFoundationIcons = false
 
-FFlagFixSoundDidLoopMultiFire4 = true
-
-FFlagFixSoundSessionTelemetryNotRemovingSounds = true
+FFlagFixSoundDidLoopMultiFire5 = false
 
 FFlagFixSoundTunableMemoryCurveSlope = false
 
@@ -15134,7 +15272,7 @@ FFlagFixStrangerThingsIssueUsingAdditionalInvalidationSignal = false
 
 FFlagFixSTUXShowingIncorrectly = false
 
-FFlagFixStyleLinkNotUpdating = false
+FFlagFixStyleLinkNotUpdating = true
 
 FFlagFixSubmenuCloseIOS = true
 
@@ -15160,7 +15298,7 @@ FFlagFixTooltipShowDelay = true
 
 FFlagFixTopBarSlowLoad = true
 
-FFlagFixTutorialMessageId = false
+FFlagFixTutorialMessageId = true
 
 FFlagFixUIGradientFlickering = false
 
@@ -15190,6 +15328,8 @@ FFlagFixVoxelizerDataIndex = false
 
 FFlagFixVoxelSmoothUndo = true
 
+FFlagFixVP8143 = false
+
 FFlagFixWalkRunTimewarp = true
 
 FFlagFixWindowAverageUnderflow = true
@@ -15216,7 +15356,7 @@ FFlagFlagRolloutTestStaticBool13 = false
 
 FFlagFlagRolloutTestStaticBool14 = false
 
-FFlagFlagRolloutTestStaticBool15 = true
+FFlagFlagRolloutTestStaticBool15 = false
 
 FFlagFlagRolloutTestStaticBool16 = false
 
@@ -15230,23 +15370,23 @@ FFlagFlagRolloutTestStaticBool2 = true
 
 FFlagFlagRolloutTestStaticBool20 = false
 
-FFlagFlagRolloutTestStaticBool21 = true
+FFlagFlagRolloutTestStaticBool21 = false
 
-FFlagFlagRolloutTestStaticBool22 = true
+FFlagFlagRolloutTestStaticBool22 = false
 
-FFlagFlagRolloutTestStaticBool23 = true
+FFlagFlagRolloutTestStaticBool23 = false
 
-FFlagFlagRolloutTestStaticBool24 = false
+FFlagFlagRolloutTestStaticBool24 = true
 
-FFlagFlagRolloutTestStaticBool25 = false
+FFlagFlagRolloutTestStaticBool25 = true
 
-FFlagFlagRolloutTestStaticBool26 = true
+FFlagFlagRolloutTestStaticBool26 = false
 
-FFlagFlagRolloutTestStaticBool27 = true
+FFlagFlagRolloutTestStaticBool27 = false
 
-FFlagFlagRolloutTestStaticBool28 = false
+FFlagFlagRolloutTestStaticBool28 = true
 
-FFlagFlagRolloutTestStaticBool29 = false
+FFlagFlagRolloutTestStaticBool29 = true
 
 FFlagFlagRolloutTestStaticBool3 = true
 
@@ -15310,6 +15450,8 @@ FFlagFmodUseRuntimeThreading2 = false
 
 FFlagFmodWasapiRecordBTHeadsetMatching3 = false
 
+FFlagFocusNavOutOfSubmenu = false
+
 FFlagFollowCompletionItemType = true
 
 FFlagFontAtlasMipsAndRefactor2 = true
@@ -15334,15 +15476,17 @@ FFlagForceReportAnythingAnnotationEnabled = false
 
 FFlagForceTextChatEnabledForTenFootInterfaces = false
 
+FFlagForceVersionCheckSync = false
+
 FFlagForgottenExplorerVerbs = true
 
 FFlagForwardRefAssetRenderModel = true
 
 FFlagForwardRefAssetRenderModel = true
 
-FFlagFoundationAddWidthToToast = true
-
 FFlagFoundationBadgeSimplifySizing = true
+
+FFlagFoundationButtonEnableLoadingState = false
 
 FFlagFoundationButtonSubEmphasisInverseStateLayer = true
 
@@ -15352,21 +15496,19 @@ FFlagFoundationDisableBadgeTruncation = true
 
 FFlagFoundationDisableCanvasGroupsInButton = true
 
-FFlagFoundationEnableColorUpdate = true
+FFlagFoundationEnableNewButtonSizes = false
 
 FFlagFoundationFixSupportImageBinding = true
 
-FFlagFoundationFixXSmallButton = false
+FFlagFoundationInteractableUseGuiState = true
 
-FFlagFoundationInteractableUseGuiState = false
+FFlagFoundationMigrateStylingV2 = false
 
-FFlagFoundationStyleSheetContext = false
+FFlagFoundationStyleSheetContext = true
 
 FFlagFoundationStylingPolyfill = true
 
-FFlagFoundationToastButtonsFillRightToLeft = true
-
-FFlagFragmentAutocompleteExperimentation = false
+FFlagFragmentAutocompleteExperimentation = true
 
 FFlagFreeTypeAllocOrCrash = true
 
@@ -15374,13 +15516,15 @@ FFlagFriendRequestNicknamesV9 = false
 
 FFlagFriendsCarouselRemoveCiUpsellEnabledForAll = false
 
+FFlagFriendsCarouselRemoveRemount = false
+
 FFlagFriendsCarouselUseFindFriendsOnDesktop_v2 = true
 
-FFlagFriendshipEventsLifecycleCallback = false
+FFlagFriendshipEventsLifecycleCallback = true
 
 FFlagFriendshipNotifsUseSendrEnabledForAll = false
 
-FFlagFriendshipNotifsUseSendrExperiment_v2 = false
+FFlagFriendshipNotifsUseSendrExperiment_v2 = true
 
 FFlagFriendsMenuDummyLoadingFriendsFixV3 = true
 
@@ -15434,11 +15578,11 @@ FFlaggenerateGameInviteShareLinkOnClick = true
 
 FFlagGenerateRecoveryFileOnWarning = false
 
-FFlagGenerationServiceDeveloperMessageErrorMapping = false
+FFlagGenerationServiceDeveloperMessageErrorMapping = true
 
-FFlagGenerationServiceEnableOptionsPassthrough = false
+FFlagGenerationServiceEnableOptionsPassthrough = true
 
-FFlagGenerationServiceUseText2MeshInsteadOfAvatarGeneration2 = false
+FFlagGenerationServiceUseText2MeshInsteadOfAvatarGeneration2 = true
 
 FFlagGeometryBuffersTelemetry = true
 
@@ -15466,7 +15610,7 @@ FFlagGLES3_0EnableCBs = false
 
 FFlagGlobalNavImageIcon = true
 
-FFlagGlobalSettingsEngineModule = true
+FFlagGlobalSettingsEngineModule = false
 
 FFlagGltfAssumeNeutralIsAtZero = true
 
@@ -15474,9 +15618,7 @@ FFlagGltfBeginAnimationsFromFirstFrame = true
 
 FFlagGltfDontAlterTranslationOnZeroRotation = true
 
-FFlagGmaEligibilityCallbackInDMThread = false
-
-FFlagGpuGeometrySplitPos = true
+FFlagGmaEligibilityCallbackInDMThread = true
 
 FFlagGpuHDRCompressedTextureSupportTelemetry = true
 
@@ -15582,7 +15724,7 @@ FFlagGuiObjectIsOverUseRect2D2 = true
 
 FFlagGuiServiceDeferGLCModifyUpdateVector = true
 
-FFlagGuiStatePressedToHoverOnRelease = false
+FFlagGuiStatePressedToHoverOnRelease = true
 
 FFlagGuiTextRenderSteppedLayoutFix = true
 
@@ -15612,8 +15754,6 @@ FFlagHeroUnitReducedMotion = false
 
 FFlagHeroUnitUpdateParallax = true
 
-FFlagHideAggregateLikeCountsOnEdp = true
-
 FFlagHideAvatarIECPromptOnUpsellSuccess = true
 
 FFlagHideChatButtonForChatDisabledUsers = true
@@ -15634,7 +15774,7 @@ FFlagHideHyphenInDisclaimerLinks = true
 
 FFlagHideNotificationIconForVR = true
 
-FFlagHideTopBarConsole = false
+FFlagHideTopBarConsole2 = false
 
 FFlagHideUIWhenVoiceDefaultDisabled = true
 
@@ -15649,8 +15789,6 @@ FFlagHighlightOutlinesOnMobile = false
 FFlagHighlightsPerWorkspaceIds2 = true
 
 FFlagHlsIgnoreDeprecatedRbxTags = false
-
-FFlagHorizontalMediaOnEventDetailsPage = false
 
 FFlagHSRClusterImprovement = false
 
@@ -15722,6 +15860,8 @@ FFlagIGMRevertGfxQuality = false
 
 FFlagIGMThemeResizeFix = true
 
+FFlagIgnoreDevGamepadBindingsMenuOpen = false
+
 FFlagIgnoreDisplayGameJoinErrorForCrossExpVoice = true
 
 FFlagIgnoreHSRForTransparentMesh = false
@@ -15752,7 +15892,7 @@ FFlagImprovedCursors = false
 
 FFlagImprovedStrafingMetrics = true
 
-FFlagImproveEnumCastingError = false
+FFlagImproveEnumCastingError = true
 
 FFlagImproveMicroprofilerReadability = true
 
@@ -15767,6 +15907,8 @@ FFlagImprovePluginSpeed_RigGenerator = true
 FFlagImprovePluginSpeed_TagEditor = false
 
 FFlagImproveShiftLockTransition = false
+
+FFlagInAppInterventionEnabled = false
 
 FFlagIncludeAuthEventLocalTimestamp = false
 
@@ -15852,8 +15994,6 @@ FFlagInvertMuteAllPermissionButton = true
 
 FFlagInvisibleBackgroundUIStrokeFix = true
 
-FFlagInviteListDeprecateNames = true
-
 FFlagInviteListRerank = true
 
 FFlagIrisExperienceLaunch = true
@@ -15928,8 +16068,6 @@ FFlagKillOldProperties2 = false
 
 FFlagLandingPageMountSignalEnabled = false
 
-FFlagLanguageServiceCancelCbCheckAsync = true
-
 FFlagLargeReplicatorEnabled3 = false
 
 FFlagLargeReplicatorRead2 = false
@@ -15947,8 +16085,6 @@ FFlagLayoutNodeChildVisibilityConsiderRotation2 = false
 FFlagLCAppearanceRemovalCrashFix = true
 
 FFlagLCCheckCageDimensions = true
-
-FFlagLCCheckCageDimNonSkinnedNonUniform = true
 
 FFlagLCCheckDimIndexReset = true
 
@@ -15969,8 +16105,6 @@ FFlagLegacyBubbleChatAnimationFix = true
 FFlagLegacyBulkImporterApiMigration = true
 
 FFlagLegacyImporterApiMigration = true
-
-FFlagLexerFixInterpStringStart = true
 
 FFlagLightingCompatiblityLightsBrightnessGreaterThanOneCountTelemetry2 = false
 
@@ -16000,7 +16134,7 @@ FFlagLoadDirectionalCurveEditorInAssetDM = false
 
 FFlagLoadDirectionalCurveEditorInAssetDM = false
 
-FFlagLoadedMessageCountOnRender = false
+FFlagLoadedMessageCountOnRender = true
 
 FFlagLoadKeysFromDbAsync = false
 
@@ -16013,6 +16147,8 @@ FFlagLoadTexturesWithReadOnlySharedBuffer = false
 FFlagLoadToolboxPackageAssetAsyncFailCase = true
 
 FFlagLocalizationServicePassStatReporterToLocalizationTable = true
+
+FFlagLocalizeAutocompleteDocs = false
 
 FFlagLocalizeErrorCodeString = true
 
@@ -16074,7 +16210,7 @@ FFlagLowCogsBannerExperiment = true
 
 FFlagLowCogsBannerInfoIcon = false
 
-FFlagLTAnalyticsQueueSampling = false
+FFlagLTAnalyticsQueueSampling = true
 
 FFlagLuaAppAbuseReportAnalyticsHasLaunchData = true
 
@@ -16128,7 +16264,7 @@ FFlagLuaAppEnableRecommendedCarouselForDesktop = false
 
 FFlagLuaAppEnableRelativeGuiHomeForAll = false
 
-FFlagLuaAppEnableRelativeGuiHomeWithIxp = false
+FFlagLuaAppEnableRelativeGuiHomeWithIxp = true
 
 FFlagLuaAppEnableSquadPage4 = false
 
@@ -16162,6 +16298,8 @@ FFlagLuaAppFixCursorHooks = true
 
 FFlagLuaAppFixDesktopShareEvent = false
 
+FFlagLuaAppFixDetailsPageThumbnailRenderInPhone = false
+
 FFlagLuaAppFixEventTileGsubCrash = true
 
 FFlagLuaAppFixFollowButtonDeeplink = true
@@ -16175,6 +16313,8 @@ FFlagLuaAppFixSelectionCursor = true
 FFlagLuaAppFixSignUpColorIssues = true
 
 FFlagLuaAppFoundationColorsABTest7 = true
+
+FFlagLuaAppFriendCarouselImpressionsTimestamp = false
 
 FFlagLuaAppGameDetailsHideEmptySections = true
 
@@ -16238,8 +16378,6 @@ FFlagLuaAppPlayButtonUpdates2 = true
 
 FFlagLuaAppPlayButtonUpdatesIxp3 = false
 
-FFlagLuaAppPreventLoadNextRefresh = true
-
 FFlagLuaAppPromotionalEmailsCheckboxEnabledInAppPolicy = false
 
 FFlagLuaAppPropagateFriendsCarouselHeader = true
@@ -16256,11 +16394,11 @@ FFlagLuaAppRefactorSelectRouteDev = false
 
 FFlagLuaAppResponsiveFixHookDeps = false
 
-FFlagLuaAppRewriteOmniFeedStartRows2 = true
-
 FFlagLuaAppScrollableDesktopCarousels = false
 
 FFlagLuaAppScrollableDesktopCarouselsIXP = false
+
+FFlagLuaAppScrollToTopOnHomeRefresh = false
 
 FFlagLuaAppSduiOmniItem = true
 
@@ -16398,17 +16536,17 @@ FFlagLuauAllFreeTypesHaveScopes = true
 
 FFlagLuauAllowComplexTypesInGenericParams = true
 
-FFlagLuauAllowNonSharedTableTypesInLiteral = true
-
-FFlagLuauAstTypeGroup3 = false
+FFlagLuauAstTypeGroup3 = true
 
 FFlagLuauAutocompleteRefactorsForIncrementalAutocomplete = true
+
+FFlagLuauAutocompleteUnionCopyPreviousSeen = false
 
 FFlagLuauAutocompleteUsesModuleForTypeCompatibility = true
 
 FFlagLuauBetterCursorInCommentDetection = true
 
-FFlagLuauBidirectionalInferenceUpcast = false
+FFlagLuauBidirectionalInferenceUpcast = true
 
 FFlagLuauClipNestedAndRecursiveUnion = true
 
@@ -16440,25 +16578,19 @@ FFlagLuauDisableNewSolverAssertsInMixedMode = true
 
 FFlagLuauDoNotClonePersistentBindings = true
 
-FFlagLuauDoNotGeneralizeInTypeFunctions = true
+FFlagLuauDoNotLeakNilInRefinement = true
 
-FFlagLuauDoNotLeakNilInRefinement = false
-
-FFlagLuauDontForgetToReduceUnionFunc = false
-
-FFlagLuauDontInPlaceMutateTableType = true
+FFlagLuauDontForgetToReduceUnionFunc = true
 
 FFlagLuauErrorRecoveryForTableTypes = true
 
-FFlagLuauEscapeCharactersInRequireSuggestions = false
+FFlagLuauEscapeCharactersInRequireSuggestions = true
 
-FFlagLuauExposeRequireByStringAutocomplete = false
-
-FFlagLuauExtendedSimpleRequire = true
+FFlagLuauExposeRequireByStringAutocomplete = true
 
 FFlagLuauExtendStatEndPosWithSemicolon = true
 
-FFlagLuauExtraFollows = false
+FFlagLuauExtraFollows = true
 
 FFlagLuauFixDoBlockEndLocation = true
 
@@ -16470,27 +16602,35 @@ FFlagLuauFixInfiniteRecursionInNormalization = true
 
 FFlagLuauFixMultithreadTypecheck = true
 
-FFlagLuauFixNormalizedIntersectionOfNegatedClass = true
-
 FFlagLuauFlagBasicIntersectFollows = true
 
 FFlagLuauFollowTableFreeze = true
 
 FFlagLuauFragmentAcSupportsReporter = true
 
-FFlagLuauFreeTypesMustHaveBounds = true
+FFlagLuauFragmentNoTypeFunEval = false
 
-FFlagLuauFreezeIgnorePersistent = true
+FFlagLuauFreeTypesMustHaveBounds = true
 
 FFlagLuauGeneralizationRemoveRecursiveUpperBound2 = true
 
-FFlagLuauGlobalSelfAssignmentCycle = false
+FFlagLuauGlobalSelfAssignmentCycle = true
 
-FFlagLuauHideImpossibleRequireSuggestions = false
+FFlagLuauHideImpossibleRequireSuggestions = true
+
+FFlagLuauImproveTypePathsInErrors = true
 
 FFlagLuauIncrementalAutocompleteBugfixes = true
 
 FFlagLuauIncrementalAutocompleteCommentDetection = true
+
+FFlagLuauIncrementalAutocompleteDemandBasedCloning = true
+
+FFlagLuauIndexAnyIsAny = false
+
+FFlagLuauIndexTypeFunctionFunctionMetamethods = false
+
+FFlagLuauIndexTypeFunctionImprovements = false
 
 FFlagLuauInferLocalTypesInMultipleAssignments = true
 
@@ -16512,9 +16652,15 @@ FFlagLuauNewNonStrictWarnOnUnknownGlobals = true
 
 FFlagLuauNonStrictByDefaultBetaFeature = true
 
+FFlagLuauNonStrictFuncDefErrorFix = false
+
 FFlagLuauNonStrictVisitorImprovements = true
 
+FFlagLuauNormalizedBufferIsNotUnknown = false
+
 FFlagLuauNormalizeNegationFix = true
+
+FFlagLuauParseOptionalAsNode = false
 
 FFlagLuauPersistConstraintGenerationScopes = true
 
@@ -16522,11 +16668,9 @@ FFlagLuauPrecalculateMutatedFreeTypes2 = true
 
 FFlagLuauPreserveUnionIntersectionNodeForLeadingTokenSingleType = true
 
-FFlagLuauPreventReentrantTypeFunctionReduction = true
-
 FFlagLuauReportAutocompleteICEToUser = false
 
-FFlagLuauSearchForRefineableType = false
+FFlagLuauSearchForRefineableType = true
 
 FFlagLuauSelectivelyRetainDFGArena = true
 
@@ -16542,33 +16686,27 @@ FFlagLuauStoreCSTData = false
 
 FFlagLuauStringFormatErrorSuppression = true
 
-FFlagLuauSubtypingFixTailPack = true
-
 FFlagLuauSyntheticErrors = false
 
 FFlagLuauTableCloneClonesType3 = true
 
-FFlagLuauTrackInteriorFreeTablesOnScope = false
+FFlagLuauTrackInteriorFreeTablesOnScope = true
 
-FFlagLuauTrackInteriorFreeTypesOnScope = false
+FFlagLuauTrackInteriorFreeTypesOnScope = true
 
 FFlagLuauTransitiveSubtyping = true
-
-FFlagLuauTypeFunFixHydratedClasses = true
 
 FFlagLuauTypeFunPrintFix = true
 
 FFlagLuauTypeFunReadWriteParents = true
 
-FFlagLuauTypeFunSingletonEquality = true
-
 FFlagLuauUngeneralizedTypesForRecursiveFunctions = true
 
 FFlagLuauUnifierRecursionOnRestart = true
 
-FFlagLuauUnifyMetatableWithAny = false
+FFlagLuauUnifyMetatableWithAny = true
 
-FFlagLuauUserTypeFunTypeofReturnsType = true
+FFlagLuauUserTypeFunTypecheck = false
 
 FFlagLuauVectorLibNativeDot = true
 
@@ -16648,15 +16786,13 @@ FFlagMeasureJoinToOutsidersUse = true
 
 FFlagMediaAccordionAndFullTelemetry = true
 
-FFlagMediaCodecReportBufferPoolMallocCount = true
-
 FFlagMediaGallerySnappingSwipeAndTap2 = true
 
 FFlagMemoryFragmentationScore = true
 
 FFlagMeshImporterStudsPerMeterUseNewValue = false
 
-FFlagMeshImporterUseNewConversionFactors = false
+FFlagMeshImporterUseNewConversionFactors = true
 
 FFlagMeshLoDSendTimeToServeMesh2 = true
 
@@ -16680,6 +16816,8 @@ FFlagMicroprofilerAssetReaderTwo = true
 
 FFlagMicroProfileRawProcessFix = true
 
+FFlagMicroprofilerBigButtons = false
+
 FFlagMicroprofilerHtmlV2Output = false
 
 FFlagMicroprofilerHtmlV3Output = true
@@ -16690,7 +16828,7 @@ FFlagMicroprofilerStatsWithCallback = false
 
 FFlagMicroProfilerTransparentTimerBars = true
 
-FFlagMicroProfilerUsageTelemetry = false
+FFlagMicroProfilerUsageTelemetry = true
 
 FFlagMicroProfileTrackAllocsPerScopeStack3 = false
 
@@ -16716,11 +16854,13 @@ FFlagMigrateRoactUtilsToReactUtils = false
 
 FFlagMigrateSocialNetworking = false
 
-FFlagMinSpecBlockStudio = false
+FFlagMinSpecBlockStudio = true
 
 FFlagMMapAudioStreams2 = false
 
 FFlagMobileOutlineColorFix = true
+
+FFlagMobilePopularItemBadgingExperimentEnabled = false
 
 FFlagMobileScrollToTopLogging = true
 
@@ -16737,6 +16877,8 @@ FFlagModalSupportCiNavigation = true
 FFlagModelLodStats2 = true
 
 FFlagModelPreviewThumbnailFallback = true
+
+FFlagModerationDialogImage = false
 
 FFlagModernizeStudioThemWarningLogs = true
 
@@ -16760,15 +16902,13 @@ FFlagMountCoreGuiBackpack = false
 
 FFlagMountCoreGuiHealthBar = false
 
-FFlagMountSceneAnalysisProvider = true
-
 FFlagMouseGetPartOptimization = false
 
 FFlagMoveAccessoriesForR15Rigs2 = true
 
 FFlagMoveAdditionalCiUpsellGatingToGuac = true
 
-FFlagMoveCanEditAssetPrintStatement = false
+FFlagMoveCanEditAssetPrintStatement = true
 
 FFlagMoveClosestPointToMesh = true
 
@@ -16794,8 +16934,6 @@ FFlagMPHARevertHeadCollision2 = false
 
 FFlagMPTriangleCount = true
 
-FFlagMRDTablePerfImprov2 = true
-
 FFlagMultilayerWrapFixBetaFeature = true
 
 FFlagMultiPseudoInstance = false
@@ -16807,6 +16945,8 @@ FFlagMuteButtonRaceConditionFix = true
 FFlagMuteNonFriendsEvent2 = true
 
 FFlagMuteTogglesEnableIXP = true
+
+FFlagNameCapturesReactRoot = false
 
 FFlagNativePurchaseWithLocalPlayer = false
 
@@ -16828,7 +16968,7 @@ FFlagNavigationFixInvalidPolyRef = true
 
 FFlagNavigationFixNewHeuristic = false
 
-FFlagNavigationImprovedSearchCounter = false
+FFlagNavigationImprovedSearchCounter = true
 
 FFlagNavigationImprovedWallEdgeRecog4 = true
 
@@ -16840,7 +16980,7 @@ FFlagNavigationNewHeuristicAlgorithm2 = false
 
 FFlagNavigationOffsetCornerPoints4 = true
 
-FFlagNavigationRemoveEphemeralAnalytics = false
+FFlagNavigationRemoveEphemeralAnalytics = true
 
 FFlagNavigationRemoveVertexCheckBounds = true
 
@@ -16898,7 +17038,7 @@ FFlagNewInGameMenuDisabledInVR = false
 
 FFlagNewLightAttenuation = false
 
-FFlagNewOptimizeNoCollisionPrimitiveInMidphase664 = true
+FFlagNewOptimizeNoCollisionPrimitiveInMidphase664 = false
 
 FFlagNewPackageAnalyticsWithRefactor2 = true
 
@@ -16988,7 +17128,7 @@ FFlagOnlyDecrementCompletenessIfReplicating = true
 
 FFlagOnlyEnableJoinVoiceInVoiceEnabledUniversesV2 = true
 
-FFlagOnlySendExitedEventsOnLeaveWindow = false
+FFlagOnlySendExitedEventsOnLeaveWindow = true
 
 FFlagOnlyShowToastOnce2 = false
 
@@ -17020,7 +17160,7 @@ FFlagOpenTelemetryEnabled2 = true
 
 FFlagOpenTelemetryOstreamDebuggingEnabled = false
 
-FFlagOpenTelemetryRemoveEvent = false
+FFlagOpenTelemetryRemoveEvent = true
 
 FFlagOpenVngTosForVngRobuxUpsell = false
 
@@ -17034,11 +17174,13 @@ FFlagOpenXrWinLegacyControllerSupport = true
 
 FFlagOptimizeCFrameUpdates2 = false
 
+FFlagOptimizeCFrameUpdatesIC = false
+
 FFlagOptimizeChildNameCopy = false
 
 FFlagOptimizeFacsSmoothingTargetReached = false
 
-FFlagOptimizeFCViewportVisible = false
+FFlagOptimizeFCViewportVisible = true
 
 FFlagOptimizeHelpMenuInputEvent = true
 
@@ -17046,11 +17188,17 @@ FFlagOpusCodecUsePool2 = false
 
 FFlagOTABackupTimerEnabled2 = false
 
-FFlagOverrideDebugAttributeWithAds = false
+FFlagOverrideDebugAttributeWithAds = true
 
 FFlagOverrideInExperienceMenuReorderFirstVariant2 = false
 
 FFlagOverridePlayerVerifiedBadge = false
+
+FFlagOverrideStreamRadii = false
+
+FFlagOverrideTagsOnChildren = false
+
+FFlagOverrideTagsOnChildren = false
 
 FFlagOverwriteIsMutedLocally = false
 
@@ -17076,7 +17224,7 @@ FFlagPackagifySettingsShowSignal = true
 
 FFlagParallelTerrainBroadphase2 = true
 
-FFlagParserBasedSyntaxHighlighter3 = false
+FFlagParserBasedSyntaxHighlighter3 = true
 
 FFlagParserNoErrorLimit = true
 
@@ -17084,11 +17232,13 @@ FFlagPartialModalConversationFix = false
 
 FFlagPartyVoiceDisallowIXPLayerExposureOnInit = false
 
+FFlagPartyVoiceEnableMicPermissionsBanner = false
+
 FFlagPartyVoiceIdleDontReconnect = true
 
 FFlagPartyVoiceLaunchFlowTelemetry = true
 
-FFlagPartyVoiceMuteOthers = false
+FFlagPartyVoiceMuteOthers = true
 
 FFlagPartyVoiceShouldConnect = true
 
@@ -17102,7 +17252,7 @@ FFlagPassiveCallAmpCanUseInExperienceChatRollout3 = false
 
 FFlagPasskeySignupDeferLaunchApp = true
 
-FFlagPasskeySignupLogErrorBody2 = false
+FFlagPasskeySignupLogErrorBody2 = true
 
 FFlagPassNavigationIntoContactsList = true
 
@@ -17166,6 +17316,8 @@ FFlagPeekViewScrimEnabled = false
 
 FFlagPeekViewScrimEnabledIXP2 = true
 
+FFlagPerformanceControlAllowExperimentNameForFlagIXP = false
+
 FFlagPerformanceControlDeprecateEffectPredictorTelemetry = false
 
 FFlagPerformanceControlEnableExposureBasedIXPTesting = true
@@ -17176,13 +17328,11 @@ FFlagPerformanceControlFixTelemetryName = false
 
 FFlagPerformanceControlPortTextureManagerTrimMemoryPrereq = true
 
-FFlagPerformanceControlPredictiveAPINotConsume = true
+FFlagPerformanceControlPredictiveAPITelemetry = true
 
-FFlagPerformanceControlPredictiveAPITelemetry = false
+FFlagPerformanceControlPreviewRace2 = false
 
-FFlagPerformanceControlPreviewRace = false
-
-FFlagPerformanceControlRecordTunableChangeEvent3 = false
+FFlagPerformanceControlRecordTunableChangeEvent3 = true
 
 FFlagPerformanceControlRecordTunableTimeToComplete = true
 
@@ -17193,6 +17343,8 @@ FFlagPerformanceControlReportEffectsToSessionTrackingSeparate = true
 FFlagPerformanceControlSendJavaHeapInfo = false
 
 FFlagPerformanceControlSendMemoryAccountingInfo = true
+
+FFlagPerformanceControlStreamingDisableMemoryTrackingPrereq = false
 
 FFlagPerformanceTelemetrySynchronize = false
 
@@ -17231,8 +17383,6 @@ FFlagPlacePublishManagementStudioPublishService = false
 FFlagPlaceUploadFailure17Plus = false
 
 FFlagPlaceVersionHistoryTitleFix = true
-
-FFlagPlatformEventEnabled2 = true
 
 FFlagPlayerCharacterLoaderReplaceModelWithActor = false
 
@@ -17277,6 +17427,8 @@ FFlagPollLikelySpeakingV2 = true
 FFlagPollVoiceState = true
 
 FFlagPoolInstances2 = true
+
+FFlagPopularFillIconEnabled = false
 
 FFlagPopupMessageBoxDoNotShow2 = false
 
@@ -17336,13 +17488,11 @@ FFlagProfilePlatformAddToasts = false
 
 FFlagProfilePlatformDevFlag = false
 
-FFlagProfilePlatformEnableImpressions = false
+FFlagProfilePlatformEnableImpressions = true
 
 FFlagProfilePlatformEnableInventory_V2 = true
 
 FFlagProfilePlatformEnableStore_V2 = true
-
-FFlagProfilePlatformEnableSupportForMultiProfileTypes_v4 = true
 
 FFlagProfilePlatformFavoritesEnableGameDetailAnalytics = true
 
@@ -17350,7 +17500,7 @@ FFlagProfilePlatformRemainingLogging = true
 
 FFlagProfilePlatformSetup_v1 = true
 
-FFlagProfileQRCodeCameraDeeplinkedLogging = false
+FFlagProfileQRCodeCameraDeeplinkedLogging_v2 = false
 
 FFlagProfilerAnnotationSet = true
 
@@ -17368,7 +17518,7 @@ FFlagPropertiesEnableTelemetry = true
 
 FFlagPropertiesNoShortHexCode = true
 
-FFlagPropertiesPanelResetModifiedProperty3 = false
+FFlagPropertiesPanelResetModifiedProperty4 = false
 
 FFlagPropertiesWidgetDisableHoverHighlight = true
 
@@ -17380,7 +17530,7 @@ FFlagPropertiesWidgetToggleCheckboxOnSpace = false
 
 FFlagPropertyItemCurrentlyHiddenFirstInstanceOnly = false
 
-FFlagPropValueVecToSmallVec2 = false
+FFlagPropValueVecToSmallVec2 = true
 
 FFlagProtectClientsToUpdateAccess = false
 
@@ -17404,7 +17554,9 @@ FFlagQRCodeScannerDeeplinkExperiment_v3 = true
 
 FFlagQtitanDumpVisualHierarchyToLog = true
 
-FFlagQtLateBoundInvokeRemoval0 = false
+FFlagQtLateBoundInvokeRemoval1 = false
+
+FFlagQtLateBoundInvokeRemovalAppInfra = false
 
 FFlagQuaternionPoseCorrection = false
 
@@ -17498,7 +17650,9 @@ FFlagRecastLayerRegionCheckAreaType = true
 
 FFlagReceivingAcknowledgementRequest2 = true
 
-FFlagRecognizePS5Platform = false
+FFlagRecentsWidgetClickedTelemetry = false
+
+FFlagRecognizePS5Platform = true
 
 FFlagReconnectDisabled = false
 
@@ -17520,11 +17674,13 @@ FFlagRefactorButtonTileCircular = true
 
 FFlagRefactorChromeAssert = true
 
+FFlagRefactorCINavigation = false
+
 FFlagRefactorEditableModelSerialization = false
 
-FFlagRefactorFormatTagKey = true
-
 FFlagRefactorGameJoinUrl = true
+
+FFlagRefactorLoadAsync = false
 
 FFlagRefactorRCCModeName2 = false
 
@@ -17536,11 +17692,13 @@ FFlagReferredByPlayerId = true
 
 FFlagReferredByPlayerIdParamForUrl = true
 
+FFlagRefineFetchThemeColorSetting = true
+
 FFlagRefineLocalPerfMonitorToken = true
 
 FFlagReflectionMetadataFasterLookup = true
 
-FFlagRegisterQRCodeKeyInEngine = false
+FFlagRegisterQRCodeKeyInEngine_v2 = false
 
 FFlagRejectMaterialGeneratorError = true
 
@@ -17569,8 +17727,6 @@ FFlagRemoveCallbcakAfterTriggering = false
 FFlagRemoveCanvasGroupFromAdsEudsaPrompt = true
 
 FFlagRemoveChatFromFriendshipThunk = true
-
-FFlagRemoveChromeRobloxGuiReferences = true
 
 FFlagRemoveClientToastNotificationDelay = true
 
@@ -17614,13 +17770,13 @@ FFlagRemoveNameRegex = true
 
 FFlagRemoveOverwriteMode = false
 
+FFlagRemovePermissionsButtons = false
+
 FFlagRemovePolyMesh = true
 
 FFlagRemovePredelete = false
 
-FFlagRemovePSMLDebuggerPlaceSessionModelListener4 = false
-
-FFlagRemovePSMLFromPlaceSessionPluginWidgetsView3 = true
+FFlagRemovePSMLDebuggerPlaceSessionModelListener4 = true
 
 FFlagRemoveQMLFromStudio = false
 
@@ -17628,7 +17784,7 @@ FFlagRemoveRbxCrashForMissingGlyphRenderer = true
 
 FFlagRemoveServiceInitGeometryService = false
 
-FFlagRemoveShareLinksRoduxAndNetworking = false
+FFlagRemoveShareLinksRoduxAndNetworking_v2 = false
 
 FFlagRemoveSingleUserCookieMigration = false
 
@@ -17658,6 +17814,8 @@ FFlagRenderAllocateShadowMapResourcesOnDemand = false
 
 FFlagRenderCBRefactor2 = false
 
+FFlagRenderChatConversationOnlyWhenVisible3 = false
+
 FFlagRenderClampTrailNode = false
 
 FFlagRenderCLI102356 = true
@@ -17666,11 +17824,11 @@ FFlagRenderCLI117434 = true
 
 FFlagRenderCrashOnFailedMemoryMap2 = true
 
-FFlagRenderCrashOnNoWorkspace = false
+FFlagRenderCrashOnNoWorkspace = true
 
 FFlagRenderDebugCheckThreading2 = true
 
-FFlagRenderDRSFixSSAO = false
+FFlagRenderDRSFixSSAO = true
 
 FFlagRenderDTMTextureProxyRefactor = false
 
@@ -17681,8 +17839,6 @@ FFlagRenderDynamicResolutionScale12 = false
 FFlagRenderEditableImageDecal = true
 
 FFlagRenderEditInPlace2 = false
-
-FFlagRenderEmitterDontSetIncompatibleLayout = true
 
 FFlagRenderEnableGlobalInstancing7 = true
 
@@ -17744,7 +17900,7 @@ FFlagRenderNoLowFrmBloom = true
 
 FFlagRenderPerformanceOverlay = false
 
-FFlagRenderQueueCheckTechnique = true
+FFlagRenderQueueCheckTechnique = false
 
 FFlagRenderReportGfxQualityLevel = true
 
@@ -17810,7 +17966,7 @@ FFlagReportClientRbxmBundleSplitExperimentTreatment2 = true
 
 FFlagReportCloudLoalizationTableParsingPerf = true
 
-FFlagReportColorPropertyInput = true
+FFlagReportColorPropertyInput = false
 
 FFlagReportCorrectAverageRenderThreadTimeInFRMStats = true
 
@@ -17826,8 +17982,6 @@ FFlagReportDurationCallbackToBWStats = true
 
 FFlagReportEnrollmentStateChanges = false
 
-FFlagReportFFAutomationFlags = true
-
 FFlagReportFRMGPUFrameTimeTelemetryInPerfdata = true
 
 FFlagReportGpuLimitedToPerfControl = true
@@ -17837,8 +17991,6 @@ FFlagReportHopperBinUsage = true
 FFlagReportInGameAssetSales = true
 
 FFlagReportIsFriendsWithUsage = true
-
-FFlagReportLuaScriptNameHangs2 = true
 
 FFlagReportMenuCellToUseAutomaticSize = true
 
@@ -17906,7 +18058,7 @@ FFlagResetGamepadOnDMSwitch2 = true
 
 FFlagResetVRSessionOnVREnabled = true
 
-FFlagReshufflePartyIconsInUnibar = false
+FFlagReshufflePartyIconsInUnibar = true
 
 FFlagRespectBalanceInfoForBundleUpsellInStudio = false
 
@@ -17932,15 +18084,17 @@ FFlagReverbAbsorptionField = false
 
 FFlagReverbAbsorptionFieldFileFormat = false
 
-FFlagRevertDPJBehaviour = false
+FFlagReverbDualRouting = false
+
+FFlagRevertDPJBehaviour = true
 
 FFlagRevertUIScaleForMaxSize = false
 
-FFlagRibbonConfigSave2 = false
+FFlagRibbonConfigSave3 = false
 
 FFlagRibbonConfigUniqueControlsIdentifiers4 = true
 
-FFlagRibbonControlsRefactor = false
+FFlagRibbonControlsRefactor3 = false
 
 FFlagRibbonSnappingEnabledByText = false
 
@@ -17960,7 +18114,7 @@ FFlagRobloxTelemetryCacheOSCalls = true
 
 FFlagRobloxTelemetryFixHostNameKey = false
 
-FFlagRobloxTelemetryRewriteDelimitedStringContains = true
+FFlagRobloxTelemetryRewriteDelimitedStringContains2 = false
 
 FFlagRobloxTelemetryTagAsStagingSourceEnvironment = false
 
@@ -17986,13 +18140,15 @@ FFlagRunCommandsInCodeAssist2 = false
 
 FFlagRuntimeEnabled8 = false
 
+FFlagRuntimeProfiled = false
+
 FFlagRuppTokenFallback = false
 
 FFlagRvCaptureFixFrontFacingCameraDefault = true
 
-FFlagRvMp4FormatCloseSync = false
+FFlagRvMp4FormatCloseSync = true
 
-FFlagRvMp4FormatUseFileByteStream = false
+FFlagRvMp4FormatUseFileByteStream = true
 
 FFlagSafetyRCCTelemetryEnable = false
 
@@ -18010,7 +18166,7 @@ FFlagSaveClientSettingsCacheOptimization2 = false
 
 FFlagScaleJointsBeforeMeshes = true
 
-FFlagScaleRequireTelemetry = true
+FFlagScaleRequireTelemetry = false
 
 FFlagSceneHashMapsHandleRecursiveUpdate = true
 
@@ -18028,9 +18184,11 @@ FFlagScriptDiffDocCloseTelemetry = false
 
 FFlagScriptDocumentMultiTextEdit2 = true
 
-FFlagScriptEditorExposeTypeColorSetting = false
+FFlagScriptEditorExposeTypeColorSetting = true
 
-FFlagScriptEditorHoverTooltipBetterDebounce = false
+FFlagScriptEditorFakeFocus = false
+
+FFlagScriptEditorHoverTooltipBetterDebounce = true
 
 FFlagScriptingProductivitySendEditorSettings = true
 
@@ -18052,7 +18210,7 @@ FFlagScrollingFrameAddMouseWheelEvents = true
 
 FFlagScrollingFrameDraggingScrollBarProperty = false
 
-FFlagScrollingFrameSmoothProperty = false
+FFlagScrollingFrameSmoothProperty = true
 
 FFlagSduiHorizontalGradient = true
 
@@ -18158,13 +18316,13 @@ FFlagSessionManagerErrorRateCounter = true
 
 FFlagSessionPrevEventTimeStamp = false
 
-FFlagSessionTaskServiceMasterSwitch = false
+FFlagSessionTaskServiceMasterSwitch = true
 
 FFlagSessionTrackingHttpFailureTracking = true
 
 FFlagSessionTrackingReportDX11HResult3 = true
 
-FFlagSesssionTaskEnableAllApis = false
+FFlagSesssionTaskEnableAllApis = true
 
 FFlagSetActiveWhenConnecting = true
 
@@ -18181,8 +18339,6 @@ FFlagSetDirectChatRequestorCrashFix = true
 FFlagSetEngineContextScopeInDataModelJob = true
 
 FFlagSetIsMainThreadAcquiringOnHang = false
-
-FFlagSetManagerSmallRefactor = true
 
 FFlagSetMeasuredValueForSoundTunableEffects = false
 
@@ -18204,7 +18360,7 @@ FFlagSetUpBubbleChatConfigurationChildProperties = true
 
 FFlagSetupSongbirdWindowExperimentFeb2025 = true
 
-FFlagSFDontSinkEndEvent = true
+FFlagShadowSyncInitPendingLimit = false
 
 FFlagShareGameSearchBoxFocusAnalytics = true
 
@@ -18222,11 +18378,11 @@ FFlagShorthandPropertiesColorAdjustments = true
 
 FFlagShouldFireLaunchAppFromUnauthenticatedSwitch = true
 
-FFlagShouldShowMusicFtuxTooltip2 = true
+FFlagShouldShowMusicFtuxTooltip3 = false
 
 FFlagShouldShowMusicFtuxTooltipXTimes3 = true
 
-FFlagShouldShowSimpleMusicFtuxTooltip = false
+FFlagShouldShowSimpleMusicFtuxTooltip2 = false
 
 FFlagShowBehaviorCategory = true
 
@@ -18254,13 +18410,13 @@ FFlagShowOffCenterOriginImporter = false
 
 FFlagShowPlaySessionIdForHelpTab = false
 
-FFlagShowPseudoInstancesInProperties3 = false
+FFlagShowPseudoInstancesInProperties4 = false
 
 FFlagShowSaveToRobloxOnStudioAssetService = true
 
 FFlagShowSocialContextToastToAll = false
 
-FFlagShowVerifiedBadgeOnDisplayNameBillboard = false
+FFlagShowVerifiedBadgeOnDisplayNameBillboard = true
 
 FFlagShowViewportContextVisualization = true
 
@@ -18388,7 +18544,9 @@ FFlagSimCSGV3SeparateDetachedCoplanarGraphs2 = false
 
 FFlagSimCSGV3TreeSerializationCrashFix = true
 
-FFlagSimDcdEnableDelta = false
+FFlagSimDcdEnableDelta2 = false
+
+FFlagSimDcdRefactorDelta = false
 
 FFlagSimDisableHighOverheadEditableMeshAnalytics = false
 
@@ -18462,7 +18620,7 @@ FFlagSimStoreSerializedOperationGraph = false
 
 FFlagSimTouchEventCallCollisionStateChanged = false
 
-FFlagSimUpgradeSolidMesh2 = false
+FFlagSimUpgradeSolidMesh3 = false
 
 FFlagSimV1BallCheckValidity = false
 
@@ -18474,6 +18632,8 @@ FFlagSkinMorphIgnoreWeights = false
 
 FFlagSkinTransferDontInvalidateAlternativeIdForBodyParts = true
 
+FFlagSkipImmediateInvalidationLightGrid = true
+
 FFlagSkipInvalidDescriptor = true
 
 FFlagSkipInvisibleLayoutViewport = false
@@ -18482,7 +18642,7 @@ FFlagSkipJoinedSessionLog = false
 
 FFlagSkipProcessGestureWithoutConnections = false
 
-FFlagSkipProcessOnNullMouseCommand = false
+FFlagSkipProcessOnNullMouseCommand = true
 
 FFlagSkipStepLayoutDisabledGLC = true
 
@@ -18494,9 +18654,11 @@ FFlagSmoothClusterDisableAsyncUpload = false
 
 FFlagSmoothClusterFixDanglingMaterialTable = true
 
-FFlagSmoothClusterGrassHashFix = false
+FFlagSmoothClusterGrassHashFix = true
 
 FFlagSmoothClusterMeshTaskHeuristic = false
+
+FFlagSmoothClusterOcclusionCulling = false
 
 FFlagSmoothClusterOpportunisticBfs = true
 
@@ -18512,13 +18674,11 @@ FFlagSmoothVoxels_Tooling = false
 
 FFlagSmoothVoxelsBetaFeature = false
 
-FFlagSmoothWaterProperDRSFlag = false
+FFlagSmoothWaterProperDRSFlag = true
 
 FFlagSnapToPartsAction = true
 
 FFlagSnapToPartsRibbonSupport = true
-
-FFlagSnoozeIndefiniteEnabled = true
 
 FFlagSocialAnalyticsTelemetryModule = true
 
@@ -18526,27 +18686,23 @@ FFlagSocialContextToastEventStream3 = true
 
 FFlagSocialLuaAnalyticsRemoveSocialLibraries = true
 
+FFlagSocialTabRemoveFriendsLandingNav_v4 = false
+
 FFlagSongbirdAutoDismissSubmenu = true
 
-FFlagSongbirdChromeWindowAnalytics = true
+FFlagSongbirdCheckTypeForAudioReporting = false
 
 FFlagSongbirdContentFitAndFinish = true
 
 FFlagSongbirdDisableExperienceAccess = false
 
-FFlagSongbirdFasterUpdatesBetweenMusicChanges = true
-
-FFlagSongbirdFixMovementCausingUIFlickering = true
-
-FFlagSongbirdLogAllAssetIds = false
-
-FFlagSongbirdMountDebugAudioEmitters = true
+FFlagSongbirdLogAllAssetIds = true
 
 FFlagSongbirdPauseMotionForNoAudioState = true
 
 FFlagSongbirdSupportReportingUnverifiedAudio = true
 
-FFlagSongbirdSupportsNewAudioAPI = false
+FFlagSongbirdSupportsNewAudioAPI = true
 
 FFlagSongbirdUnverifiedMusicState2 = true
 
@@ -18556,31 +18712,21 @@ FFlagSongbirdUpdateTopBarDesign = true
 
 FFlagSongbirdUseAudioTrackingIconWithMotion = true
 
-FFlagSongbirdUseFullWidthScroller = true
-
 FFlagSongbirdUseLatestIcons = true
 
 FFlagSongbirdUseMusicIconWithBackground = true
 
-FFlagSongbirdUseSmallWidthMusicIcon2 = true
-
 FFlagSongbirdWindowAnalyticsUseNonpii = true
 
-FFlagSongbirdWindowFitAndFinish = true
-
-FFlagSongbirdWindowHeightFix = true
-
-FFlagSongbirdWindowResponsiveSizing = true
-
-FFlagSongbirdWrapLongAlertStrings = true
-
 FFlagSoothsayerCheckForContactImporterV1 = false
+
+FFlagSortInvitesByScoreEnabledForAll = false
 
 FFlagSortKeyOptimization = false
 
 FFlagSortKeyOptimizationTelemetry = false
 
-FFlagSortScriptingAnalysisMessageItem = false
+FFlagSortScriptingAnalysisMessageItem = true
 
 FFlagSoundServiceDefaultListenerLocation2 = true
 
@@ -18590,23 +18736,23 @@ FFlagSoundTelemetryOsClock = false
 
 FFlagSplitHashHeterogeneousByDefault = true
 
-FFlagSqliteCacheBatchHits = false
+FFlagSqliteCacheBatchHits = true
 
 FFlagSQLiteDisableIntegrityCheck = true
 
-FFlagSQLiteDisableWalAutoCheckpoint = true
+FFlagSQLiteDisableMmap = false
 
 FFlagSquadAppChatRTNFixWithSquadMainFlag = true
 
 FFlagSquadCardInitialParticipantUserIdsFixEnabled = true
 
-FFlagSquadCardOptimizationsEnabled = true
-
 FFlagSquadExperienceInviteExpireWhenMissing = true
+
+FFlagSquadExperienceInviteGameParams = false
 
 FFlagSquadExperienceInviteLifecycleAndActionRecover = true
 
-FFlagSquadExperienceInviteRecoverRefactor = false
+FFlagSquadExperienceInviteRecoverRefactor = true
 
 FFlagSquadExperienceInviteTimerRecover = true
 
@@ -18614,7 +18760,7 @@ FFlagSquadInitPollingFix = true
 
 FFlagSquadLaunchExperienceMobileFix = false
 
-FFlagSquadsFoundationEnabled = true
+FFlagSquadThirdPartySettingsChangesEnabled = false
 
 FFlagSquadToastNotificationsEnabled2 = false
 
@@ -18623,6 +18769,8 @@ FFlagSquadToastNotificationsEnabledAmazon = false
 FFlagStandaloneDMInitPerfTelemetry = true
 
 FFlagStandaloneDMInitPerfTelemetryLogging = false
+
+FFlagStandaloneUserSearchScreen_v3 = true
 
 FFlagStandardCursorPageCustomFieldName = true
 
@@ -18644,7 +18792,7 @@ FFlagStartupDeprecationMessage = false
 
 FFlagStatsCodeStandardCleanup = true
 
-FFlagSTM5561Enabled3 = false
+FFlagSTM5561Enabled4 = false
 
 FFlagStopClippingAllCoreGuiUI = false
 
@@ -18674,9 +18822,9 @@ FFlagStudioAccountSwitchingUtilsUseScopedNamedMutex = true
 
 FFlagStudioActionComponentConversionGroupB2 = false
 
-FFlagStudioActionComponentConversionGroupC = false
+FFlagStudioActionComponentConversionGroupC = true
 
-FFlagStudioActionComponentConversionGroupCTwo = false
+FFlagStudioActionComponentConversionGroupCTwo2 = true
 
 FFlagStudioActivityTrackerHeartbeat = false
 
@@ -18689,8 +18837,6 @@ FFlagStudioAddAuxiliaryWindowOnce2 = false
 FFlagStudioAddInternalDebugWidgetToSystemMenu = true
 
 FFlagStudioAdditionalFontHangInfo = false
-
-FFlagStudioAddManualSplitForPSML = true
 
 FFlagStudioAddMaterialPickerNewRibbon = true
 
@@ -18718,13 +18864,19 @@ FFlagStudioChildProcessContext = true
 
 FFlagStudioClosePlaceReplicationSyncDialogTelemetry = true
 
-FFlagStudioCmdBaseEnabledContext = false
+FFlagStudioCloseTelemetry = false
+
+FFlagStudioCmdBaseEnabledContext = true
 
 FFlagStudioConfigureStartPageBridgeTaskTimeout = true
+
+FFlagStudioConstraintGizmoManager = false
 
 FFlagStudioConvertAboutRobloxActionToContexts = false
 
 FFlagStudioDataModelLoadUtilDisableClientPresenceCall = true
+
+FFlagStudioDataModelProxyChangeMap = false
 
 FFlagStudioDebugCrashOnInvalidPlaceOrUniverseId = false
 
@@ -18754,6 +18906,8 @@ FFlagStudioDoNotBakeDraftsIntoServerRbxl = false
 
 FFlagStudioDoNotCarryOverDockingLayoutWhenFPSEnabled = true
 
+FFlagStudioDontBlockLoginIfFailedToSaveToken = false
+
 FFlagStudioEnableFragmentACInternally = true
 
 FFlagStudioEnableKeychainSecureStorage = false
@@ -18766,9 +18920,7 @@ FFlagStudioExpandMMEndMetrics = true
 
 FFlagStudioFindReplaceResetPositionOnCloseFix = false
 
-FFlagStudioFixCheckingGraphicsMode = true
-
-FFlagStudioFixCommandBarActionStates = true
+FFlagStudioFixExitAllPlaceSessionScopesCrash = false
 
 FFlagStudioFixGridSizeInitialize = false
 
@@ -18776,7 +18928,7 @@ FFlagStudioFixInstanceSignalStackOverflow = true
 
 FFlagStudioFixLateBoundActionShortcuts = true
 
-FFlagStudioFixLogoutCloseSavePlaceProblem2 = false
+FFlagStudioFixLogoutCloseSavePlaceProblem2 = true
 
 FFlagStudioFixNewOpenPlaceCameraSaving2 = true
 
@@ -18788,15 +18940,17 @@ FFlagStudioFixNullLuaToolbarRelayCrash = true
 
 FFlagStudioFixPersistingTcEnableFlag = false
 
+FFlagStudioFixPluginLoadingTestFixtures = false
+
 FFlagStudioFixPublishingDependency2 = false
 
-FFlagStudioFixRunServiceMonitorDataSyncing = false
+FFlagStudioFixRunServiceMonitorDataSyncing = true
 
 FFlagStudioFixSavingAsXMLForDownloadPlace = false
 
-FFlagStudioFixSoundNotMutedWhenLostFocus = false
+FFlagStudioFixSoundNotMutedWhenLostFocus = true
 
-FFlagStudioFixUserSettingsContextDependencies = false
+FFlagStudioFixUserSettingsContextDependencies = true
 
 FFlagStudioFloatingRibbon2 = true
 
@@ -18808,11 +18962,9 @@ FFlagStudioForceReauthenticationOnGameJoin403 = true
 
 FFlagStudioFragmentAutocomplete5 = true
 
-FFlagStudioFragmentAutocompleteSimplify = true
-
 FFlagStudioFragmentAutocompleteSkipPostTypecheck = true
 
-FFlagStudioGameSettingsAndDownloadCopyGrayedInScriptEditor = false
+FFlagStudioGameSettingsAndDownloadCopyGrayedInScriptEditor = true
 
 FFlagStudioGenreOverhaulInfo = false
 
@@ -18822,7 +18974,9 @@ FFlagStudioHandleDebuggerHittingBreakpointDuringResume = false
 
 FFlagStudioHandleMultiDMBreakpointHitCase = false
 
-FFlagStudioHasTeamTestChildProcess2 = false
+FFlagStudioHardenApplicationManagerSocket = false
+
+FFlagStudioHasTeamTestChildProcess2 = true
 
 FFlagStudioHelpMenuTourAction2 = true
 
@@ -18838,15 +18992,13 @@ FFlagStudioIndonesianLocale2 = true
 
 FFlagStudioInitializeTemplacePlaceIdZero3 = true
 
-FFlagStudioInsertObjectWidgetAddStyleRelatedChildren = false
+FFlagStudioInsertObjectWidgetAddStyleRelatedChildren2 = false
 
 FFlagStudioInsertObjectWidgetResetStyledProperties = false
 
 FFlagStudioInsertObjectWidgetSetScreenGuiDefaults = false
 
 FFlagStudioInternalOnlyBetaFeatures = true
-
-FFlagStudioLanguageServerShareParse = true
 
 FFlagStudioLocalDebuggerConnectionLockTargetDMBeforeDoingWork = false
 
@@ -18864,7 +19016,7 @@ FFlagStudioMenuRedesign5 = false
 
 FFlagStudioMoveBetaFeatureStrings = true
 
-FFlagStudioMoveCreatorLayerFetch = false
+FFlagStudioMoveCreatorLayerFetch = true
 
 FFlagStudioNativeMenu = true
 
@@ -18886,7 +19038,7 @@ FFlagStudioOutputContextMenuVisibleFix = false
 
 FFlagStudioOutputFixDoubleLinkMemoryLeak = true
 
-FFlagStudioPasteActionContextConversion = false
+FFlagStudioPasteActionContextConversion = true
 
 FFlagStudioPlaceOpener5 = false
 
@@ -18906,7 +19058,7 @@ FFlagSTUDIOPLAT_36032_BetterBetaFeaturesDialogSelectAllCheckboxBug = true
 
 FFlagSTUDIOPLAT_38487_ReplaceDeprecatedQTAPIs2 = false
 
-FFlagSTUDIOPLAT_38597_UseRbxSignals = false
+FFlagSTUDIOPLAT_38597_UseRbxSignals = true
 
 FFlagSTUDIOPLAT34811LogKeyStudioEvents = true
 
@@ -18942,7 +19094,7 @@ FFlagStudioPreAllocateUniqueIdCollisionDetectorMaps = true
 
 FFlagStudioPrevent3DViewUndocking = true
 
-FFlagStudioQWidgetObserverSafeRelease = false
+FFlagStudioQWidgetObserverSafeRelease = true
 
 FFlagStudioReapplyDockWindowGeometryWithDelayedExecution = false
 
@@ -18950,9 +19102,13 @@ FFlagStudioReEnableNetworkProxy_Dev = false
 
 FFlagStudioRefactorGraphicsModes = true
 
-FFlagStudioRemoveExitAllPlaceSessionScopes = false
+FFlagStudioRemoveAboutToCreateDataModelSignal = false
+
+FFlagStudioRemoveQuitIfLastDocInLastAppInstance = false
 
 FFlagStudioRenderingSettingsViewMode = false
+
+FFlagStudioReplacePlayTestingExpression = true
 
 FFlagStudioReplicationSyncDialogEvents = true
 
@@ -18982,6 +19138,8 @@ FFlagStudioResultNullopt = false
 
 FFlagStudioRetryFetchingAccountInfo = true
 
+FFlagStudioReverseWindowsAltScroll = true
+
 FFlagStudioReworkPluginUnloading3 = false
 
 FFlagStudioRibbonHGroup = true
@@ -18995,6 +19153,8 @@ FFlagStudioSendVisualizationModeCounter = true
 FFlagStudioSetQActionMenuRole = false
 
 FFlagStudioSettingEnumBuilder = false
+
+FFlagStudioSettingsHaveVisibleContext = false
 
 FFlagStudioSetupUselessCode = false
 
@@ -19030,9 +19190,11 @@ FFlagStudioToolDialogs = false
 
 FFlagStudioTourNewExplorer = false
 
-FFlagStudioTrackMultiSessionSpanData = false
+FFlagStudioTrackMultiSessionSpanData2 = true
 
 FFlagStudioTurkishLocale2 = true
+
+FFlagStudioUnderstandInvalidLaunchTask = false
 
 FFlagStudioUnlockMouseWhenEmulating = false
 
@@ -19056,7 +19218,7 @@ FFlagStudioUseLocalizedReflectionMetadata2 = true
 
 FFlagStudioUseNewEndpointForPlaceVersion = false
 
-FFlagStudioUsePluginLoaderCacheLogs = false
+FFlagStudioUsePluginLoaderCacheLogs = true
 
 FFlagStudioUsePublishInProgressScreen2 = true
 
@@ -19080,7 +19242,7 @@ FFlagStudioVisualizationModesUI3 = true
 
 FFlagStudioZeroOwnerOnTcEnabled = true
 
-FFlagStyleEditorUITab = false
+FFlagStyleEditorUITab2 = false
 
 FFlagStyleEngineNoWarningOnUpdate = true
 
@@ -19092,19 +19254,17 @@ FFlagStyleTreeStructOfArrays = false
 
 FFlagStylingFasterTagProcessing = false
 
-FFlagStylingInvalidTypeCrash = false
+FFlagStylingInvalidTypeCrash = true
 
-FFlagStylingMapUIListLayoutPadding2 = false
-
-FFlagStylingMarkDirtyOnPropReset = true
+FFlagStylingMapUIListLayoutPadding2 = true
 
 FFlagStylingRemoveStyleFix = true
 
-FFlagStylingSkipUpdateIfMatchesUnchanged = false
+FFlagStylingSkipUpdateIfMatchesUnchanged = true
 
 FFlagStylingStateSelectorImprovements = false
 
-FFlagStylingV2SupportPseudoInstances = false
+FFlagStylingV2SupportPseudoInstances = true
 
 FFlagSubmenuFixInvisibleButtons = true
 
@@ -19140,11 +19300,11 @@ FFlagSupportsTexture3DCopyDX11 = true
 
 FFlagSupportsTexture3DCopyVulkan = true
 
-FFlagSurfaceAppearanceTintMask = false
+FFlagSurfaceAppearanceTintMask = true
 
-FFlagSurfaceAppearanceTintMaskSelectable = false
+FFlagSurfaceAppearanceTintMaskSelectable = true
 
-FFlagSurfaceAppearanceUseLowestRoughnessMipAtLowLOD = false
+FFlagSurfaceAppearanceUseLowestRoughnessMipAtLowLOD2 = false
 
 FFlagSwitchCFMPositionFrameToTextButton = true
 
@@ -19248,7 +19408,7 @@ FFlagTextureGeneratorPollingFix = false
 
 FFlagTextureGeneratorUploadMeshMigratePublishService = true
 
-FFlagTextureManagerRemoveAddExternalRef5 = false
+FFlagTextureManagerRemoveAddExternalRef6 = false
 
 FFlagTextureStreamingV02 = false
 
@@ -19279,6 +19439,8 @@ FFlagTimeToSelectReportExtras = true
 FFlagToastNotificationAnalyticsPlaySessionId = true
 
 FFlagToastNotificationsGamepadSupport1 = false
+
+FFlagToastNotificationsLogoutClearQueueEnabled = false
 
 FFlagToastNotificationsProtocolEnabled2 = true
 
@@ -19418,13 +19580,13 @@ FFlagUGCValidateDynamicHeadMoodClient = true
 
 FFlagUGCValidateDynamicHeadMoodRCC = true
 
-FFlagUGCValidateExtraShoesTests = false
+FFlagUGCValidateExtraShoesTests = true
 
 FFlagUGCValidateFixDeprecatedTransparency = true
 
 FFlagUGCValidateFixTotalSurfaceAreaTestErrorString = true
 
-FFlagUGCValidateFixTransparencyReporting2 = false
+FFlagUGCValidateFixTransparencyReporting2 = true
 
 FFlagUGCValidateFullBodyBoundsAvatarRules = true
 
@@ -19444,11 +19606,11 @@ FFlagUGCValidateLCHandleScale = true
 
 FFlagUGCValidateMeshInsideMesh = true
 
-FFlagUGCValidateMeshMin2 = false
+FFlagUGCValidateMeshMin2 = true
 
 FFlagUGCValidateMeshVertColors = false
 
-FFlagUGCValidateModifiedAreaUsePadding = false
+FFlagUGCValidateModifiedAreaUsePadding = true
 
 FFlagUGCValidateOrientedAttachmentOrientationCheck = false
 
@@ -19486,13 +19648,13 @@ FFlagUGCValidateTotalSurfaceAreaTestBody = true
 
 FFlagUGCValidateTraversalOptimizations = true
 
-FFlagUGCValidateUseAnalyticsEntryPoint = false
+FFlagUGCValidateUseAnalyticsEntryPoint = true
 
 FFlagUGCValidateUseDataCache = true
 
 FFlagUGCValidateUseMeshSizeProperty = true
 
-FFlagUGCValidateUseVariableKeyTol = false
+FFlagUGCValidateUseVariableKeyTol = true
 
 FFlagUGCValidateUVValuesInReference = true
 
@@ -19565,6 +19727,8 @@ FFlagUIBloxFoundationProvider2 = true
 FFlagUIBloxGetTextHeightOptionalMaxHeight = false
 
 FFlagUIBloxMoveDetailsPageToLuaApps = true
+
+FFlagUIBloxMoveMediaGalleryToLuaApps = false
 
 FFlagUIBloxSupportControlStateSelectedForTooltipHover = true
 
@@ -19664,9 +19828,17 @@ FFlagUnbindRenderSteps = true
 
 FFlagUnderlineGoToDeclaration1 = false
 
+FFlagUndoRedoTextBox = true
+
 FFlagUnibarHoldoutChatIconUseNewIconSize = false
 
 FFlagUnibarLuaOcclusionMetrics = true
+
+FFlagUnibarMenuOpenHamburger = false
+
+FFlagUnibarMenuOpenSelectionIXP = false
+
+FFlagUnibarMenuOpenSubmenu = false
 
 FFlagUnifiedCookieProtocolEnabledSticky = false
 
@@ -19700,15 +19872,17 @@ FFlagUnMinimizeOnAnySystemMenuActionActivated2 = true
 
 FFlagUnpinUnavailable = true
 
+FFlagUnreduxLastInputTypeChanged = false
+
 FFlagUpdateAsyncLightGrid2 = false
 
 FFlagUpdateDeviceInputPlayerChanged = false
 
 FFlagUpdatedGetDescendants = true
 
-FFlagUpdateFmodVorbisDecoder = true
+FFlagUpdateFmodVorbisDecoder = false
 
-FFlagUpdateInvitesToUsePaginatedFriends = false
+FFlagUpdateInvitesToUsePaginatedFriends = true
 
 FFlagUpdateSelfieViewOnBan = true
 
@@ -19717,6 +19891,8 @@ FFlagUpdateSquadInDefaultAppChatContainer = false
 FFlagUpdateSquadInDefaultAppChatContainerWithMainFlag = false
 
 FFlagUpdateThumbnailAssetDataLoaderRetryLogic = true
+
+FFlagUpdateToolbarsInternalEnforceUIThread = false
 
 FFlagUpdateUICachesWithQuadTree3 = false
 
@@ -19730,7 +19906,7 @@ FFlagUpdateVoiceJoinTimeoutTimerIncludeSubscribe2 = true
 
 FFlagUseAccumulationStepperForMouseWheelScrollPicker = true
 
-FFlagUseAspectRatioConstraintModifier = false
+FFlagUseAspectRatioConstraintModifier2 = true
 
 FFlagUseAssetRequest3 = true
 
@@ -19738,7 +19914,7 @@ FFlagUseAssetTypeForRefinementKeys = true
 
 FFlagUseAtomsForNewIndex = true
 
-FFlagUseAudioAnalyzerForLocalMetering = true
+FFlagUseAudioAnalyzerForLocalMetering = false
 
 FFlagUseAudioInstanceAdded = true
 
@@ -19752,13 +19928,15 @@ FFlagUseCachedAudibilityMeasurements = false
 
 FFlagUseCameraDevicesListener = true
 
-FFlagUseCanvasMaxSizeForNonGuiObjectToo2 = false
+FFlagUseCanvasMaxSizeForNonGuiObjectToo2 = true
+
+FFlagUseCaptureCommonComponents = false
 
 FFlagUseCatalogItemDetailsToResolveBundlePurchase = false
 
 FFlagUseChannelBoundEnum = true
 
-FFlagUseCodeAssistAPI = false
+FFlagUseCodeAssistAPI = true
 
 FFlagUseCommunitiesTranslation = true
 
@@ -19792,7 +19970,7 @@ FFlagUseFlexItemModifier = true
 
 FFlagUseFriendsPropsInMuteToggles2 = true
 
-FFlagUseGenerationServiceHttpHelper = false
+FFlagUseGenerationServiceHttpHelper = true
 
 FFlagUseGUACforDUARPolicy = false
 
@@ -19824,7 +20002,7 @@ FFlagUseNewLoadStreamAnimationAPI = true
 
 FFlagUseNewPinIcon = true
 
-FFlagUseNewRequireSuggestionsApi = false
+FFlagUseNewRequireSuggestionsApi = true
 
 FFlagUseNewUnibarIcon = true
 
@@ -19920,7 +20098,7 @@ FFlagUserExitFreecamBreaksWithShiftlock = true
 
 FFlagUserFixBubbleChatText = true
 
-FFlagUserFixCameraCameraCharacterUpdates = false
+FFlagUserFixCameraCameraCharacterUpdates = true
 
 FFlagUserFixCameraFPError = true
 
@@ -20006,7 +20184,7 @@ FFlagUserProfilesDataLoaderEnabled = true
 
 FFlagUserProfilesEnableRetries = true
 
-FFlagUserProfilesEnableSkip = false
+FFlagUserProfilesEnableSkip = true
 
 FFlagUserProfilesFilterInvalidUserIds = true
 
@@ -20035,6 +20213,8 @@ FFlagUserResizeAwareTouchControls = true
 FFlagUserRespectLegacyCameraOptions = true
 
 FFlagUserRoactBubbleChatBeta = false
+
+FFlagUserSearchScreenBarAnalytics = true
 
 FFlagUserShouldLocalizeGameChatBubble = true
 
@@ -20094,7 +20274,7 @@ FFlagUseSDLGameControllerRumble2 = true
 
 FFlagUseSignalInsteadOfMessageSenderInANRDetector = false
 
-FFlagUseSizeConstraintModifier = false
+FFlagUseSizeConstraintModifier2 = true
 
 FFlagUseSizeInClipRect = true
 
@@ -20120,11 +20300,11 @@ FFlagUseTooltipSizeAttachmentFixes = true
 
 FFlagUseTooltipSizeAttachmentFixes = true
 
-FFlagUseUIPaddingModifier = false
+FFlagUseUIPaddingModifier = true
 
 FFlagUseUIRenderModifiers = false
 
-FFlagUseUIScaleModifier = false
+FFlagUseUIScaleModifier = true
 
 FFlagUseUpdatedModelToGetHumanoid = true
 
@@ -20164,8 +20344,6 @@ FFlagValidateUserAndUniverseNoModeration = true
 
 FFlagVariableKeyboardFocusMode = true
 
-FFlagvdataShadowDeprecated = true
-
 FFlagVersionedFlagTestNotDebug2 = true
 
 FFlagVersionsBeforeHistoryIdFix = true
@@ -20184,7 +20362,7 @@ FFlagVideoAndroidVP9DecoderTurnOnModelFilter = false
 
 FFlagVideoAndroidVP9DecoderTurnOnSocFilter = false
 
-FFlagVideoAndroidVP9FilterByHardwareRender = false
+FFlagVideoAndroidVP9FilterByHardwareRender = true
 
 FFlagVideoAndroidVP9TurnOnFilter = false
 
@@ -20192,7 +20370,7 @@ FFlagVideoApiBetaFeature = false
 
 FFlagVideoApiEnabled2 = false
 
-FFlagVideoAsyncStream = false
+FFlagVideoAsyncStream2 = false
 
 FFlagVideoCacheHlsSegments = false
 
@@ -20206,19 +20384,13 @@ FFlagVideoCaptureServiceFixRespawn = false
 
 FFlagVideoCheckHarmonyWhenOpeningMp4 = false
 
-FFlagVideoClientMetricsForAdGui = true
-
 FFlagVideoDecoderFastSeek3 = true
 
 FFlagVideoDetailedMemoryMetrics = true
 
-FFlagVideoDoNotResetResolution = false
-
 FFlagVideoEnabledImmutableSamplerRenderSolely = false
 
 FFlagVideoEnableHardwareBufferRender3 = true
-
-FFlagVideoEnablePresentationQueue3 = true
 
 FFlagVideoFixCMCDParamRace = true
 
@@ -20250,8 +20422,6 @@ FFlagVideoMoveMemoryPoolConstructionToOpen = true
 
 FFlagVideoPlaybackManager2 = false
 
-FFlagVideoPlayerDrivesVideoCodecTasks3 = true
-
 FFlagVideoRecordDeadlockFix = true
 
 FFlagVideoRecordFix = true
@@ -20272,8 +20442,6 @@ FFlagVideoReportIsLoadedMetrics2 = false
 
 FFlagVideoReportMaxActiveVideoFrames = true
 
-FFlagVideoReportPacketOnSuccessfulSubmit = true
-
 FFlagVideoReportRebufferingsInVideoServiceClient = false
 
 FFlagVideoReportThumbnailTimestamp2 = false
@@ -20282,19 +20450,17 @@ FFlagVideoResolutionWorkaround = true
 
 FFlagVideoRingUseRuntimePrimitive = false
 
-FFlagVideoRvLibLoaderPointerCheck = false
+FFlagVideoRvLibLoaderPointerCheck = true
 
 FFlagVideoSchedulerTestWaitForRunningTasksWithoutTimeout = false
 
-FFlagVideoSeparateRebuffering = true
-
 FFlagVideoServiceAddHardwareCodecMetrics = false
 
-FFlagVideoSoundSync2AncestorChange = false
+FFlagVideoSoundSync2AncestorChange = true
 
 FFlagVideoSoundVolumeMetrics = true
 
-FFlagVideoSourceAndSinkRender2 = false
+FFlagVideoSourceAndSinkRender2 = true
 
 FFlagVideoStreamAdaptiveBitrate3 = true
 
@@ -20372,7 +20538,7 @@ FFlagVoiceChatControlPlaneAcceptClientSubFailures = false
 
 FFlagVoiceChatCullingDecibelsAudibilityThresholdEnabled = true
 
-FFlagVoiceChatCullingDontSendBitsEnabled = false
+FFlagVoiceChatCullingDontSendBitsEnabled = true
 
 FFlagVoiceChatCullingEmitTotalTransactionsInPendingAndCompletedQueue = true
 
@@ -20382,7 +20548,7 @@ FFlagVoiceChatCullingEnableMutedSubsTelemetry = true
 
 FFlagVoiceChatCullingEnableStaleSubsTelemetry = true
 
-FFlagVoiceChatCullingGrowingQueueSizeEnabled = false
+FFlagVoiceChatCullingGrowingQueueSizeEnabled = true
 
 FFlagVoiceChatCullingReportSilenceForCulledAndMuted = true
 
@@ -20464,8 +20630,6 @@ FFlagVoiceChatStopSendingIceCandidate = false
 
 FFlagVoiceChatSubscriptionRetryOnPeerConnectionFailures = false
 
-FFlagVoiceChatSubscriptionsDroppedTelemetry = true
-
 FFlagVoiceChatUILogging = false
 
 FFlagVoiceChatUpdateSourcesOnSeparateThread = false
@@ -20518,7 +20682,7 @@ FFlagVREmulationRenderView2 = false
 
 FFlagVREmulatorBetaFeature = true
 
-FFlagVREmulatorFullRelease5 = false
+FFlagVREmulatorFullRelease5 = true
 
 FFlagVRFreeUIPanel = false
 
@@ -20546,11 +20710,11 @@ FFlagWASDKeyIgnore = true
 
 FFlagWaveEmoteOnAvatarContextMenuWithExpChat = true
 
-FFlagWebBrowserNewCallbacksEnabled2 = false
+FFlagWebBrowserNewCallbacksEnabled3 = false
 
 FFlagWebrtcUseProfiledAudioDecoder = false
 
-FFlagWebSocketServiceEnableClientCreation = false
+FFlagWebSocketServiceEnableClientCreation = true
 
 FFlagWebViewCheckPlatformAvailable = false
 
@@ -20558,7 +20722,7 @@ FFlagWebViewProtocol = true
 
 FFlagWebViewServiceHasShowDomainAsTitle = false
 
-FFlagWHAM1707 = false
+FFlagWHAM17072 = false
 
 FFlagWheelEventUsageTelemetry = false
 
@@ -20578,7 +20742,7 @@ FFlagWindowsIMEDynamicAnchor = false
 
 FFlagWindowsMonitorAnalytics = false
 
-FFlagWinMediaCodecEncoderFixes = false
+FFlagWinMediaCodecEncoderFixes = true
 
 FFlagWirableDynamicCastBegone = true
 
@@ -20588,7 +20752,7 @@ FFlagWrapDeformerClearAltMeshContent = true
 
 FFlagWrapDeformerEditableDeformation = false
 
-FFlagWrapDeformerRespectsCageOrigin2 = false
+FFlagWrapDeformerRespectsCageOrigin2 = true
 
 FFlagWrapDeformerTargetModifier7 = true
 
@@ -20630,11 +20794,11 @@ FIntActiveRegionProfileMarkerRefactorNumTokens = 100
 
 FIntActiveSquadInitPollingDelaySeconds = 3
 
-FIntActiveSquadPollingCardIntervalSeconds = 10
+FIntActiveSquadPollingCardIntervalSeconds = 30
 
-FIntActiveSquadPollingIdleIntervalSeconds = 60
+FIntActiveSquadPollingIdleIntervalSeconds = 120
 
-FIntActiveSquadPollingLobbyIntervalSeconds = 30
+FIntActiveSquadPollingLobbyIntervalSeconds = 60
 
 FIntActivityFeedBDISFetchSensitivity = 50
 
@@ -20764,13 +20928,13 @@ FIntAppChatNetworkingTelemetryThrottlingThousandths = 7500
 
 FIntAppChatNewMessageFetchMaxDepth = 10
 
-FIntAppChatPerfChatConversationPaginationInitialRender = 8
+FIntAppChatPerfChatConversationPaginationInitialRender = 10
 
 FIntAppChatPerfChatConversationPaginationOnEndReached = 100
 
 FIntAppChatPerfChatConversationPaginationOnStartReached = 64
 
-FIntAppChatPerfChatConversationPaginationWindowSize = 1
+FIntAppChatPerfChatConversationPaginationWindowSize = 2
 
 FIntAppChatWideBreakpointMinHeight = 0
 
@@ -21034,6 +21198,8 @@ FIntCollab6803Period = 50
 
 FIntCollab6803PersistenceExpiry = 90
 
+FIntCollab7848MaxDepth = 30
+
 FIntCollisionFidelityDeduplicationMaxMapSize = 1000
 
 FIntCommercePurchaseMaxHttpRequestRetries = 2
@@ -21130,7 +21296,7 @@ FIntCountDeletedBeforeReschedule = 200
 
 FIntCrashHandlerStartTimeOutMilliSec = 10000
 
-FIntCrashpadIndirectMemoryLimitBytes = 0
+FIntCrashpadIndirectMemoryLimitBytes = 10485760
 
 FIntCreateAnimationFromVideoBetaFeatureRoleSet = 4
 
@@ -21516,6 +21682,8 @@ FIntFriendsCarouselInitialFetchSize = 20
 
 FIntFriendsCarouselSocialBtnFriendsLimit = 10
 
+FIntFriendsListDefaultPageSize = 12
+
 FIntFRMMaxGrassDistance = 290
 
 FIntFRMMinGrassDistance = 100
@@ -21533,8 +21701,6 @@ FIntGamepadEmulatorBetaFeatureRoleSet = 4
 FIntGamepadEmulatorBetaFeatureRolloutPercent = 0
 
 FIntGamepadNavigationDialogShowCount = 1
-
-FIntGameGridFlexFeedItemTileNumPerFeed = 500
 
 FIntGamePerfMonitorPercentage = 10
 
@@ -21998,7 +22164,7 @@ FIntMLCodeCompleteRequestTokens = 1000
 
 FIntMLCodeCompleteRequestTrailingTokens = 500
 
-FIntMLCodeCompletionTimeRateLimitTimeMs = 3000
+FIntMLCodeCompletionTimeRateLimitTimeMs = 1000
 
 FIntMmapForMemProfStorageThrottle = 10000
 
@@ -22222,6 +22388,8 @@ FIntPartyPlayerInactivityTimeoutInSeconds = 1200
 
 FIntPartyVoiceAudioFaderVolumePerc = 120
 
+FIntPartyVoiceJoinRequestPulseCheckTimeout = 0
+
 FIntPartyVoiceTelemetryThrottlingThousandths = 10000
 
 FIntPartyVoiceTopbarActivityIndicatorAnimationMs = 50
@@ -22273,6 +22441,16 @@ FIntPercentReportingLeaveGameAnalytics = 10
 FIntPercentReportingNetworkProfileAfterStartup = 20
 
 FIntPerformanceControlDualSurfaceExpectedMemorySavingsKB = 150000
+
+FIntPerformanceControlTextureManagerCriticalTextureLevel = 0
+
+FIntPerformanceControlTextureManagerHighTextureLevel = 1
+
+FIntPerformanceControlTextureManagerLowTextureLevel = 3
+
+FIntPerformanceControlTextureManagerMediumTextureLevel = 2
+
+FIntPerformanceControlTextureManagerNoneTextureLevel = 3
 
 FIntPerformanceTelemetryGlobalThrottleHundredthsPercent = 10000
 
@@ -22590,7 +22768,7 @@ FIntRuntimeMaxNumOfSemaphores = 64
 
 FIntRuntimeMaxNumOfStrands = 64
 
-FIntRuntimeMaxNumOfThreads = 4000
+FIntRuntimeMaxNumOfThreads = 15000
 
 FIntRuntimeWorkerStackSize = 1048576
 
@@ -22674,9 +22852,11 @@ FIntSettingsHubPlayersButtonsResponsiveThreshold = 0
 
 FIntShadowmapUseSpinBudgetIters = 50
 
+FIntShadowSyncInitFlushSize = 131072
+
 FIntShareCaptureUploadToApiRolloutLimit = 0
 
-FIntShareCaptureUploadVideoToApiRolloutLimit = 0
+FIntShareCaptureUploadVideoToApiRolloutLimit = 50
 
 FIntShareGameHttpRetryCount = 3
 
@@ -23554,6 +23734,8 @@ FIntUITextureMediumSingleTextureMemoryMB = 8
 
 FIntUIViewportFrameCollectFrames = 300
 
+FIntUndoRedoTextBoxStackSize = 6
+
 FIntUnfilteredMessageTransparencyHundredths = 0
 
 FIntUnfilteredThreadsPvDelayMs = 2000
@@ -23766,7 +23948,7 @@ FIntVRBottomBarPositionOffsetVerticalNumber = -170
 
 FIntVREmulatorBetaFeatureRoleSet = 4
 
-FIntVREmulatorBetaFeatureRolloutPercent = 0
+FIntVREmulatorBetaFeatureRolloutPercent = 25
 
 FIntVRScaleGuiDistance = 150
 
@@ -23957,6 +24139,8 @@ FLogCOMCalls = Warning,1
 FLogConfigureWithoutRun = Warning,0
 
 FLogConnectivityProtocolCore = Info,6
+
+FLogConstraintGizmoManager = Warning,6
 
 FLogContentProviderRequests = Warning,0
 
@@ -24666,6 +24850,8 @@ FLogStudioAeroMeshProcessing = Info,6
 
 FLogStudioAnalytics = Warning,1
 
+FLogStudioApplicationManager = Info,6
+
 FLogStudioApplicationState = Info,6
 
 FLogStudioCmds = Warning,0
@@ -25000,6 +25186,8 @@ FLogTool = Warning,0
 
 FLogToolboxManager = Info,6
 
+FLogToolboxWebBrowserWidget = Warning,6
+
 FLogTools = Warning,6
 
 FLogTrackUserActions = Warning,0
@@ -25163,6 +25351,8 @@ FStringAppChatClosedCounter = AppChatClosed
 FStringAppChatHideChatToastExperimentationLayer = Social.AppChat
 
 FStringAppChatInExperienceIXPLayer = Social.ConnectTab
+
+FStringAppChatPerfExperimentLayer = Party.Chat.Perf
 
 FStringAppChatRebrandIconUpdatesNewOff = icons/menu/2-person-with-bubble
 
@@ -25504,6 +25694,8 @@ FStringCreateAnimationFromVideoBetaFeatureUrl =
 
 FStringCreateAssetAsyncBetaFeatureUrl = 
 
+FStringCreatorStoreWVUrl = 
+
 FStringCrossExpEventLoggingLevel = Warning
 
 FStringCrossExpVoiceFeasibilityLayer = CrossExpVoice.Harmony
@@ -25664,21 +25856,23 @@ FStringEmoteUtilityFallbackKeyframeSequenceAssetId = 10921261056
 
 FStringEnableSquadEntrypointsVariant = enableSquadEntrypoints
 
-FStringEngineVoiceComfortNoiseIxpLayer = Engine.Voice.ComfortNoiseLayer
+FStringEngineVoiceChatClientRewriteIxpLayer = 
+
+FStringEngineVoiceComfortNoiseIxpLayer = Engine.Voice.Exposure.4
 
 FStringEngineVoiceComfortNoiseIxpVariable = WebrtcDisableComfortNoiseIXPVariable
 
 FStringEngineVoiceCullingLayer = Engine.VoiceCullingExposure
 
-FStringEngineVoiceWebrtcAudioJitterBufferFastAccelerateIxpLayer = Engine.Voice.JitterBuffer
+FStringEngineVoiceWebrtcAudioJitterBufferFastAccelerateIxpLayer = Engine.Voice.Exposure.3
 
 FStringEngineVoiceWebrtcAudioJitterBufferFastAccelerateIxpVariable = webrtcAudioJitterBufferFastAccelerateIxpVariable
 
-FStringEngineVoiceWebrtcRobloxAudioJitterBufferSizeDecreaseIxpLayer = Engine.Voice.JitterBufferSizeDecrease
+FStringEngineVoiceWebrtcRobloxAudioJitterBufferSizeDecreaseIxpLayer = Engine.Voice.Exposure.1
 
-FStringEngineVoiceWebrtcRobloxAudioJitterBufferSizeDecreaseIxpVariable = webrtcRobloxAudioJitterBufferSizeDecreaseIxpVariable
+FStringEngineVoiceWebrtcRobloxAudioJitterBufferSizeDecreaseIxpVariable = EnableNewFeatureTest
 
-FStringEngineVoiceWebrtcRobloxNeteqDynamicMemoryIxpLayer = Engine.Voice.NeteqDynamicMemory
+FStringEngineVoiceWebrtcRobloxNeteqDynamicMemoryIxpLayer = Engine.Voice.Exposure.2
 
 FStringEngineVoiceWebrtcRobloxNeteqDynamicMemoryIxpVariable = webrtcRobloxNeteqDynamicMemoryIxpVariable
 
@@ -25732,7 +25926,7 @@ FStringFeature_UnifiedCookieProtocolEnabledSticky =
 
 FStringFindFriendsButtonClickedCounter = FindFriendsButtonClicked
 
-FStringFlagRepoGitHashFastString = 15397d0940625a2db65b200e1ecabb47bc73fc59
+FStringFlagRepoGitHashFastString = 6fa9bb87b33ac8b6d68587178ecc900d07899ab2
 
 FStringFlagRolloutTestStaticString0 = Static03072024
 
@@ -25756,7 +25950,7 @@ FStringFlagRolloutTestStaticString9 = Static03072024
 
 FStringFlickerFixUserIxpLayer = App.FlickerFixOnForegroundLayer2
 
-FStringFlipTimeStampFastString = 2025-03-18T18:12:00.888Z
+FStringFlipTimeStampFastString = 2025-03-28T18:28:41.127Z
 
 FStringFmodUseVoiceDriverIxpLayer = Voice.AudioInputQuality
 
@@ -25786,7 +25980,7 @@ FStringGameInviteBannerEnabledGameIds2 = 6173080615,2380077519,2992873140,485847
 
 FStringGameJoinStatusConsideredError = 12;
 
-FStringGameLaunchLinkURL = (?:(?:https?:\/\/(?:www\.)?(?:\w+\.)?roblox(?:labs)?\.com(?:\/[A-Za-z]{2}(-[A-Za-z0-9]{2,3})?)?\/games\/start\?)|(?:roblox(?:mobile)?:\/\/(?:experiences\/start\?)?))(?:(?:(?:(?:id=\d+)|(?:placeid=\d+)|(?:userID=\d+)|(?:launchtime=\d+)|(?:gameInstanceId=(?:\w|\-)+)|(?:linkCode=(?:\w|\-)+)|(?:accessCode=(?:\w|\-)+)|(?:launchData=(?:.+))|(?:eventId=(?:\d+))|(?:joinAttemptId=(?:[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12})+)|(?:joinAttemptOrigin=(?:\w|\-)+)|(?:callId=(?:[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12})+)|(?:reservedServerAccessCode=(?:\w|\-)+))&?)+)\/?
+FStringGameLaunchLinkURL = (?:(?:https?://\w+\.roblox(?:labs)?\.com(?:/[A-Za-z]{2}(-[A-Za-z0-9]{2,3})?)?/games/start\?)|(?:roblox(?:mobile)?://(?:experiences/start\?)?))(?:(?:(?:(?:id=\d+)|(?:placeid=\d+)|(?:userID=\d+)|(?:launchtime=\d+)|(?:gameInstanceId=(?:\w|\-)+)|(?:linkCode=(?:\w|\-)+)|(?:accessCode=(?:\w|\-)+)|(?:reservedServerAccessCode=(?:\w|\-)+)|(?:launchData=(?:.+))|(?:referredByPlayerId=\d+)|(?:joinAttemptId=(?:[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12})+)|(?:joinAttemptOrigin=(?:\w|\-)+)|(?:eventId=(?:\d+))|(?:callId=(?:[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12})+)|(?:gaasKey=(?:\w|_)+)|(?:source_aid=(?:\w)+)|(?:referrer=(?:\w|_|\-|\%)+))&?)+)/?
 
 FStringGameLocaleIdName = GameLocale
 
@@ -25954,8 +26148,6 @@ FStringIXPPerformanceControlMLThresholdThreshold = threshold
 
 FStringIXPPerformanceControlMLThresholdTreatmentName = treatmentName
 
-FStringIXPPerformanceControlRunSoundCacheTunableV2Branch = runSoundCacheTunableV2Branch
-
 FStringIXPPerformanceControlStreamingTunableMaxUtility = streamingMaxUtility
 
 FStringIXPTestAccountSwitcherLayerName = Accounts.AccountSwitcher
@@ -26122,6 +26314,8 @@ FStringMicActivityFixIXPLayerValue = MicActivityFixEnabled
 
 FStringMicrophoneDevicePermissionsLoggingEventName = microphoneDevicePermissionPromptedV2
 
+FStringMobilePopularItemBadgingLayer = Optimization.InExperienceUpsell.Mobile.UI
+
 FStringMobileSoundAndHapticsLayer = Mobile.UI.Shell
 
 FStringModerationDialogCommunityGuidelinesLink = https://en.help.roblox.com/hc/en-us/articles/203313410-Roblox-Community-Standards
@@ -26194,6 +26388,8 @@ FStringPartyCoordinationExperienceJoinIxpLayer = Party.Coordination.ExperienceJo
 
 FStringPartyCoordinationUIIxpLayer = Party.Coordination.UI
 
+FStringPartyFormationCreateUserLayer = Party.Formation.Create.User
+
 FStringPartyFormationInviteIxpLayer = Party.Formation.Invite
 
 FStringPartyVoiceConnectedParticipantsOnJoinCounter = PartyVoiceConnectedParticipantsOnJoin
@@ -26207,6 +26403,8 @@ FStringPauseLuaAppBackgroundParam = pauseLuaAppOnBackgroundEnabled
 FStringPerformanceControlDeviceListForPortTextureManagerTrimMemory = 
 
 FStringPerformanceControlExcludedTunables = None
+
+FStringPerformanceControlExperimentName = 
 
 FStringPerformanceControlIncludedTunables = None
 
@@ -26226,11 +26424,11 @@ FStringPivotEditorLearnMoreUrl = https://devforum.roblox.com/t/pivot-points-stud
 
 FStringPlaceAnnotationsBetaFeatureUrl = 
 
-FStringPlatformEventUrl = https://www.roblox.com/the-hunt-mega-edition
-
 FStringPlatformExcellenceVRSpatialUILayer = PlatformExcellence.VR.SpatialUI
 
 FStringPlayerContextualMenuVendorImagePath = rbxasset://textures/ui/Shell/Icons/PlatformLogo.png
+
+FStringPopularFillIconLocation = icons/menu/fire_fill
 
 FStringPreferredTextSizeSettingBetaFeatureUrl = 
 
@@ -26312,8 +26510,6 @@ FStringRuppTokEnPath =
 
 FStringSaveOptimizationDocsLinkString = https://create.roblox.com/docs/projects/place-files
 
-FStringSceneAnalysisProcessingMode = AudioInstances
-
 FStringScriptIterationDiffExperimentLayer = Creator.Assistant.ScriptIterationDiff.CreatorId
 
 FStringScriptSyncM2_5BetaFeatureUrl = https://devforum.roblox.com/t/early-preview-studio-script-sync/3257548
@@ -26372,6 +26568,8 @@ FStringSocialOnboardingExperimentLayer = Social.Friends
 
 FStringSocialPartyLayer = Social.Party
 
+FStringSortInvitesByScoreExperimentLayer = Growth.Notifications.GameInviteMenu
+
 FStringSpatialRobloxUIIXPLayerName = PlatformExcellence.VR.SpatialUI
 
 FStringSpatialRobloxUIIXPSpatialUIVariantValue = spatial_ui
@@ -26382,7 +26580,11 @@ FStringSquadCoordinationUiExperimentLayer = Party.Coordination.UI
 
 FStringSquadEnablePartyCoordinationUiVariant = enablePartyCoordinationUi
 
+FStringSquadEnablePartyInviteChangesVariant = enablePartyInviteChanges
+
 FStringSquadExpLayer = Social.PartyRollout
+
+FStringSquadInviteChangesExperimentLayer = Party.Formation.Invite
 
 FStringSSODeepLinkUrlPattern = roblox://single-sign-on/login.*([?&](?:baseUrl=\d+|auth=\w+|placeId=\d+))+.*
 
@@ -26396,7 +26598,7 @@ FStringStudioDefaultNewTemplatePlaceId = 95206881
 
 FStringStudioDevforumUrl = https://devforum.roblox.com/c/platform-feedback/studio-bugs
 
-FStringStudioEmergencyMessageV4 = ewogICAgInZlcnNpb25TdGFydCI6IjAuMzAwLjAuMSIsCiAgICAidmVyc2lvbkVuZCI6IjAuNjU5LjAuMCIsCiAgICAicGxhdGZvcm1zIjogWyJXaW5kb3dzIiwgIk1hYyJdLAogICAgIm1lc3NhZ2UiOnt9LAogICAgInNodXRkb3duIjp0cnVlCn0=
+FStringStudioEmergencyMessageV4 = ewogICAgInZlcnNpb25TdGFydCI6IjAuMzAwLjAuMSIsCiAgICAidmVyc2lvbkVuZCI6IjAuNjYzLjEuNjY2MDYwOCIsCiAgICAicGxhdGZvcm1zIjogWyJXaW5kb3dzIiwgIk1hYyJdLAogICAgIm1lc3NhZ2UiOnt9LAogICAgInNodXRkb3duIjp0cnVlCn0=
 
 FStringStudioForceLocale = 
 
@@ -26444,7 +26646,7 @@ FStringStudioTaskRegistryLogPinpoint = StartPageBridge/openLoadingPage
 
 FStringStudioTestRewardedVideoAdAssetUrl = rbxassetid://77013990375904
 
-FStringSuppressMutedErrorKeys = AdjustAccessoryView,ItemActionEventMissingParameter,ItemImpressionsEventMissingParameter
+FStringSuppressMutedErrorKeys = AdjustAccessoryView
 
 FStringTelemetryDataReArchTransmissionDualWriteWhiteList = 
 
@@ -26628,13 +26830,13 @@ FStringWireDefaultName = Wire
 
 FStringXboxClassicUILayer = Consoles.Xbox.Classic.UI
 
-FStringXboxSaleAvatarPackageIds = Please review the code and press the Play button to run it.
+FStringXboxSaleAvatarPackageIds = 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-SFFlagEliminateLSCHashStorage = false
+SFFlagEliminateLSCHashStorage2 = false
 
 SFFlagSimOneAttachmentAlignmentsAreNotSpanningTreeJoints2 = false
 
