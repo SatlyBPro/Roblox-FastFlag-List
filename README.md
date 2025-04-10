@@ -1,7 +1,7 @@
 ### Version: 0.668.0.6680659
 ### Channel: ZControl
 ### Hash: version-04a222f011414c81
-### Type: Studio
+### Type: Studio64
 
 ---
 
