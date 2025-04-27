@@ -25280,9 +25280,7 @@ FLogStudioEmbeddedWebBrowser = Warning,6
 
 FLogStudioFeatureActivityTrackerLog = Warning,0
 
-FLogStudioFlagEditor : "255" (string)
-
-FLogStudioFlagEditor = Warning,255
+FLogStudioFlagEditor = Warning,0
 
 FLogStudioFontDatabase = Warning,6
 
